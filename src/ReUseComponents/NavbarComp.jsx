@@ -90,7 +90,6 @@ function NavbarComp() {
             </MenuListWrapper>
         </MainMenu>
       </MainMenuWrapper>
-      <MainSlider />
     </MainContainer>
 
   );

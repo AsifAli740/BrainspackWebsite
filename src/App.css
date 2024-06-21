@@ -53,3 +53,11 @@
   padding-top: 3px;
   color: #1B1525 !important;
 }
+
+.exploreLink{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border-bottom: 3px solid #2be4ac;
+  padding-bottom: 3px;
+}
