@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import brainspackLogo from "../Assets/images/resources/final-header-brainspack-logo.svg";
 import { NavLink } from "react-router-dom";
 
@@ -13,7 +13,6 @@ export const Navbar = styled(Box)(() => ({
   height: "47px",
   display: "flex",
   borderBottom: "1px solid #ddd",
-
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -133,7 +132,6 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
   backgroundImage: `url(${brainspackLogo}) `,
   backgroundSize: "100% 60px",
   backgroundRepeat: "no-repeat",
-  
 }));
 
 export const ListsBox = styled(Box)(() => ({
@@ -156,3 +154,17 @@ export const Navlinks = styled(NavLink)(() => ({
   color: "#777181",
 }));
 
+export const CustomBtn = styled(Button)(() => ({
+  height: "60px",
+  width: "220px",
+  backgroundColor: "#55ad88 !important",
+  color: "white",
+  borderRadius: "0px !important",
+  fontSize: "18px !important",
+  fontWeight: "700 !important",
+  textTransform: "none !important",
+  "&:hover": {
+    backgroundColor: "black !important",
+    transition: "all 0.5s linear",
+  },
+}));

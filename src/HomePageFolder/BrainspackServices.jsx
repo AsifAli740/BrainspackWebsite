@@ -6,16 +6,7 @@ import {
   ServicesCardMedia,
 } from "./homePageStyled";
 import { SERVICES_CONTENT } from "./Constants";
-import {
-  Card,
-  CardActionArea,
-  Typography,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Button,
-  Box,
-} from "@mui/material";
+import { Box } from "@mui/material";
 
 const BrainspackServices = () => {
   return (
