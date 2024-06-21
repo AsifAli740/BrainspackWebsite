@@ -1,15 +1,8 @@
-import React from 'react';
-import { MainContainer, Navbar, NavbarTopLeft, NavbarTopRight } from './homePageStyled';
+import React from "react";
+import BrainspackServices from "./BrainspackServices";
 
 function HomePage() {
-    return (
-        <MainContainer>
-            <Navbar>
-                <NavbarTopLeft></NavbarTopLeft>
-                <NavbarTopRight></NavbarTopRight>
-            </Navbar>
-        </MainContainer>
-    );
+  return <BrainspackServices />;
 }
 
 export default HomePage;
