@@ -1,12 +1,14 @@
-import React from 'react';
-import NavbarComp from '../ReUseComponents/NavbarComp';
+import React from "react";
+import NavbarComp from "../ReUseComponents/NavbarComp";
+import BrainspackServices from "./BrainspackServices";
 
 function HomePage(props) {
-    return (
-        <>
-            <NavbarComp />
-        </>
-    );
+  return (
+    <>
+      <NavbarComp />
+      <BrainspackServices />
+    </>
+  );
 }
 
 export default HomePage;

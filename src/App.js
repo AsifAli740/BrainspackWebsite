@@ -1,12 +1,13 @@
-// import logo from './logo.svg';
-import './App.css';
-import HomePage from './HomePageFolder/HomePage';
+import "./App.css";
+import HomePage from "./HomePageFolder/HomePage";
+import GetKnowUs from "./HomePageFolder/GetKnowUs/GetKnowUs";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <HomePage />
-    </div>
+      <GetKnowUs />
+    </>
   );
 }
 
