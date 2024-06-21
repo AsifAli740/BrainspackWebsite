@@ -13,7 +13,7 @@ export const Navbar = styled(Box)(() => ({
   height: "47px",
   display: "flex",
   borderBottom: "1px solid #ddd",
-  
+
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -155,3 +155,4 @@ export const Navlinks = styled(NavLink)(() => ({
   paddingBottom: "5px",
   color: "#777181",
 }));
+
