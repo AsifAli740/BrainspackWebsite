@@ -1,17 +1,18 @@
-.App {
+/* .App {
   text-align: center;
-}
-*{
+} */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: "Kumbh Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "YOPQ" 300;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
+ }
 
 .App-logo {
   height: 40vmin;
@@ -46,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.active{
+  border-bottom: 3px solid green;
+  padding-top: 3px;
+  color: #1B1525 !important;
 }
