@@ -103,6 +103,8 @@ export const counterItemContent = [
     dataCount: "15",
     counterPlus: "+",
     counterTitle:"Pro team members"
+}
+]
 export const TECH_SERVICES = [
   {
     id: 0,

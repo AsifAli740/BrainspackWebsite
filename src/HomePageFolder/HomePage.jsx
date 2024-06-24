@@ -21,10 +21,10 @@ const HomePage = (props) => {
       <GetKnowUs />
       <DevelopmentProcess />
       <ServicesOfBrainspack />
-      <CounterItems/>
-      <HelpingContainer />
       <LaunchingComp />
       <TechServicesComp />
+      <CounterItems/>
+      <HelpingContainer />
       <FooterComp />
     </>
   );

@@ -1,9 +1,7 @@
+import { Box, Button, Card, CardMedia, Fab, Typography } from "@mui/material";
 import styled from "styled-components";
-import { Box, Button, Card, CardMedia, Typography } from "@mui/material";
-import mainSliderOneImg from "../Assets/images/backgrounds/main-slider-1-3.jpg"
 import helpingLeftImage from "../Assets/images/backgrounds/helping-left-bg.jpg"
 import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png"
-import { Box, Button, Card, CardMedia, Fab, Typography } from "@mui/material";
 import mainSliderOneImg from "../Assets/images/backgrounds/main-slider-1-3.jpg";
 import businessImg from "../Assets/images/backgrounds/business-from-bg.jpg";
 
@@ -253,7 +251,7 @@ export const FooterWrapper = styled(Box)(() => ({
   height: "600px",
   border: "1px solid red",
 }));
-export const leftFooterImageBox = styled(Box)(() => ({
+export const LeftFooterImageBox = styled(Box)(() => ({
   width: "30%",
   height: "70%",
   border: "1px solid red",
