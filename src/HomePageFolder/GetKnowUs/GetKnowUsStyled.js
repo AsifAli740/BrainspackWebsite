@@ -11,7 +11,6 @@ export const GetKnowUsWrapper = styled(Box)(() => ({
   height: "100%",
   display: "flex",
   justifyContent: "space-between",
-  //   gap: "5px",
 }));
 export const GetKnowUsImageBox = styled(Box)(() => ({
   width: "58%",
@@ -20,6 +19,9 @@ export const GetKnowUsImageBox = styled(Box)(() => ({
 export const GetKnowUsContentBox = styled(Box)(() => ({
   width: "39%",
   height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
 }));
 export const GetKnowUsTitle = styled(Typography)(() => ({
   color: "#55ad88",
@@ -42,4 +44,10 @@ export const Features = styled(Typography)(() => ({
   fontSize: "18px !important",
   fontWeight: "400 !important",
   lineHeight: "32px",
+}));
+export const Problems = styled(Typography)(() => ({
+  color: "#1b1525 !important",
+  fontSize: "20px !important",
+  fontWeight: "700 !important",
+  lineHeight: "36px",
 }));

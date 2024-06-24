@@ -13,7 +13,6 @@ export const Navbar = styled(Box)(() => ({
   height: "47px",
   display: "flex",
   borderBottom: "1px solid #ddd",
-
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -54,6 +53,10 @@ export const EmailBox = styled(Typography)(() => ({
   display: "flex",
   justifyContent: "space-between",
   cursor: "pointer",
+  "&:hover": {
+    color: "#55ad88 !important",
+    cursor: "pointer",
+  },
 }));
 
 export const AboutContactLinkWrapper = styled(Box)(() => ({
@@ -133,7 +136,6 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
   backgroundImage: `url(${brainspackLogo}) `,
   backgroundSize: "100% 60px",
   backgroundRepeat: "no-repeat",
-  
 }));
 
 
@@ -158,3 +160,17 @@ export const Navlinks = styled(NavLink)(() => ({
   color: "#777181",
 }));
 
+export const CustomBtn = styled(Button)(() => ({
+  height: "60px",
+  width: "220px",
+  backgroundColor: "#55ad88 !important",
+  color: "white",
+  borderRadius: "0px !important",
+  fontSize: "18px !important",
+  fontWeight: "700 !important",
+  textTransform: "none !important",
+  "&:hover": {
+    backgroundColor: "black !important",
+    transition: "all 0.5s linear",
+  },
+}));
