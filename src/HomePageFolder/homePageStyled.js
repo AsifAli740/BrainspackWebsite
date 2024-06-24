@@ -179,7 +179,7 @@ export const FooterWrapper = styled(Box)(() => ({
   height: "600px",
   border: "1px solid red",
 }));
-export const leftFooterImageBox = styled(Box)(() => ({
+export const LeftFooterImageBox = styled(Box)(() => ({
   width: "30%",
   height: "70%",
   border: "1px solid red",
