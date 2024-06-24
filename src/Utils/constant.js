@@ -3,6 +3,7 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import AutoFixOffIcon from "@mui/icons-material/AutoFixOff";
+import CheckIcon from "@mui/icons-material/Check";
 export const headerLinks = [
   {
     links: "/",
@@ -70,5 +71,28 @@ export const serviceCardContent = [
     icons: "icons",
     heading: "Digital Marketing",
     subHeading: "Strategic Promotion for Online Triumph.",
+  },
+];
+
+export const TECH_SERVICES = [
+  {
+    id: 0,
+    icon: <CheckIcon />,
+    name: "Web Development",
+  },
+  {
+    id: 1,
+    icon: <CheckIcon />,
+    name: "UI/UX Designing",
+  },
+  {
+    id: 2,
+    icon: <CheckIcon />,
+    name: "Mobile App Development",
+  },
+  {
+    id: 3,
+    icon: <CheckIcon />,
+    name: "Digital Marketing",
   },
 ];
