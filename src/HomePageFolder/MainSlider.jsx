@@ -1,15 +1,7 @@
-import React from "react";
-import {
-  BrainspackSliderHeading,
-  BrainspackSliderPPPHeading,
-  CustomBtn,
-  ExploreBrainspackLink,
-  GetSolution,
-  GetSolutionContainer,
-  MainSliderBox,
-  SliderWrapper,
-} from "./homePageStyled";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { BrainspackSliderHeading, BrainspackSliderPPPHeading, CustomBtn, ExploreBrainspackLink, GetSolution, GetSolutionContainer, MainSliderBox, SliderWrapper } from './homePageStyled';
+import { Link } from 'react-router-dom';
+
 
 function MainSlider(props) {
   return (

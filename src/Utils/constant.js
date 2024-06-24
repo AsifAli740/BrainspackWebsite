@@ -3,6 +3,10 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import AutoFixOffIcon from "@mui/icons-material/AutoFixOff";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import PermDataSettingIcon from '@mui/icons-material/PermDataSetting';
+import GroupsIcon from '@mui/icons-material/Groups';
 import CheckIcon from "@mui/icons-material/Check";
 export const headerLinks = [
   {
@@ -74,6 +78,33 @@ export const serviceCardContent = [
   },
 ];
 
+
+export const counterItemContent = [
+  {
+    icons: <BusinessCenterIcon />,
+    dataCount: "3",
+    counterPlus: "+",
+    counterTitle:"Years of experience"
+  },
+  {
+    icons: <PermDataSettingIcon />,
+    dataCount: "700",
+    counterPlus: "+",
+    counterTitle:"IT problems solved"
+  },
+  {
+    icons: <ThumbUpIcon />,
+    dataCount: "11",
+    counterPlus: "+",
+    counterTitle:"Satisfied clients"
+  },
+  {
+    icons: <GroupsIcon />,
+    dataCount: "15",
+    counterPlus: "+",
+    counterTitle:"Pro team members"
+}
+]
 export const TECH_SERVICES = [
   {
     id: 0,
