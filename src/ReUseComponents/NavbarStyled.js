@@ -53,6 +53,10 @@ export const EmailBox = styled(Typography)(() => ({
   display: "flex",
   justifyContent: "space-between",
   cursor: "pointer",
+  "&:hover": {
+    color: "#55ad88 !important",
+    cursor: "pointer",
+  },
 }));
 
 export const AboutContactLinkWrapper = styled(Box)(() => ({

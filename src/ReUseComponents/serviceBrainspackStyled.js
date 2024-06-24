@@ -74,15 +74,13 @@ export const ServiceCard = styled(Card)(() => ({
     color:"white !important",
     backgroundColor:"#1b1525 !important",
     border:"1px solid #322d3b",
-//     "&:hover":{
-//         backgroundColor:"white !important",
-//         transform:"translateY(-10px)",
-//     transition: "all 500ms ease",
-// color:"black !important",
-    // },
-
-
-    
+    "&:hover":{
+        backgroundColor:"white !important",
+        transform:"translateY(-10px)",
+    transition: "all 500ms ease",
+color:"black !important",
+    },
+      
 
     
 
