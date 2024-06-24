@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Box, Button, Card, CardMedia, Typography } from "@mui/material";
 import mainSliderOneImg from "../Assets/images/backgrounds/main-slider-1-3.jpg"
+import helpingLeftImage from "../Assets/images/backgrounds/helping-left-bg.jpg"
+import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png"
 
 export const ServicesWrapper = styled(Box)(() => ({
   width: "100%",
@@ -95,6 +97,7 @@ export const CustomBtn = styled(Button)(() => ({
   fontWeight: "700 !important",
   textTransform: "none !important",
   
+  
 }));
 export const GetSolutionContainer = styled(Box)(() => ({
   width: "100%",
@@ -124,5 +127,73 @@ export const ExploreBrainspackLink = styled(Typography)(() => ({
   
   
 }));
+
+
+// ============================ Helping Styling ======================================================
+
+export const HelpingContainerWrapper = styled(Box)(() => ({
+  width:"100%",
+  height:"790px",
+  backgroundColor:"red",
+  display:"flex"
+
+  
+  
+}));
+export const HelpingContainerImageBox = styled(Box)(() => ({
+  width:"50%",
+  height:"790px",
+  backgroundColor:"yellow",
+  backgroundImage:`url(${helpingLeftImage})`,
+  backgroundRepeat:"no-repeat",
+  backgroundPosition:"center",
+  backgroundSize:"cover"
+
+  
+  
+}));
+export const HelpingContentWrapper = styled(Box)(() => ({
+  width:"50%",
+  height:"790px",
+  backgroundColor:"#1B1525",
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"end",
+  position:"relative"
+ 
+  
+}));
+export const HelpingLineImageWrapper = styled(Box)(() => ({
+  position:"absolute",
+  right:"0px",
+  width:"390px",
+  height:"500px",
+  backgroundColor:"#yellow",
+  backgroundImage:`url(${helpingBlackImage})`,
+  backgroundRepeat:"no-repeat",
+  opacity:"0.1" 
+  
+}));
+export const HelpingContent = styled(Box)(() => ({
+  width:"60%",
+  height:"600px",
+  // backgroundColor:"yellow",
+  border:"1px solid green"
+ 
+}));
+export const TechnologySolutionHeading = styled(Typography)(() => ({
+  color: "#55ad88",
+  fontSize: "16px !important",
+  fontWeight: "700 !important",
+ 
+}));
+export const HelpingHeading = styled(Typography)(() => ({
+  color: "white",
+  fontSize: "40px !important",
+  fontWeight: "600 !important",
+  lineHeight:"50px !important"
+ 
+}));
+
 
 

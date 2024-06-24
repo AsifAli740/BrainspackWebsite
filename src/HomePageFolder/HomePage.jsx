@@ -5,6 +5,8 @@ import GetKnowUs from "./GetKnowUs/GetKnowUs";
 import DevelopmentProcess from "./DevelopmentProcess";
 import MainSlider from "./MainSlider";
 import ServicesOfBrainspack from "../ReUseComponents/ServicesOfBrainspack";
+import CounterItems from "../ReUseComponents/CounterItems";
+import HelpingContainer from "./HelpingContainer";
 // import GetKnowUs from "../HomePageFolder/GetKnowUs/GetKnowUs";
 
 function HomePage(props) {
@@ -18,6 +20,8 @@ function HomePage(props) {
       <DevelopmentProcess />
 
       <ServicesOfBrainspack />
+      <CounterItems/>
+      <HelpingContainer />
     </>
   );
 }
