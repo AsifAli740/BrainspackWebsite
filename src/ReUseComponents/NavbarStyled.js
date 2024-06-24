@@ -134,6 +134,8 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
   backgroundRepeat: "no-repeat",
 }));
 
+
+
 export const ListsBox = styled(Box)(() => ({
   width: "57%",
   height: "inherit",
