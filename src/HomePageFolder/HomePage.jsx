@@ -1,9 +1,11 @@
 import React from "react";
 import NavbarComp from "../ReUseComponents/NavbarComp";
 import BrainspackServices from "./BrainspackServices";
+import GetKnowUs from "./GetKnowUs/GetKnowUs";
+import DevelopmentProcess from "./DevelopmentProcess";
 import MainSlider from "./MainSlider";
 import ServicesOfBrainspack from "../ReUseComponents/ServicesOfBrainspack";
-import GetKnowUs from "../HomePageFolder/GetKnowUs/GetKnowUs";
+// import GetKnowUs from "../HomePageFolder/GetKnowUs/GetKnowUs";
 
 function HomePage(props) {
   return (
@@ -13,6 +15,7 @@ function HomePage(props) {
 
       <BrainspackServices />
       <GetKnowUs />
+      <DevelopmentProcess />
 
       <ServicesOfBrainspack />
     </>
