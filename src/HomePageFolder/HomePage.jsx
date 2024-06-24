@@ -5,21 +5,24 @@ import GetKnowUs from "./GetKnowUs/GetKnowUs";
 import DevelopmentProcess from "./DevelopmentProcess";
 import MainSlider from "./MainSlider";
 import ServicesOfBrainspack from "../ReUseComponents/ServicesOfBrainspack";
-// import GetKnowUs from "../HomePageFolder/GetKnowUs/GetKnowUs";
+import LaunchingComp from "./Launching";
+import TechServicesComp from "./TechServices";
+import FooterComp from "./Footer";
 
-function HomePage(props) {
+const HomePage = (props) => {
   return (
     <>
       <NavbarComp />
       <MainSlider />
-
       <BrainspackServices />
       <GetKnowUs />
       <DevelopmentProcess />
-
       <ServicesOfBrainspack />
+      <LaunchingComp />
+      <TechServicesComp />
+      <FooterComp />
     </>
   );
-}
+};
 
 export default HomePage;
