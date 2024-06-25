@@ -131,10 +131,10 @@ export const LogoWrapper = styled(Box)(() => ({
 }));
 
 export const BrainspackLogoWrapper = styled(Box)(() => ({
-  width: "100%",
-  height: "60px",
+  width: "220px",
+  height: "65px",
   backgroundImage: `url(${brainspackLogo}) `,
-  backgroundSize: "100% 60px",
+  backgroundSize: "100% 65px",
   backgroundRepeat: "no-repeat",
 }));
 
@@ -158,6 +158,11 @@ export const Navlinks = styled(NavLink)(() => ({
   textDecoration: "none",
   paddingBottom: "5px",
   color: "#777181",
+  "&:hover":{
+    color:"#1B1525",
+    borderBottom: "3px solid green",
+  paddingTop: "3px",
+  }
 }));
 
 export const CustomBtn = styled(Button)(() => ({
