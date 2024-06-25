@@ -23,7 +23,7 @@ export const headerLinks = [
   },
   {
     links: "/Contact",
-    item: "contact",
+    item: "Contact",
   },
 ];
 

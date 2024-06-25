@@ -109,6 +109,8 @@ export const BusinessTextBox = styled(Typography)(() => ({}));
 export const BusinessText = styled(Typography)(() => ({
   color: "red !important",
 }));
+
+//   ================================= TECH SERVICES ================================================
 export const TechServicesContainer = styled(Box)(() => ({
   height: "600px",
   width: "100%",
@@ -155,6 +157,24 @@ export const LearnMoreBtn = styled(Button)(() => ({
   textTransform: "none !important",
   fontSize: "16px !important",
   fontWeight: "600 !important",
+}));
+
+export const TechServicesTextWrapper = styled(Typography)(() => ({
+  height: "100%",
+  width: "43%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+}));
+export const CustomFab = styled(Fab)(() => ({
+  backgroundColor: "#2be4ac !important",
+  color: "white !important",
+  boxShadow: "none !important",
+}));
+export const FabText = styled(Typography)(() => ({
+  color: "#1B1524 !important",
+  fontSize: "20px !important",
+  fontWeight: "700 !important",
 }));
 
 // ============================ Helping Styling ======================================================
@@ -205,8 +225,14 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
 export const HelpingContent = styled(Box)(() => ({
   width:"60%",
   height:"600px",
-  // backgroundColor:"yellow",
-  border:"1px solid green"
+ 
+}));
+export const HelpingContentBox = styled(Box)(() => ({
+  width:"100%",
+  height:"450px",
+  display:"flex",
+  flexDirection:"column",
+justifyContent:"space-between"
  
 }));
 export const TechnologySolutionHeading = styled(Typography)(() => ({
@@ -222,26 +248,68 @@ export const HelpingHeading = styled(Typography)(() => ({
   lineHeight:"50px !important"
  
 }));
-
-
-
-export const TechServicesTextWrapper = styled(Typography)(() => ({
-  height: "100%",
-  width: "43%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-}));
-export const CustomFab = styled(Fab)(() => ({
-  backgroundColor: "#2be4ac !important",
-  color: "white !important",
-  boxShadow: "none !important",
-}));
-export const FabText = styled(Typography)(() => ({
-  color: "#1B1524 !important",
-  fontSize: "20px !important",
+export const EmpoweringBussiness = styled(Typography)(() => ({
+  color: "#2be4ac",
+  fontSize: "18px !important",
   fontWeight: "700 !important",
+ 
 }));
+export const HelpingPointsWrapper = styled(Box)(() => ({
+  width:"100%",
+  height:"200px",
+  display:"flex"
+ 
+}));
+export const DataProtectionWrapper = styled(Box)(() => ({
+  width:"50%",
+  height:"200px",
+  display:"flex",
+  flexDirection:"column",
+  justifyContent:"space-between"
+ 
+}));
+export const DataProtectionTitle = styled(Typography)(() => ({
+  width:"67%",
+  borderBottom:"3px solid #ffffff1a",
+
+  fontSize: "18px !important",
+  fontWeight: "900 !important",
+  paddingBottom:"15px",
+  color:"white"
+ 
+}));
+export const DataProtectionText = styled(Typography)(() => ({
+  fontSize: "16px !important",
+  fontWeight: "500 !important",
+  color:"#aea8b9",
+  lineHeight:"30px !important"
+ 
+}));
+export const OptimizeWrapper = styled(Box)(() => ({
+  width:"50%",
+  height:"200px",
+  display:"flex",
+  flexDirection:"column",
+  justifyContent:"space-between"
+ 
+}));
+export const OptimizeTitle = styled(Typography)(() => ({
+  width:"81%",
+  borderBottom:"3px solid #ffffff1a",
+  fontSize: "18px !important",
+  fontWeight: "900 !important",
+  paddingBottom:"15px",
+  color:"white"
+ 
+}));
+export const OptimizeText = styled(Typography)(() => ({
+  fontSize: "16px !important",
+  fontWeight: "500 !important",
+  color:"#aea8b9",
+  lineHeight:"30px !important"
+ 
+}));
+
 
 // ________________________________________________________________________________
 // FOOTER STYLING
