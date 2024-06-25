@@ -61,4 +61,11 @@
   border-bottom: 3px solid #2be4ac;
   padding-bottom: 3px;
 }
+.AboutHomeLink{
+  text-decoration: none;
+  color: #2be4ac;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+
+}
 
