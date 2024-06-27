@@ -2,9 +2,13 @@ import {
   ContactUsDetailsBox,
   ContactUsIconsBox,
   ContactUsIconsBoxEach,
+  ContactUsText,
+  ContactUsTextAddress,
+  ContactUsTextEmail,
   GetInTouchBox,
   GetInTouchContainer,
   GetInTouchContentBox,
+  GetInTouchContentContainer,
   GetInTouchImageBox,
   TrialBox,
   TwoDotsBox,
@@ -26,70 +30,76 @@ const GetInTouch = () => {
         <GetInTouchBox>
           <GetInTouchImageBox></GetInTouchImageBox>
           <GetInTouchContentBox>
-            <Box>
-              <TwoDotsBox>
-                <Box component={"img"} src={twoDots} />
-                <GetKnowUsTitle>Contact with us</GetKnowUsTitle>
-              </TwoDotsBox>
+            <GetInTouchContentContainer>
               <Box>
-                <GetKnowUsTitle2>Get in touch with us</GetKnowUsTitle2>
+                <TwoDotsBox>
+                  <Box component={"img"} src={twoDots} />
+                  <GetKnowUsTitle>Contact with us</GetKnowUsTitle>
+                </TwoDotsBox>
+                <Box>
+                  <GetKnowUsTitle2>Get in touch with us</GetKnowUsTitle2>
+                </Box>
               </Box>
-            </Box>
-            <Box>
-              <Offerings>Ignite Your Digital Journey Today.</Offerings>
-            </Box>
-            <ContactUsIconsBoxEach>
-              <ContactUsIconsBox>
-                <TrialBox>
-                  <PhoneInTalkIcon
-                    className="phoneIcon"
-                    sx={{ height: "25px", width: "25px", color: "#55ad88" }}
-                  />
-                </TrialBox>
-              </ContactUsIconsBox>
-              <ContactUsDetailsBox>
-                <Box>
-                  <Typography>Have any question?</Typography>
-                </Box>
-                <Box>
-                  <Typography>Free +91-9168117671</Typography>
-                </Box>
-              </ContactUsDetailsBox>
-            </ContactUsIconsBoxEach>
-            <ContactUsIconsBoxEach>
-              <ContactUsIconsBox>
-                <Box>
-                  <EmailIcon
-                    sx={{ height: "25px", width: "25px", color: "#55ad88" }}
-                  />
-                </Box>
-              </ContactUsIconsBox>
-              <ContactUsDetailsBox>
-                <Box>
-                  <Typography>Have any question?</Typography>
-                </Box>
-                <Box>
-                  <Typography>Free +91-9168117671</Typography>
-                </Box>
-              </ContactUsDetailsBox>
-            </ContactUsIconsBoxEach>
-            <ContactUsIconsBoxEach>
-              <ContactUsIconsBox>
-                <Box>
-                  <PlaceIcon
-                    sx={{ height: "25px", width: "25px", color: "#55ad88" }}
-                  />
-                </Box>
-              </ContactUsIconsBox>
-              <ContactUsDetailsBox>
-                <Box>
-                  <Typography>Have any question?</Typography>
-                </Box>
-                <Box>
-                  <Typography>Free +91-9168117671</Typography>
-                </Box>
-              </ContactUsDetailsBox>
-            </ContactUsIconsBoxEach>
+              <Box>
+                <Offerings>Ignite Your Digital Journey Today.</Offerings>
+              </Box>
+              <ContactUsIconsBoxEach>
+                <ContactUsIconsBox>
+                  <TrialBox>
+                    <PhoneInTalkIcon
+                      className="phoneIcon"
+                      sx={{ height: "25px", width: "25px", color: "#55ad88" }}
+                    />
+                  </TrialBox>
+                </ContactUsIconsBox>
+                <ContactUsDetailsBox>
+                  <Box>
+                    <ContactUsText>Have any question?</ContactUsText>
+                  </Box>
+                  <Box>
+                    <ContactUsTextEmail>Free +91-9168117671</ContactUsTextEmail>
+                  </Box>
+                </ContactUsDetailsBox>
+              </ContactUsIconsBoxEach>
+
+              <ContactUsIconsBoxEach>
+                <ContactUsIconsBox>
+                  <Box>
+                    <EmailIcon
+                      sx={{ height: "25px", width: "25px", color: "#55ad88" }}
+                    />
+                  </Box>
+                </ContactUsIconsBox>
+                <ContactUsDetailsBox>
+                  <Box>
+                    <ContactUsText>Write email</ContactUsText>
+                  </Box>
+                  <Box>
+                    <ContactUsTextEmail>info@brainspack.com</ContactUsTextEmail>
+                  </Box>
+                </ContactUsDetailsBox>
+              </ContactUsIconsBoxEach>
+              <ContactUsIconsBoxEach>
+                <ContactUsIconsBox>
+                  <Box>
+                    <PlaceIcon
+                      sx={{ height: "25px", width: "100px", color: "#55ad88" }}
+                    />
+                  </Box>
+                </ContactUsIconsBox>
+                <ContactUsDetailsBox>
+                  <Box>
+                    <ContactUsText>Visit anytime</ContactUsText>
+                  </Box>
+                  <Box display={"flex"} gap={"20px"}>
+                    <ContactUsTextAddress>
+                      SCF-15, First Floor, opposite Bus Stand Road, Sarojini
+                      Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
+                    </ContactUsTextAddress>
+                  </Box>
+                </ContactUsDetailsBox>
+              </ContactUsIconsBoxEach>
+            </GetInTouchContentContainer>
           </GetInTouchContentBox>
         </GetInTouchBox>
       </GetInTouchContainer>

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 export const GetKnowUsContainer = styled(Box)(() => ({
   width: "100%",
   height: "700px",
@@ -28,16 +27,24 @@ export const GetKnowUsTitle = styled(Typography)(() => ({
   fontSize: "16px !important",
   fontWeight: "700 !important",
 }));
-export const GetKnowUsTitle2 = styled(Typography)(() => ({
+export const GetKnowUsTitle2 = styled(Typography)(({ theme }) => ({
   fontSize: "42px !important",
   fontWeight: "700 !important",
   lineHeight: "50px !important",
+  color: "#1b1525",
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "30px !important",
+    fontWeight: "700 !important",
+  },
 }));
 
-export const Offerings = styled(Typography)(() => ({
+export const Offerings = styled(Typography)(({ theme }) => ({
   color: "#777181",
   fontSize: "18px !important",
   fontWeight: "400 !important",
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "16px !important",
+  },
 }));
 export const Features = styled(Typography)(() => ({
   color: "#1B1525",

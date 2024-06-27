@@ -1,5 +1,12 @@
-import { Box, Button, Card, CardMedia, Fab, Typography } from "@mui/material";
-import styled from "styled-components";
+import {
+  Box,
+  Button,
+  Card,
+  CardMedia,
+  Fab,
+  Typography,
+  styled,
+} from "@mui/material";
 import helpingLeftImage from "../Assets/images/backgrounds/helping-left-bg.jpg";
 import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png";
 import mainSliderOneImg from "../Assets/images/backgrounds/main-slider-1-3.jpg";
@@ -358,7 +365,7 @@ export const OptimizeText = styled(Typography)(() => ({
 // ________________________________________________________________________________
 // FOOTER STYLING
 
-export const FooterWrapper = styled(Box)(() => ({
+export const FooterWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "600px",
   backgroundColor: "#1b1525",
@@ -366,6 +373,10 @@ export const FooterWrapper = styled(Box)(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    height: "800px",
+    border: "1px solid green",
+  },
 }));
 export const LeftFooterImageBox = styled(Box)(() => ({
   height: "388px",
@@ -383,7 +394,6 @@ export const LeftFooterImageBox = styled(Box)(() => ({
 export const RightFooterImageBox = styled(Box)(() => ({
   width: "460px",
   height: "600px",
-
   backgroundImage: `url(${footerImg2})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
@@ -394,33 +404,51 @@ export const RightFooterImageBox = styled(Box)(() => ({
   bottom: 0,
   right: 0,
 }));
-export const FooterTextWrapper = styled(Box)(() => ({
+export const FooterTextWrapper = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "80%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
   alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    border: "1px solid red",
+    height: "85%",
+  },
 }));
-export const ChallengesWrapper = styled(Box)(() => ({
+export const ChallengesWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "30%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   border: "1px solid #322d3b",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "100%",
+    height: "40%",
+    border: "1px solid blue",
+  },
 }));
-export const ChallengesBox = styled(Box)(() => ({
+export const ChallengesBox = styled(Box)(({ theme }) => ({
   width: "95%",
   height: "90%",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "100%",
+    // border: "1px solid blue",
+  },
 }));
-export const IconAndBtnBox = styled(Box)(() => ({
+export const IconAndBtnBox = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "56%",
   justifyContent: "space-between",
+  [theme.breakpoints.between("xs", "sm")]: {
+    flexDirection: "column",
+  },
 }));
 
 export const FooterContent = styled(Typography)(() => ({
