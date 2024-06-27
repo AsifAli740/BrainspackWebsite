@@ -162,6 +162,30 @@ export const MainMenuList = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   fontSize: "18px",
+  // "&:hover":{
+  //   color:"#1B1525",
+  //   borderBottom: "3px solid green",
+  // paddingTop: "3px",
+  // }
+}));
+export const ServiceOptions = styled(Box)(() => ({
+  width: "100%",
+  height: "55px",
+  display: "flex",
+  position: "relative",
+  // justifyContent:"center",
+  alignItems: "center",
+  textAlign: "justify",
+  padding: "22px",
+  fontSize: "18px",
+  fontWeight: "400",
+  lineHeight: "30px",
+  color: "black",
+  transition: "200ms ease",
+  "&:hover": {
+    backgroundColor: "#55ad88",
+    color: "white",
+  },
 }));
 
 export const Navlinks = styled(NavLink)(() => ({
@@ -173,6 +197,11 @@ export const Navlinks = styled(NavLink)(() => ({
     borderBottom: "3px solid green",
     paddingTop: "3px",
   },
+  // "&:hover":{
+  //   color:"#1B1525",
+  //   borderBottom: "3px solid green",
+  // paddingTop: "3px",
+  // }
 }));
 
 export const CustomBtn = styled(Button)(() => ({

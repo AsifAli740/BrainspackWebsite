@@ -23,6 +23,7 @@ import {
   ServiceProvideWrapper,
   ShapingFutureText,
 } from "./aboutUsStyled";
+import FooterComp from "../HomePageFolder/Footer";
 
 function AboutUsPage() {
   return (
@@ -71,7 +72,9 @@ function AboutUsPage() {
       <OurVisionMission />
       <CounterItems />
       <TeamCarousel />
+      <FooterComp />
     </>
   );
 }
+
 export default AboutUsPage;
