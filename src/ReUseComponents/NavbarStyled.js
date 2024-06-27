@@ -141,10 +141,11 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
 
 
 export const ListsBox = styled(Box)(() => ({
-  width: "57%",
+  width: "55%",
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
+  position:"relative"
 }));
 
 export const MainMenuList = styled(Box)(() => ({
@@ -152,17 +153,46 @@ export const MainMenuList = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   fontSize: "18px",
+  // "&:hover":{
+  //   color:"#1B1525",
+  //   borderBottom: "3px solid green",
+  // paddingTop: "3px",
+  // }
+}));
+export const ServiceOptions = styled(Box)(() => ({
+  width:"100%",
+  height:"55px",
+  display:"flex",
+  position:"relative",
+  // justifyContent:"center",
+  alignItems:"center",
+  textAlign:"justify",
+  padding:"22px",
+  fontSize:"18px",
+  fontWeight:"400",
+  lineHeight:"30px",
+  color:"black",
+  transition:"200ms ease",
+  "&:hover":{
+    backgroundColor:"#55ad88",
+    color:"white"
+  }
+
+  
+ 
 }));
 
 export const Navlinks = styled(NavLink)(() => ({
   textDecoration: "none",
   paddingBottom: "5px",
   color: "#777181",
-  "&:hover":{
-    color:"#1B1525",
-    borderBottom: "3px solid green",
-  paddingTop: "3px",
-  }
+  // "&:hover":{
+  //   color:"#1B1525",
+  //   borderBottom: "3px solid green",
+  // paddingTop: "3px",
+  // }
+  
+  
 }));
 
 export const CustomBtn = styled(Button)(() => ({

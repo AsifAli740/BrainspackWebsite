@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Box, Button, Typography } from "@mui/material";
 import ourVisionImage from "../Assets/images/resources/get-to-know-img-1.jpg"
 import ourVisionImageBgBottomLeft from "../Assets/images/shapes/get-to-know-shape-1.png"
+import serviceProvide from "../Assets/images/resources/notech-more-img-1.jpg";
+
 
 // ================== OUR VISION AND MISSION STYLING ============================
 
@@ -132,9 +134,6 @@ export const MissonImageBg = styled(Box)(() => ({
  
 //BRAINSPACK SERVICE PROVIDE
 
-import styled from "styled-components";
-import { Box, Typography } from "@mui/material";
-import serviceProvide from "../Assets/images/resources/notech-more-img-1.jpg";
 
 export const ServiceProvideWrapper = styled(Box)(() => ({
   width: "100%",
