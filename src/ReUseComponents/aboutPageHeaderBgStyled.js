@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Box, Button, Typography } from "@mui/material";
+// import styled from "styled-components";
+import { Box, Button, Typography, styled } from "@mui/material";
 import AboutPageBgImage from "../Assets/images/backgrounds/page-header-bg.jpg";
 
-export const PageHeaderBg = styled(Box)(() => ({
+export const PageHeaderBg = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "350px",
   backgroundColor: "#1b1525",
@@ -15,6 +15,9 @@ export const PageHeaderBg = styled(Box)(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  // [theme.breakpoints.down("sm")]: {
+  //   display: "none",
+  // },
 }));
 export const PageHeaderInnerBox = styled(Box)(() => ({
   width: "80%",
@@ -30,10 +33,17 @@ export const AboutLinkWrapper = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "35%",
+  },
+  // [theme.breakpoints.down("md")]: {
+  //   width: "25%",
+  // },
+  // [theme.breakpoints.down("lg")]: {
+  //   width: "35%",
+  // },
 }));
 export const AboutHeadingWrapper = styled(Box)(() => ({}));
-
-
 export const AboutHeading = styled(Typography)(() => ({
   fontSize: "40px !important",
   fontWeight: "700 !important",

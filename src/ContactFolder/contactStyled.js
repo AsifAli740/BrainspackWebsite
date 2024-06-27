@@ -1,35 +1,58 @@
-import styled from "styled-components";
-import { Box } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 import ContactDetails from "../Assets/images/resources/contact-details-img.jpg";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import { LineWeight } from "@mui/icons-material";
 
-export const GetInTouchContainer = styled(Box)(() => ({
+export const GetInTouchContainer = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "800px",
-  border: "1px solid black",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    height: "1250px",
+  },
 }));
-export const GetInTouchBox = styled(Box)(() => ({
+export const GetInTouchBox = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "70%",
-  border: "1px solid red",
   display: "flex",
   justifyContent: "space-between",
+  [theme.breakpoints.between("xs", "sm")]: {
+    flexDirection: "column",
+    height: "80%",
+    width: "88%",
+  },
 }));
-export const GetInTouchImageBox = styled(Box)(() => ({
+export const GetInTouchImageBox = styled(Box)(({ theme }) => ({
   width: "45%",
   height: "90%",
-  border: "1px solid green",
   backgroundImage: `url(${ContactDetails})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "100%",
+    height: "435px",
+    backgroundSize: "100% 435px",
+  },
 }));
-export const GetInTouchContentBox = styled(Box)(() => ({
+export const GetInTouchContentBox = styled(Box)(({ theme }) => ({
   width: "45%",
   height: "100%",
-  border: "1px solid yellow",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "100%",
+    height: "520px",
+  },
+}));
+export const GetInTouchContentContainer = styled(Box)(({ theme }) => ({
+  width: "80%",
+  height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "65%",
+    height: "100%",
+  },
 }));
 export const TwoDotsBox = styled(Box)(() => ({
   display: "flex",
@@ -56,9 +79,6 @@ export const ContactUsIconsBox = styled(Box)(() => ({
 }));
 export const TrialBox = styled(Box)(() => ({
   "&:hover": {
-    // backgroundColor: "#55AD88",
-    // color: "white",
-    // transition: "all 500ms ease",
     "& $phoneIcon": {
       color: "purple",
     },
@@ -68,4 +88,29 @@ export const ContactUsDetailsBox = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+}));
+export const ContactUsText = styled(Typography)(({ theme }) => ({
+  fontSize: "16px !important",
+  fontWeight: "400 !important",
+  color: "#777181",
+  [theme.breakpoints.between("xs", "sm")]: {
+    fontSize: "16px !important",
+  },
+}));
+export const ContactUsTextEmail = styled(Typography)(({ theme }) => ({
+  fontSize: "20px !important",
+  fontWeight: "500 !important",
+  color: "#1b1525",
+  [theme.breakpoints.between("xs", "sm")]: {
+    fontSize: "16px !important",
+  },
+}));
+export const ContactUsTextAddress = styled(Typography)(({ theme }) => ({
+  fontSize: "22px !important",
+  fontWeight: "500 !important",
+  color: "#1b1525",
+  [theme.breakpoints.between("xs", "sm")]: {
+    fontSize: "16px !important",
+    fontWeight: "400 !important",
+  },
 }));

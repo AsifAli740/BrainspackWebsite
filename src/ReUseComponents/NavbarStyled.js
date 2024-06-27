@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Button, Typography } from "@mui/material";
+// import styled from "styled-components";
+import { Box, Button, Typography, styled } from "@mui/material";
 import brainspackLogo from "../Assets/images/resources/final-header-brainspack-logo.svg";
 import { NavLink } from "react-router-dom";
 
@@ -8,11 +8,20 @@ export const MainContainer = styled(Box)(() => ({
   height: "auto",
 }));
 
-export const Navbar = styled(Box)(() => ({
+export const Navbar = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "47px",
   display: "flex",
   borderBottom: "1px solid #ddd",
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -104,19 +113,19 @@ export const LinkedInInstaWrapper = styled(Box)(() => ({
   alignItems: "center",
 }));
 
-export const MainMenuWrapper = styled(Box)(() => ({
+export const MainMenuWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "130px",
   display: "flex",
   justifyContent: "center",
 }));
 
-export const MainMenu = styled(Box)(() => ({
+export const MainMenu = styled(Box)(({ theme }) => ({
   width: "89%",
   height: "inherit",
 }));
 
-export const MenuListWrapper = styled(Box)(() => ({
+export const MenuListWrapper = styled(Box)(({ theme }) => ({
   width: "65%",
   height: "inherit",
   display: "flex",
@@ -138,14 +147,14 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
   backgroundRepeat: "no-repeat",
 }));
 
-
-
-export const ListsBox = styled(Box)(() => ({
-  width: "55%",
+export const ListsBox = styled(Box)(({ theme }) => ({
+  width: "57%",
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
-  position:"relative"
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
 }));
 
 export const MainMenuList = styled(Box)(() => ({
@@ -160,39 +169,39 @@ export const MainMenuList = styled(Box)(() => ({
   // }
 }));
 export const ServiceOptions = styled(Box)(() => ({
-  width:"100%",
-  height:"55px",
-  display:"flex",
-  position:"relative",
+  width: "100%",
+  height: "55px",
+  display: "flex",
+  position: "relative",
   // justifyContent:"center",
-  alignItems:"center",
-  textAlign:"justify",
-  padding:"22px",
-  fontSize:"18px",
-  fontWeight:"400",
-  lineHeight:"30px",
-  color:"black",
-  transition:"200ms ease",
-  "&:hover":{
-    backgroundColor:"#55ad88",
-    color:"white"
-  }
-
-  
- 
+  alignItems: "center",
+  textAlign: "justify",
+  padding: "22px",
+  fontSize: "18px",
+  fontWeight: "400",
+  lineHeight: "30px",
+  color: "black",
+  transition: "200ms ease",
+  "&:hover": {
+    backgroundColor: "#55ad88",
+    color: "white",
+  },
 }));
 
 export const Navlinks = styled(NavLink)(() => ({
   textDecoration: "none",
   paddingBottom: "5px",
   color: "#777181",
+  "&:hover": {
+    color: "#1B1525",
+    borderBottom: "3px solid green",
+    paddingTop: "3px",
+  },
   // "&:hover":{
   //   color:"#1B1525",
   //   borderBottom: "3px solid green",
   // paddingTop: "3px",
   // }
-  
-  
 }));
 
 export const CustomBtn = styled(Button)(() => ({
