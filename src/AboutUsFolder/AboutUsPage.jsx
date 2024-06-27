@@ -1,16 +1,10 @@
-import React from "react";
-import NavbarComp from "../ReUseComponents/NavbarComp";
-import AboutPageHeaderBg from "../ReUseComponents/AboutPageHeaderBg";
-import {
-  ServiceProvideBox,
-  ServiceProvideContent,
-  ServiceProvideContentBox,
-  ServiceProvideImageBox,
-  ServiceProvideImageBox1,
-  ServiceProvideImageBox2,
-  ServiceProvideWrapper,
-  ShapingFutureText,
-} from "./aboutUsStyled";
+import React from 'react';
+import NavbarComp from '../ReUseComponents/NavbarComp';
+import AboutPageHeaderBg from '../ReUseComponents/AboutPageHeaderBg';
+import OurVisionMission from './OurVisionMission';
+import CounterItems from '../ReUseComponents/CounterItems';
+import SwipeableTextMobileStepper from '../Carousel/TeamMemberCarousel';
+import TeamCarousel from '../Carousel/carousel';
 import { Box, Typography } from "@mui/material";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import {
@@ -19,13 +13,24 @@ import {
 } from "../HomePageFolder/GetKnowUs/GetKnowUsStyled";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import LaunchingComp from "../HomePageFolder/Launching";
+import {
+    ServiceProvideBox,
+    ServiceProvideContent,
+    ServiceProvideContentBox,
+    ServiceProvideImageBox,
+    ServiceProvideImageBox1,
+    ServiceProvideImageBox2,
+    ServiceProvideWrapper,
+    ShapingFutureText,
+  } from "./aboutUsStyled";
 
-function AboutUsPage(props) {
-  return (
-    <>
-      <NavbarComp />
-      <AboutPageHeaderBg activeText={"About Us"} headerHeading={"About Us"} />
-      <ServiceProvideWrapper>
+
+function AboutUsPage() {
+    return (
+        <>
+        <NavbarComp />
+        <AboutPageHeaderBg activeText={"About Us"} headerHeading={"About Us"} />
+        <ServiceProvideWrapper>
         <ServiceProvideBox>
           <ServiceProvideContentBox>
             <Box display={"flex"} alignItems={"center"} gap={"10px"}>
@@ -64,8 +69,15 @@ function AboutUsPage(props) {
         </ServiceProvideBox>
       </ServiceProvideWrapper>
       <LaunchingComp />
-    </>
-  );
-}
+        <OurVisionMission />
+        <CounterItems/>
+        <TeamCarousel />
 
-export default AboutUsPage;
+        
+
+
+
+            
+        </>
+    );
+}

@@ -22,7 +22,7 @@ function MainSlider(props) {
         <GetSolution>
           Stop wasting time and money on technology.
           <ExploreBrainspackLink variant="span">
-            <Link className="exploreLink" to="about.html">
+            <Link className="exploreLink" to="/about">
               {" "}
               Explore Brainspack{" "}
             </Link>

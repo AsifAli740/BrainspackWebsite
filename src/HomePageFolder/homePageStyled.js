@@ -38,7 +38,6 @@ export const ServicesHeading = styled(Typography)(() => ({
 export const SliderWrapper = styled(Box)(() => ({
   width: "100%",
   height: "731px",
-  backgroundColor: "red",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -232,7 +231,6 @@ export const NumberText = styled(Typography)(() => ({
 export const HelpingContainerWrapper = styled(Box)(() => ({
   width: "100%",
   height: "790px",
-  backgroundColor: "red",
   display: "flex",
   position: "relative",
   zIndex: "1",
@@ -240,7 +238,6 @@ export const HelpingContainerWrapper = styled(Box)(() => ({
 export const HelpingContainerImageBox = styled(Box)(() => ({
   width: "50%",
   height: "790px",
-  backgroundColor: "yellow",
   backgroundImage: `url(${helpingLeftImage})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -260,7 +257,6 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
   right: "0px",
   width: "390px",
   height: "500px",
-  backgroundColor: "#yellow",
   backgroundImage: `url(${helpingBlackImage})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
