@@ -29,8 +29,8 @@ export const GetKnowUsTitle = styled(Typography)(() => ({
   fontWeight: "700 !important",
 }));
 export const GetKnowUsTitle2 = styled(Typography)(() => ({
-  fontSize: "40px !important",
-  fontWeight: "600 !important",
+  fontSize: "42px !important",
+  fontWeight: "700 !important",
   lineHeight: "50px !important",
 }));
 
