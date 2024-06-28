@@ -28,7 +28,7 @@ export const PageHeaderInnerBox = styled(Box)(() => ({
   alignItems: "center",
 }));
 
-export const AboutLinkWrapper = styled(Box)(() => ({
+export const AboutLinkWrapper = styled(Box)(({}) => ({
   width: "12%",
   display: "flex",
   justifyContent: "space-between",
