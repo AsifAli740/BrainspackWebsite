@@ -152,6 +152,7 @@ export const ListsBox = styled(Box)(({ theme }) => ({
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
+  position: "relative",
   [theme.breakpoints.down("sm")]: {
     display: "none",
   },
