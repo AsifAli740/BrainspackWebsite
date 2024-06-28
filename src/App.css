@@ -69,3 +69,17 @@
 
 }
 
+.navService:hover .hello{
+  display: block;
+  
+}
+
+.border-btm:hover .setBorderBtm{
+  color:#1B1525;
+  border-bottom: 3px solid green;
+   padding-top: 3px
+}
+.webDevelop:hover .webDev-options{
+  display: block;
+}
+
