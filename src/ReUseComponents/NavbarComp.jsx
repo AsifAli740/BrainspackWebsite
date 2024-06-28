@@ -100,11 +100,11 @@ function NavbarComp() {
                     zIndex: "999",
                     display: "none",
                     boxShadow: "0px 0px 65px 0px rgba(0, 0, 0, 0.1)",
-                    transition: "500ms ease",
+                    
                     cursor:"pointer"
                   }}
                 >
-                  <ServiceOptions onClick={()=>navigate("/webDev")} className="options webDevelop">
+                  <ServiceOptions onClick={()=>navigate("/web-development")} className="options webDevelop">
                     <Box
                       className="webDev-options"
                       sx={{
@@ -129,13 +129,13 @@ function NavbarComp() {
                     </Box>
                     Web Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/uiDesign")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/ui-ux-design")} className="options">
                     UI/UX Desiging
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/mobileApp")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/mobile-app-development")} className="options">
                     Mobile App Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/digitalMarkt")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/digital-marketing")} className="options">
                     Digital Marketing
                   </ServiceOptions>
                 </Box>

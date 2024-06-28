@@ -2,20 +2,20 @@ import React from "react";
 import {
     AboutHeading,
     AboutHeadingWrapper,
-    AboutLinkWrapper,
   PageHeaderBg,
   PageHeaderInnerBox,
-} from "./aboutPageHeaderBgStyled";
-import { Slash } from "./NavbarStyled";
+} from "../ReUseComponents/aboutPageHeaderBgStyled";
+import { Slash } from "../ReUseComponents/NavbarStyled";
 import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
+import { ServiceLinkWrapper } from "../ReUseComponents/aboutPageHeaderBgStyled";
 
-function AboutPageHeaderBg({activeText, headerHeading}) {
+function ServicePageHeaderLink({activeText, headerHeading, nestedActiveText}) {
   return (
     <>
       <PageHeaderBg>
         <PageHeaderInnerBox>
-            <AboutLinkWrapper>
+            <ServiceLinkWrapper>
 
           <Typography>
             <Link className="AboutHomeLink" to={"/"}>
@@ -26,7 +26,11 @@ function AboutPageHeaderBg({activeText, headerHeading}) {
           <Typography className="AboutHomeLink">
               {activeText}
           </Typography>
-            </AboutLinkWrapper>
+          <Slash sx={{color:"#2be4ac", fontWeight:"700"}}>/</Slash>
+          <Typography className="AboutHomeLink">
+              {nestedActiveText}
+          </Typography>
+            </ServiceLinkWrapper>
             <AboutHeadingWrapper>
             <AboutHeading>
             {headerHeading}
@@ -40,4 +44,4 @@ function AboutPageHeaderBg({activeText, headerHeading}) {
   );
 }
 
-export default AboutPageHeaderBg;
+export default ServicePageHeaderLink;

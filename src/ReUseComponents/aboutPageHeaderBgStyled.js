@@ -37,6 +37,21 @@ export const AboutLinkWrapper = styled(Box)(({ theme }) => ({
     width: "35%",
   },
 }));
+export const ServiceLinkWrapper = styled(Box)(({ theme }) => ({
+  width: "28%",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "35%",
+  },
+  // [theme.breakpoints.down("md")]: {
+  //   width: "25%",
+  // },
+  // [theme.breakpoints.down("lg")]: {
+  //   width: "35%",
+  // },
+}));
 export const AboutHeadingWrapper = styled(Box)(() => ({}));
 export const AboutHeading = styled(Typography)(() => ({
   fontSize: "40px !important",

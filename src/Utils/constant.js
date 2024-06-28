@@ -10,6 +10,14 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import CheckIcon from "@mui/icons-material/Check";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
+import htmlImage from "../Assets/images/resources/html.png";
+import cssImage from "../Assets/images/resources/css.svg";
+import jsImage from "../Assets/images/resources/js3.png";
+import reactImage from "../Assets/images/resources/react.jpg";
+import angularImage from "../Assets/images/resources/angular-image-1.png";
+import reactNativeImage from "../Assets/images/resources/react-native.png";
+import nodeJsImage from "../Assets/images/resources/node_js.jpg";
+import phpImage from "../Assets/images/resources/php.png";
 export const headerLinks = [
   {
     links: "/",
@@ -197,5 +205,66 @@ export const WHY_CHOOSE = [
       <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
     ),
     name: "Innovative Solutions",
+  },
+];
+export const serviceFrontEndContent = [
+  {
+    id: 0,
+    image: htmlImage,
+    heading: "HTML",
+    subHeading:
+      "HTML stands as the fundamental framework for web content, employing tags to meticulously structure and visually present information",
+  },
+  {
+    id: 1,
+    image: cssImage,
+    heading: "CSS",
+    subHeading:
+      "CSS styles web content, enhancing visual appeal through design, layout, and presentation for immersive user experiences",
+  },
+  {
+    id: 2,
+    image: jsImage,
+    heading: "Javascript",
+    subHeading:
+      "JavaScript powers dynamic web behavior, enabling interactive features, animations, and seamless user experiences on websites.",
+  },
+  {
+    id: 3,
+    image: reactImage,
+    heading: "ReactJS",
+    subHeading:
+      "ReactJS revolutionizes web development with a declarative, component-based approach, fostering efficient, scalable, and interactive interfaces.",
+  },
+  {
+    id: 4,
+    image: angularImage,
+    heading: "Angular",
+    subHeading:
+      "Angular empowers application development, delivering a solid structure for creating dynamic, scalable, and feature-rich experiences effortlessly.",
+  },
+  {
+    id: 5,
+    image: reactNativeImage,
+    heading: "React Native",
+    subHeading:
+      "React Native streamlines cross-platform mobile app development, ensuring efficiency and code-sharing between iOS and Android platforms.",
+  },
+];
+
+export const serviceBackEndContent = [
+  {
+    id: 0,
+    image: nodeJsImage,
+    heading: "Node.js",
+    subHeading:
+      "Node.js fuels server-side JavaScript, facilitating scalability and efficiency in web applications and APIsA.",
+  },
+  {
+    id: 1,
+    image: phpImage,
+    heading: "PHP",
+    subHeading:
+      "PHP is a server-side scripting language for dynamic web development",
   },
 ];

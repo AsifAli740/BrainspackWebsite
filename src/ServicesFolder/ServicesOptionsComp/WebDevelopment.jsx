@@ -1,9 +1,11 @@
 import React from "react";
 import ServicesComp from "../../ReUseComponents/ServicesComp";
 import { SERVICES_PROVIDED } from "../../HomePageFolder/Constants";
-import NavbarComp from "../../ReUseComponents/NavbarComp";
 import FooterComp from "../../HomePageFolder/Footer";
 import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
+import NavbarComp from "../../ReUseComponents/NavbarComp";
+import ServicePageHeaderLink from "../ServicePageHeaderLink";
+import FrontendBackendContainer from "../FrontendBackendContainer";
 
 function WebDevelopment(props) {
   return (
@@ -15,6 +17,13 @@ function WebDevelopment(props) {
         servicesImage={SERVICES_PROVIDED[0].image}
       />
       <WhyChooseUs />
+      <ServicePageHeaderLink
+        activeText={"Services"}
+        headerHeading={"Our Services"}
+        nestedActiveText={"Web Development"}
+      />
+      <FrontendBackendContainer />
+
       <FooterComp />
     </>
   );
