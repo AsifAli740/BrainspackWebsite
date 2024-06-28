@@ -28,7 +28,7 @@ export const PageHeaderInnerBox = styled(Box)(() => ({
   alignItems: "center",
 }));
 
-export const AboutLinkWrapper = styled(Box)(({theme}) => ({
+export const AboutLinkWrapper = styled(Box)(({ theme }) => ({
   width: "12%",
   display: "flex",
   justifyContent: "space-between",
@@ -36,14 +36,8 @@ export const AboutLinkWrapper = styled(Box)(({theme}) => ({
   [theme.breakpoints.between("xs", "sm")]: {
     width: "35%",
   },
-  // [theme.breakpoints.down("md")]: {
-  //   width: "25%",
-  // },
-  // [theme.breakpoints.down("lg")]: {
-  //   width: "35%",
-  // },
 }));
-export const ServiceLinkWrapper = styled(Box)(({theme}) => ({
+export const ServiceLinkWrapper = styled(Box)(({ theme }) => ({
   width: "28%",
   display: "flex",
   justifyContent: "space-between",
