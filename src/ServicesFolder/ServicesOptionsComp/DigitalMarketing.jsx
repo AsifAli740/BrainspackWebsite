@@ -1,10 +1,13 @@
 import React from 'react';
+import NavbarComp from '../../ReUseComponents/NavbarComp';
+import ServicePageHeaderLink from '../ServicePageHeaderLink';
 
 function DigitalMarketing(props) {
     return (
-        <div>
-            Digital Marketing
-        </div>
+        <>
+            <NavbarComp />
+            <ServicePageHeaderLink activeText={"Services"} headerHeading={"Our Services"} nestedActiveText={"Digital Marketing"} />
+        </>
     );
 }
 

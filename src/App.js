@@ -20,14 +20,14 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/about" element={<AboutUsPage />}/>
         <Route path="/services" index element={<Services />}/>
-        <Route path="/webDev" index element={<WebDevelopment />}/>
-        <Route path="/uiDesign"  element={<UiUxDesigning />}/>
-        <Route path="/mobileApp"   element={<MobileAppDevelopment />}/>
+        <Route path="/web-development" index element={<WebDevelopment />}/>
+        <Route path="/ui-ux-design"  element={<UiUxDesigning />}/>
+        <Route path="/mobile-app-development"   element={<MobileAppDevelopment />}/>
         <Route path="/mean"  element={<MeanStack />}/>
         <Route path="/mern"  element={<MernStack />}/>
         <Route path="/php"  element={<Php />}/>
 
-        <Route path="/digitalMarkt"  element={<DigitalMarketing />}/>
+        <Route path="/digital-marketing"  element={<DigitalMarketing />}/>
 
 
 

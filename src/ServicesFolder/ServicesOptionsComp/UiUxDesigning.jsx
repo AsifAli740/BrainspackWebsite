@@ -1,10 +1,13 @@
 import React from 'react';
+import NavbarComp from '../../ReUseComponents/NavbarComp';
+import ServicePageHeaderLink from '../ServicePageHeaderLink';
 
 function UiUxDesigning(props) {
     return (
-        <div>
-            Ui Design
-        </div>
+        <>
+            <NavbarComp />
+            <ServicePageHeaderLink activeText={"Services"} headerHeading={"Our Services"} nestedActiveText={"UI UX Designing"} />
+        </>
     );
 }
 

@@ -152,16 +152,20 @@ export const ListsBox = styled(Box)(({ theme }) => ({
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
+  position:"relative",
+
   [theme.breakpoints.down("sm")]: {
     display: "none",
   },
 }));
 
 export const MainMenuList = styled(Box)(() => ({
+  width:"100%",
   height: "inherit",
   display: "flex",
   alignItems: "center",
   fontSize: "18px",
+ 
   // "&:hover":{
   //   color:"#1B1525",
   //   borderBottom: "3px solid green",
