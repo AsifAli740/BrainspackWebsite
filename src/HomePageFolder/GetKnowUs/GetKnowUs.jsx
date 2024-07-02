@@ -22,7 +22,7 @@ const GetKnowUs = () => {
     <>
       <GetKnowUsContainer>
         <GetKnowUsWrapper>
-          <GetKnowUsImageBox sx={{ position: "relative" }}>
+          <GetKnowUsImageBox>
             <Box
               component={"img"}
               height={"600px"}

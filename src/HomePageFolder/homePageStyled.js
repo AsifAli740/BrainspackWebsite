@@ -1,5 +1,12 @@
-import { Box, Button, Card, CardMedia, Fab, Typography } from "@mui/material";
-import styled from "styled-components";
+import {
+  Box,
+  Button,
+  Card,
+  CardMedia,
+  Fab,
+  Typography,
+  styled,
+} from "@mui/material";
 import helpingLeftImage from "../Assets/images/backgrounds/helping-left-bg.jpg";
 import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png";
 import mainSliderOneImg from "../Assets/images/backgrounds/main-slider-1-3.jpg";
@@ -7,6 +14,7 @@ import businessImg from "../Assets/images/backgrounds/business-from-bg.jpg";
 import footerImg1 from "../Assets/images/shapes/site-footer-shape-1.png";
 import footerImg2 from "../Assets/images/shapes/site-footer-shape-2.png";
 import brainspackLogo from "../Assets/images/resources/final-footer-brainspack-logo.svg";
+import trustedSourceIcon from "../Assets/images/icon/trusted-source-icon.png";
 
 export const ServicesWrapper = styled(Box)(() => ({
   width: "100%",
@@ -161,10 +169,78 @@ export const LearnMoreBtn = styled(Button)(() => ({
 
 // ============================ Helping Styling ======================================================
 
+// __________________________________________________________________________________
+// TRUST SOURCES IN IT SERVICES
+export const TrustedSourceWrapper = styled(Box)(() => ({
+  width: "90%",
+  height: "200px",
+  position: "absolute",
+  zIndex: "2",
+  top: "-100px",
+  left: "80px",
+  backgroundColor: "#55ad88",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+export const TrustedSourceBox = styled(Box)(() => ({
+  width: "80%",
+  height: "70%",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+}));
+export const TrustedSourceTextBox = styled(Box)(() => ({
+  width: "30%",
+}));
+export const TrustedSourceText = styled(Typography)(() => ({
+  color: "white",
+  fontSize: "30px !important",
+  fontWeight: "700 !important",
+}));
+export const IconBox = styled(Box)(() => ({
+  height: "94px",
+  width: "94px",
+  borderRadius: "50%",
+  backgroundColor: "white",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  "&:hover": {
+    backgroundColor: "black",
+    transition: " all 500ms ease",
+  },
+}));
+export const IconBoxImage = styled(Box)(() => ({
+  height: "38px",
+  width: "36px",
+  backgroundImage: `url(${trustedSourceIcon})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+}));
+export const QueryBox = styled(Box)(() => ({
+  height: "80%",
+  width: "25%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  gap: "5px",
+}));
+export const AnyQuestionText = styled(Typography)(() => ({
+  color: "white",
+  fontSize: "16px !important",
+}));
+export const NumberText = styled(Typography)(() => ({
+  color: "white",
+  fontSize: "24px !important",
+  fontWeight: "700 !important",
+}));
 export const HelpingContainerWrapper = styled(Box)(() => ({
   width: "100%",
   height: "790px",
   display: "flex",
+  position: "relative",
+  zIndex: "1",
 }));
 export const HelpingContainerImageBox = styled(Box)(() => ({
   width: "50%",
@@ -289,7 +365,7 @@ export const OptimizeText = styled(Typography)(() => ({
 // ________________________________________________________________________________
 // FOOTER STYLING
 
-export const FooterWrapper = styled(Box)(() => ({
+export const FooterWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "600px",
   backgroundColor: "#1b1525",
@@ -297,6 +373,9 @@ export const FooterWrapper = styled(Box)(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    height: "800px",
+  },
 }));
 export const LeftFooterImageBox = styled(Box)(() => ({
   height: "388px",
@@ -314,7 +393,6 @@ export const LeftFooterImageBox = styled(Box)(() => ({
 export const RightFooterImageBox = styled(Box)(() => ({
   width: "460px",
   height: "600px",
-
   backgroundImage: `url(${footerImg2})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
@@ -325,33 +403,60 @@ export const RightFooterImageBox = styled(Box)(() => ({
   bottom: 0,
   right: 0,
 }));
-export const FooterTextWrapper = styled(Box)(() => ({
+export const FooterTextWrapper = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "80%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
   alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    height: "85%",
+  },
 }));
-export const ChallengesWrapper = styled(Box)(() => ({
+export const ChallengesWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "30%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   border: "1px solid #322d3b",
+  [theme.breakpoints.between("xs", "sm")]: {
+    width: "100%",
+    height: "40%",
+  },
 }));
-export const ChallengesBox = styled(Box)(() => ({
+export const ChallengesBox = styled(Box)(({ theme }) => ({
   width: "95%",
   height: "90%",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  [theme.breakpoints.between("xs", "sm")]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "100%",
+  },
 }));
-export const IconAndBtnBox = styled(Box)(() => ({
+export const IconAndBtnBox = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "56%",
   justifyContent: "space-between",
+  [theme.breakpoints.between("xs", "sm")]: {
+    flexDirection: "column",
+    width: "90%",
+    display: "flex",
+    alignItems: "space-between",
+    gap: "20px",
+  },
+}));
+export const AcUnitIconBox = styled(Box)(({ theme }) => ({
+  fontSize: "65px !important ",
+  color: "#2be4ac !important",
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    justifyContent: "center",
+  },
 }));
 
 export const FooterContent = styled(Typography)(() => ({
@@ -364,6 +469,12 @@ export const FooterContentWrapper = styled(Box)(() => ({
   width: "100%",
   height: "60%",
 }));
+export const FooterContentBox = styled(Box)(() => ({
+  display: "flex",
+  justifyContent: "space-between",
+  width: "85%",
+  height: "100%",
+}));
 
 export const FooterLinks = styled(Typography)(() => ({
   color: "white ",
@@ -375,27 +486,19 @@ export const FooterAddress = styled(Typography)(() => ({
   fontSize: "16px !important",
   fontWeight: "500 !important",
 }));
-export const FooterContentBox = styled(Box)(() => ({
-  display: "flex",
-  justifyContent: "space-between",
-  width: "100%",
-  height: "100%",
-  border: "1px solid yellow",
-}));
+
 export const FooterLogo = styled(Box)(() => ({
   backgroundImage: `url(${brainspackLogo})`,
-
-  width: "20%",
+  backgroundRepeat: "no-repeat",
+  width: "18%",
   height: "65px",
   backgroundSize: "100% 65px",
-  border: "1px solid red",
 }));
 export const LinksAndContentBox = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-between",
   width: "35%",
   height: "100%",
-  border: "1px solid purple",
 }));
 export const FooterLinksBox = styled(Box)(() => ({
   width: "30% ",
@@ -403,7 +506,6 @@ export const FooterLinksBox = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  border: "1px solid red",
 }));
 export const FooterContactBox = styled(Box)(() => ({
   width: "52% ",
@@ -411,14 +513,12 @@ export const FooterContactBox = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  border: "1px solid blue",
 }));
 export const SocialMediaBox = styled(Box)(() => ({
   display: "flex",
   gap: "10px",
-  justifyContent: "flex-start",
-  width: "22%",
-  border: "1px solid red",
+  justifyContent: "flex-end",
+  width: "10%",
 }));
 
 export const LinksTextBox = styled(Box)(() => ({

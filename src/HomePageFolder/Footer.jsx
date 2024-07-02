@@ -23,6 +23,7 @@ import {
   LinksTextBoxDetails,
   SocialMediaBox,
   LinksAndContentBox,
+  AcUnitIconBox,
 } from "./homePageStyled";
 import { Box, Fab, Typography } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
@@ -41,9 +42,9 @@ const FooterComp = () => {
           <ChallengesWrapper>
             <ChallengesBox>
               <IconAndBtnBox>
-                <Box>
-                  <AcUnitIcon sx={{ fontSize: "65px", color: "#2be4ac" }} />
-                </Box>
+                <AcUnitIconBox>
+                  <AcUnitIcon sx={{ fontSize: "65px" }} />
+                </AcUnitIconBox>
                 <Box display={"flex"} alignItems={"center"}>
                   <FooterContent>
                     Helping you overcome your technology challenges

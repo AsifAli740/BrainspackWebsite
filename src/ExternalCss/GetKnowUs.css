@@ -1,3 +1,18 @@
 .iconanalytics-data-:before {
     content: "\e904";
   }
+  .contactUs{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s linear;
+  }
+  .services{
+    font-size: 18px;
+    color: #777181;
+    text-decoration: none;
+  }
+  .customAccordian{
+    padding: "20px";
+  }

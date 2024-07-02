@@ -11,6 +11,7 @@ import HelpingContainer from "./HelpingContainer";
 import LaunchingComp from "./Launching";
 import TechServicesComp from "./TechServices";
 import FooterComp from "./Footer";
+import CustomizedSteppers from "../ReUseComponents/Stepper";
 
 const HomePage = (props) => {
   return (
@@ -23,9 +24,10 @@ const HomePage = (props) => {
       <ServicesOfBrainspack />
       <LaunchingComp />
       <TechServicesComp />
-      <CounterItems/>
+      <CounterItems />
       <HelpingContainer />
       <FooterComp />
+      <CustomizedSteppers />
     </>
   );
 };
