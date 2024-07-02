@@ -5,6 +5,7 @@ export const ServicesCompWrapper = styled(Box)(() => ({
   height: "auto",
   display: "flex",
   justifyContent: "center",
+  padding:"50px 0px"
 }));
 export const ServicesCompBox = styled(Box)(() => ({
   width: "90%",

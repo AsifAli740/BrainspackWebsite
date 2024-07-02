@@ -7,6 +7,14 @@ export const WebFrontContainer = styled(Box)(({}) => ({
   display: "flex",
   justifyContent: "center",
 }));
+export const ServiceDetailContainer = styled(Box)(({}) => ({
+  width: "100%",
+  height: "auto",
+  // backgroundColor:"purple",
+  display: "flex",
+  justifyContent: "center",
+}));
+
 export const WebFrontWrapper = styled(Box)(({}) => ({
   width: "86.5%",
   height: "inherit",
@@ -16,17 +24,17 @@ export const WebFrontWrapper = styled(Box)(({}) => ({
 }));
 export const FrontEndWrapper = styled(Box)(({}) => ({
   width: "100%",
-  height: "1150px",
+  height: "auto",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
+//   justifyContent: "space-between",
 }));
 export const BackEndWrapper = styled(Box)(({}) => ({
   width: "100%",
   height: "420px",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
+//   justifyContent: "space-between",
 }));
 export const ServiceWebHeadingWrapper = styled(Box)(({}) => ({
   width: "100%",
@@ -44,6 +52,7 @@ export const ServiceFrontEndDetailWrapper = styled(Box)(({}) => ({
   height: "auto",
   display: "flex",
   justifyContent: "space-between",
+  marginBottom:"25px"
 }));
 export const ServiceFrontEndImgWrapper = styled(Box)(({}) => ({
   width: "30%",
@@ -53,8 +62,8 @@ export const ServiceFrontEndImgWrapper = styled(Box)(({}) => ({
   alignItems: "center",
 }));
 export const WebImageWrapper = styled(Box)(({}) => ({
-  width: "135px",
-  height: "135px",
+  width: "180px",
+  height: "140px",
   borderRadius: "50%",
   display: "flex",
   alignItems: "center",
