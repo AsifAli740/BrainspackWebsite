@@ -36,7 +36,6 @@ function DigitalMarketing(props) {
         servicesImage={SERVICES_PROVIDED[3].image}
       />
       <ServiceWebDetailsComp content={serviceDigitalContent} />
-      {/* <WhyChooseUs /> */}
       <FooterComp />
     </>
   );
