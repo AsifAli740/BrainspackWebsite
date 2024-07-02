@@ -1,13 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import {
+  CreatingWebsiteText,
+  CreatingWebsiteTextDetails,
   WhyChooseUsContainer,
   WhyChooseUsContentBox,
   WhyChooseUsImageBox,
+  WhyChooseUsTitle,
   WhyChooseUsWrapper,
 } from "./WhyChooseUsStyled";
 import { WHY_CHOOSE } from "../Utils/constant";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ data, title }) => {
   return (
     <>
       <WhyChooseUsWrapper>
@@ -15,18 +18,17 @@ const WhyChooseUs = () => {
           <WhyChooseUsImageBox></WhyChooseUsImageBox>
           <WhyChooseUsContentBox>
             <Box>
-              <Typography variant="h5">Why choose us ?</Typography>
+              <WhyChooseUsTitle>Why choose us ?</WhyChooseUsTitle>
             </Box>
-            <Box>
-              <Typography variant="h5">
-                Creating visually engaging websites for seamless user
-                experiences and branding.
-              </Typography>
+            <Box width={"90%"}>
+              <CreatingWebsiteText>{title}</CreatingWebsiteText>
             </Box>
-            {WHY_CHOOSE.map((item) => (
-              <Box display={"flex"}>
+            {data.map((item) => (
+              <Box display={"flex"} gap={"15px"}>
                 <Box>{item.icon}</Box>
-                <Typography>{item.name}</Typography>
+                <CreatingWebsiteTextDetails>
+                  {item.name}
+                </CreatingWebsiteTextDetails>
               </Box>
             ))}
           </WhyChooseUsContentBox>

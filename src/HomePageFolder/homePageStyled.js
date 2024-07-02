@@ -375,7 +375,6 @@ export const FooterWrapper = styled(Box)(({ theme }) => ({
   alignItems: "center",
   [theme.breakpoints.between("xs", "sm")]: {
     height: "800px",
-    border: "1px solid green",
   },
 }));
 export const LeftFooterImageBox = styled(Box)(() => ({
@@ -412,7 +411,6 @@ export const FooterTextWrapper = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   alignItems: "center",
   [theme.breakpoints.down("sm")]: {
-    border: "1px solid red",
     height: "85%",
   },
 }));
@@ -426,7 +424,6 @@ export const ChallengesWrapper = styled(Box)(({ theme }) => ({
   [theme.breakpoints.between("xs", "sm")]: {
     width: "100%",
     height: "40%",
-    border: "1px solid blue",
   },
 }));
 export const ChallengesBox = styled(Box)(({ theme }) => ({
@@ -439,7 +436,6 @@ export const ChallengesBox = styled(Box)(({ theme }) => ({
     flexDirection: "column",
     width: "100%",
     height: "100%",
-    // border: "1px solid blue",
   },
 }));
 export const IconAndBtnBox = styled(Box)(({ theme }) => ({
@@ -448,6 +444,18 @@ export const IconAndBtnBox = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   [theme.breakpoints.between("xs", "sm")]: {
     flexDirection: "column",
+    width: "90%",
+    display: "flex",
+    alignItems: "space-between",
+    gap: "20px",
+  },
+}));
+export const AcUnitIconBox = styled(Box)(({ theme }) => ({
+  fontSize: "65px !important ",
+  color: "#2be4ac !important",
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    justifyContent: "center",
   },
 }));
 

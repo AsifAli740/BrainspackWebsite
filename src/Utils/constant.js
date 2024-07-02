@@ -169,6 +169,43 @@ export const teamCarouselImages = [
     title: "hello world",
   },
 ];
+export const WHY_CHOOSE_WEB = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Expertise",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Custom Solutions",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Innovative Designs",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Scalability",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Cutting-Edge Technologies",
+  },
+];
 
 export const WHY_CHOOSE = [
   {
@@ -205,6 +242,80 @@ export const WHY_CHOOSE = [
       <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
     ),
     name: "Innovative Solutions",
+  },
+];
+export const WHY_CHOOSE_MOBILE = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Expertise",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Innovation",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Client-Centricity",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Competitive Pricing",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Platform Diversity",
+  },
+];
+export const WHY_CHOOSE_DIGITAL = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Expertise and Experience",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Comprehensive Service",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Customized Strategies",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Innovative Technologies",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Data-driven Approach",
   },
 ];
 export const serviceFrontEndContent = [
@@ -266,5 +377,267 @@ export const serviceBackEndContent = [
     heading: "PHP",
     subHeading:
       "PHP is a server-side scripting language for dynamic web development",
+  },
+];
+
+export const WHY_CHOOSE_UI_DESIGNING = [
+  {
+    id: 0,
+    heading: "Why Choose UI/UX Designing ?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Opting for web designing is essential for a captivating online presence.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "Our proficiency guarantees visually appealing, user-centric websites aligned with your brand identity.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "We prioritize smooth navigation, mobile responsiveness, and compelling designs, enhancing user satisfaction and cultivating success in the digital realm.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of Web Designing ?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Professional Appearance :",
+        paragraph:
+          "Web designing ensures a polished and professional look for your website, enhancing your brand image.",
+      },
+      {
+        subHeading: "User Engagement : ",
+        paragraph:
+          "Well-designed websites provide a positive user experience, keeping visitors engaged and encouraging them to explore further.",
+      },
+      {
+        subHeading: "Brand Consistency:",
+        paragraph:
+          " Web designers incorporate consistent brand elements, such as logos and color schemes, reinforcing brand identity across digital platforms.",
+      },
+      {
+        subHeading: "Mobile Responsiveness : ",
+        paragraph:
+          "Responsive design ensures your website functions seamlessly on various devices, catering to the growing number of mobile users.",
+      },
+      {
+        subHeading: "SEO Optimization :",
+        paragraph:
+          " Effective web design includes SEO best practices, improving your website's visibility on search engines and attracting organic traffic.",
+      },
+      {
+        subHeading: "Increased Conversions :",
+        paragraph:
+          " User-friendly design and clear calls-to-action contribute to higher conversion rates, turning website visitors into customers.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "Web Designing Development Services ?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "Graphic Design :",
+        paragraph:
+          " Incorporate visually appealing graphics, images, and icons to enhance the overall aesthetics of the website.",
+      },
+      {
+        subHeading: "Layout Planning :  ",
+        paragraph:
+          "Organize content in a structured and logical manner to ensure easy navigation and a clear hierarchy.",
+      },
+      {
+        subHeading: " User Interface (UI) Design : ",
+        paragraph:
+          " Create interactive elements and controls for seamless user navigation and interaction.",
+      },
+      {
+        subHeading: "Usability and User Experience (UX):",
+        paragraph:
+          "Focus on creating a positive and intuitive user experience by considering user needs and behaviors.",
+      },
+    ],
+  },
+];
+export const WHY_CHOOSE_MOBILE_APP = [
+  {
+    id: 0,
+    heading: "Why Choose Mobile App Development ?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Mobile development is crucial for businesses aiming at extensive digital outreach. Given the prevalence of smartphones, a meticulously designed mobile app not only engages consumers directly but also amplifies brand visibility, nurturing customer loyalty.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "It stands as a strategic investment, guaranteeing flexibility amid evolving market trends and user preferences within the dynamic digital terrain.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of Mobile App Development ?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Brand Visibility :",
+        paragraph:
+          "Establish a visible presence on users' devices, reinforcing brand awareness.",
+      },
+      {
+        subHeading: "Efficient Marketing : ",
+        paragraph:
+          "Targeted promotions and notifications maximize marketing effectiveness.",
+      },
+      {
+        subHeading: "Brand Consistency:",
+        paragraph:
+          " Web designers incorporate consistent brand elements, such as logos and color schemes, reinforcing brand identity across digital platforms.",
+      },
+      {
+        subHeading: "Streamlined User Experience : ",
+        paragraph:
+          "Tailored interfaces enhance user satisfaction and streamline interactions.",
+      },
+      {
+        subHeading: "Data Analytics :",
+        paragraph:
+          " Gain valuable insights into user behavior and preferences for informed decision-making Responsive design ensures your website functions seamlessly on various devices, catering to the growing number of mobile users.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "Mobile App Development Services ?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Our mobile app services provide comprehensive solutions for designing, developing, and optimizing applications on various platforms.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "From conceptualization to deployment, we focus on creating user-centric and innovative mobile experiences, ensuring functionality, aesthetics, and seamless performance to meet the evolving demands of the digital landscape.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    heading: "Mobile App Development ?",
+    panel: "panel4",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Our mobile app development services encompass the meticulous creation of sophisticated software applications tailored for smartphones and tablets.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "From conceptualization to implementation, we specialize in crafting feature-rich apps, ensuring seamless user experiences and leveraging cutting-edge technologies to meet the diverse needs of our clients.",
+      },
+    ],
+  },
+];
+export const WHY_CHOOSE_DIGITAL_MARKETING = [
+  {
+    id: 0,
+    heading: "Why Digital Marketing ?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Digital marketing is essential for businesses to thrive in the modern landscape. It enables precise audience targeting, cost-effective strategies, and real-time analytics",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "With the ability to reach global audiences, digital marketing optimizes brand visibility, fosters customer engagement, and ensures adaptability to dynamic market trends, driving sustained success.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of Digital Marketing ?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Brand Visibility :",
+        paragraph: " Pinpoint audience engagement for optimal results.",
+      },
+      {
+        subHeading: "Cost-Effective:  ",
+        paragraph: "Efficient use of resources for maximum impact.",
+      },
+      {
+        subHeading: "Real-Time Analytics:",
+        paragraph: "  Instant insights for data-driven decision-making.",
+      },
+      {
+        subHeading: "Global Reach: ",
+        paragraph: " Connect with audiences worldwide for expanded visibility",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "Digital Marketing Service ?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Delivering comprehensive digital marketing services, we strategically promote brands through SEO, content marketing, social media, and paid advertising",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "Our approach optimizes brand visibility, engages target audiences, and guarantees measurable results.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "our services align with evolving market trends and user preferences, ensuring sustained success in the dynamic digital landscape.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    heading: "Development OF Digital Marketing ?",
+    panel: "panel4",
+    details: [
+      {
+        subHeading: "Strategic Promotion:",
+        paragraph: " Harnessing online channels for effective brand promotion.",
+      },
+      {
+        subHeading: "Diverse Methods: ",
+        paragraph:
+          "Utilizing SEO, content marketing, social media, and paid advertising.",
+      },
+      {
+        subHeading: "Audience Engagement:",
+        paragraph: "  Engaging and connecting with target audiences.",
+      },
+      {
+        subHeading: "Measurable Results: ",
+        paragraph: "  Employing analytics for quantifiable outcomes.",
+      },
+    ],
   },
 ];

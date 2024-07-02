@@ -14,6 +14,7 @@ export const GetKnowUsWrapper = styled(Box)(() => ({
 export const GetKnowUsImageBox = styled(Box)(() => ({
   width: "58%",
   height: "100%",
+  position: "relative",
 }));
 export const GetKnowUsContentBox = styled(Box)(() => ({
   width: "39%",
