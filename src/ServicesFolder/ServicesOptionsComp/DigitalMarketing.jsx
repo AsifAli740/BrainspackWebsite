@@ -5,22 +5,25 @@ import { SERVICES_PROVIDED } from "../../HomePageFolder/Constants";
 import NavbarComp from "../../ReUseComponents/NavbarComp";
 import FooterComp from "../../HomePageFolder/Footer";
 import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
+import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
+import { serviceDigitalContent } from "../../Utils/constant";
 
 function DigitalMarketing(props) {
   return (
     <>
       <NavbarComp />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[3].name}
-        serviceText={SERVICES_PROVIDED[3].text}
-        servicesImage={SERVICES_PROVIDED[3].image}
-      />
       <ServicePageHeaderLink
         activeText={"Services"}
         headerHeading={"Our Services"}
         nestedActiveText={"Digital Marketing"}
       />
-      <WhyChooseUs />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[3].name}
+        serviceText={SERVICES_PROVIDED[3].text}
+        servicesImage={SERVICES_PROVIDED[3].image}
+      />
+    <ServiceWebDetailsComp content={serviceDigitalContent}/>
+    <WhyChooseUs />
       <FooterComp />
     </>
   );

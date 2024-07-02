@@ -11,18 +11,18 @@ function WebDevelopment(props) {
   return (
     <>
       <NavbarComp />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[0].name}
-        serviceText={SERVICES_PROVIDED[0].text}
-        servicesImage={SERVICES_PROVIDED[0].image}
-      />
-      <WhyChooseUs />
       <ServicePageHeaderLink
         activeText={"Services"}
         headerHeading={"Our Services"}
         nestedActiveText={"Web Development"}
       />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[0].name}
+        serviceText={SERVICES_PROVIDED[0].text}
+        servicesImage={SERVICES_PROVIDED[0].image}
+      />
       <FrontendBackendContainer />
+      <WhyChooseUs />
 
       <FooterComp />
     </>
