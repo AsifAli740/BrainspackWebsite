@@ -32,7 +32,7 @@ function WebDevelopment(props) {
         servicesImage={SERVICES_PROVIDED[0].image}
       />
       <FrontendBackendContainer />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
 
       <FooterComp />
     </>

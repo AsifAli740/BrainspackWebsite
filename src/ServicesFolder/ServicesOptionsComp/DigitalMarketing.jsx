@@ -9,7 +9,9 @@ import WhyChooseOurServices from "../../ReUseComponents/WhyChooseOurServices";
 import {
   WHY_CHOOSE_DIGITAL,
   WHY_CHOOSE_DIGITAL_MARKETING,
+  serviceDigitalContent,
 } from "../../Utils/constant";
+import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
 
 function DigitalMarketing(props) {
   const [digital, setDigital] = useState();
@@ -34,7 +36,6 @@ function DigitalMarketing(props) {
         servicesImage={SERVICES_PROVIDED[3].image}
       />
       <ServiceWebDetailsComp content={serviceDigitalContent} />
-      <WhyChooseUs />
       <FooterComp />
     </>
   );
