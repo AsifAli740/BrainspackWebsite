@@ -3,8 +3,6 @@ import NavbarComp from "../ReUseComponents/NavbarComp";
 import AboutPageHeaderBg from "../ReUseComponents/AboutPageHeaderBg";
 import OurVisionMission from "./OurVisionMission";
 import CounterItems from "../ReUseComponents/CounterItems";
-import SwipeableTextMobileStepper from "../Carousel/TeamMemberCarousel";
-import TeamCarousel from "../Carousel/carousel";
 import { Box, Typography } from "@mui/material";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import {
@@ -24,6 +22,7 @@ import {
   ShapingFutureText,
 } from "./aboutUsStyled";
 import FooterComp from "../HomePageFolder/Footer";
+import MyCarousel from "../CarasoulStepper";
 
 function AboutUsPage() {
   return (
@@ -71,7 +70,7 @@ function AboutUsPage() {
       <LaunchingComp />
       <OurVisionMission />
       <CounterItems />
-      <TeamCarousel />
+
       <FooterComp />
     </>
   );
