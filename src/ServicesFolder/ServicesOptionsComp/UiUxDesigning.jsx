@@ -32,7 +32,7 @@ const UiUxDesigning = () => {
         servicesImage={SERVICES_PROVIDED[1].image}
       />
       <ServiceWebDetailsComp content={serviceUiUxContent} />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
 
       <FooterComp />
     </>
