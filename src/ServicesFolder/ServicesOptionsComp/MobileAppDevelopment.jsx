@@ -7,16 +7,13 @@ import FooterComp from "../../HomePageFolder/Footer";
 import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
 import { WHY_CHOOSE_MOBILE, WHY_CHOOSE_MOBILE_APP } from "../../Utils/constant";
 import WhyChooseOurServices from "../../ReUseComponents/WhyChooseOurServices";
+import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
+import { serviceMobileContent } from "../../Utils/constant";
 
 function MobileAppDevelopment(props) {
   return (
     <>
       <NavbarComp />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[2].name}
-        serviceText={SERVICES_PROVIDED[2].text}
-        servicesImage={SERVICES_PROVIDED[2].image}
-      />
       <ServicePageHeaderLink
         activeText={"Services"}
         headerHeading={"Our Services"}
@@ -29,6 +26,14 @@ function MobileAppDevelopment(props) {
         }
       />
       <WhyChooseOurServices data={WHY_CHOOSE_MOBILE_APP} />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[2].name}
+        serviceText={SERVICES_PROVIDED[2].text}
+        servicesImage={SERVICES_PROVIDED[2].image}
+      />
+      <ServiceWebDetailsComp content={serviceMobileContent} />
+
+      <WhyChooseUs />
       <FooterComp />
     </>
   );

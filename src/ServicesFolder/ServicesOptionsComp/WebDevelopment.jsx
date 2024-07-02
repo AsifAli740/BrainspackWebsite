@@ -26,7 +26,13 @@ function WebDevelopment(props) {
         headerHeading={"Our Services"}
         nestedActiveText={"Web Development"}
       />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[0].name}
+        serviceText={SERVICES_PROVIDED[0].text}
+        servicesImage={SERVICES_PROVIDED[0].image}
+      />
       <FrontendBackendContainer />
+      <WhyChooseUs />
 
       <FooterComp />
     </>
