@@ -23,6 +23,13 @@ function DigitalMarketing(props) {
         headerHeading={"Our Services"}
         nestedActiveText={"Digital Marketing"}
       />
+
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[3].name}
+        serviceText={SERVICES_PROVIDED[3].text}
+        servicesImage={SERVICES_PROVIDED[3].image}
+      />
+      <ServiceWebDetailsComp content={serviceDigitalContent} />
       <WhyChooseUs
         data={WHY_CHOOSE_DIGITAL}
         title={
@@ -30,12 +37,7 @@ function DigitalMarketing(props) {
         }
       />
       <WhyChooseOurServices data={WHY_CHOOSE_DIGITAL_MARKETING} />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[3].name}
-        serviceText={SERVICES_PROVIDED[3].text}
-        servicesImage={SERVICES_PROVIDED[3].image}
-      />
-      <ServiceWebDetailsComp content={serviceDigitalContent} />
+
       <FooterComp />
     </>
   );

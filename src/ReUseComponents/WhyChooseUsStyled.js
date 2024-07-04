@@ -56,18 +56,20 @@ export const UiAndUxWrapper = styled(Box)(() => ({
 }));
 export const UiAndUxBox = styled(Box)(() => ({
   width: "90%",
+  // minHeight: "450px",
+  marginBottom: "30px",
 }));
-export const UiAndUxHeading = styled(Box)(() => ({
+export const UiAndUxHeading = styled(Typography)(() => ({
   fontSize: "19px !important",
   fontWeight: "500 !important",
   color: "#1b1525 ! important",
 }));
-export const UiAndUxSubHeading = styled(Box)(() => ({
+export const UiAndUxSubHeading = styled(Typography)(() => ({
   fontSize: "17px !important",
   fontWeight: "600 !important",
   color: "#777181 ! important",
 }));
-export const UiAndUxParagraph = styled(Box)(() => ({
+export const UiAndUxParagraph = styled(Typography)(() => ({
   fontSize: "16px !important",
   fontWeight: "400 !important",
   color: "#777181 ! important",
@@ -75,4 +77,10 @@ export const UiAndUxParagraph = styled(Box)(() => ({
 
 export const CustomAccordian = styled(Accordion)(() => ({
   padding: "20px !important",
+}));
+export const CustomAccordianDetails = styled(Accordion)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  height: "200px",
 }));
