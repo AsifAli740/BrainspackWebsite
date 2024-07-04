@@ -104,7 +104,7 @@ function NavbarComp() {
                     cursor:"pointer"
                   }}
                 >
-                  <ServiceOptions onClick={()=>navigate("/web-development")} className="options webDevelop">
+                  <ServiceOptions onClick={()=>navigate("/services/web-development")} className="options webDevelop">
                     <Box
                       className="webDev-options"
                       sx={{
@@ -129,13 +129,13 @@ function NavbarComp() {
                     </Box>
                     Web Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/ui-ux-design")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/services/ui-ux-design")} className="options">
                     UI/UX Desiging
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/mobile-app-development")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/services/mobile-app-development")} className="options">
                     Mobile App Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/digital-marketing")} className="options">
+                  <ServiceOptions onClick={()=>navigate("/services/digital-marketing")} className="options">
                     Digital Marketing
                   </ServiceOptions>
                 </Box>
