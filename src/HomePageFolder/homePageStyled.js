@@ -133,7 +133,7 @@ export const BusinessText = styled(Typography)(() => ({
   fontSize:"36px"
 }));
 export const LaunchingHeading = styled(Typography)(() => ({
-  color: "#ffffff !important",
+  color: "white !important",
   fontSize:"105px",
   fontWeight:"700",
   letterSpacing:"8px"
