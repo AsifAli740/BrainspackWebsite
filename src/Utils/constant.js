@@ -352,6 +352,118 @@ export const WHY_CHOOSE_DIGITAL = [
     name: "Data-driven Approach",
   },
 ];
+export const WHY_CHOOSE_MEAN = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Client Collaboration",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "MEAN Stack Prowess",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Cross-Platform Proficiency",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Security Measures",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Quality Assurance",
+  },
+];
+
+export const WHY_CHOOSE_MERN = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Technology Stack",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Quality Assurance",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Client Support",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Cost and Timeline",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Innovation and Adaptability",
+  },
+];
+export const WHY_CHOOSE_Php = [
+  {
+    id: 0,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Proficiency",
+  },
+  {
+    id: 1,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Database Integration",
+  },
+  {
+    id: 2,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Proven Track Record",
+  },
+  {
+    id: 3,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Competitive Pricing",
+  },
+  {
+    id: 4,
+    icon: (
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+    ),
+    name: "Framework Mastery",
+  },
+];
 export const serviceFrontEndContent = [
   {
     id: 0,
@@ -675,7 +787,200 @@ export const WHY_CHOOSE_DIGITAL_MARKETING = [
     ],
   },
 ];
-
+export const WHY_CHOOSE_MERN_STACK = [
+  {
+    id: 0,
+    heading: "Why Choose MERN Stack?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Embrace the MERN (MongoDB, Express.js, React.js, Node.js) stack for web development to harness the power of a cohesive JavaScript ecosystem. This choice guarantees streamlined development, reusable code, and effortless scalability. Bolstered by a vibrant community, isomorphic JavaScript features, and an extensive ecosystem, MERN enables developers to craft dynamic, real-time applications with unparalleled ease and effectiveness, ensuring a seamless and efficient web development experience.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of MERN Stack?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Full-Stack JavaScript:",
+        paragraph:
+          "Developers can seamlessly work across the entire stack, reducing complexity.",
+      },
+      {
+        subHeading: "Real-time Functionality with Node.js: ",
+        paragraph:
+          "Node.js empowers real-time functionalities, essential for creating interactive and responsive applications.",
+      },
+      {
+        subHeading: "Modularity and Code Reusability:",
+        paragraph:
+          " Components are designed for reusability, fostering modularity and accelerating development pace.",
+      },
+      {
+        subHeading: "Community-Driven Support:",
+        paragraph:
+          "Each stack component enjoys robust community support, providing developers with access to valuable resources and knowledge.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "MERN Stack developing Services?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Enhance your projects with our MERN (MongoDB, Express.js, React.js, Node.js) development services, featuring a unified JavaScript stack for streamlined coding, reusable solutions, and seamless scalability. With strong community support and isomorphic JavaScript capabilities, we empower clients to effortlessly create dynamic, real-time applications, delivering innovative and effective solutions to meet diverse web development needs.",
+      },
+    ],
+  },
+];
+export const WHY_CHOOSE_MEAN_STACK = [
+  {
+    id: 0,
+    heading: "Why Choose MEAN Stack?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "The MEAN stack—MongoDB, Express.js, Angular, and Node.js—stands out as an excellent option for web development, offering a cohesive JavaScript-based ecosystem. This choice guarantees smooth data flow, code uniformity, and efficiency across the development lifecycle. Boasting a flexible mix of technologies for front-end and back-end, the MEAN stack empowers the development of scalable, maintainable, and contemporary web applications.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of MEAN Stack?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Unified Technology Stack:",
+        paragraph:
+          "The MEAN stack (Mongo DB, Express.js, Angular, Node.js) provides a seamless end-to-end JavaScript environment, eliminating the need for different languages and promoting code consistency throughout the development process",
+      },
+      {
+        subHeading: "Versatility and Scalability : ",
+        paragraph:
+          "MEAN's versatile combination of technologies caters to both front-end and back-end development, allowing developers to create scalable, maintainable, and modern web applications. This flexibility is particularly advantageous for projects with evolving requirements.",
+      },
+      {
+        subHeading: "Brand Consistency:",
+        paragraph:
+          " Web designers incorporate consistent brand elements, such as logos and color schemes, reinforcing brand identity across digital platforms.",
+      },
+      {
+        subHeading: "Full-stack JavaScript Development: ",
+        paragraph:
+          "MEAN enables full-stack JavaScript development, allowing developers to leverage their skills across the entire application stack. This leads to improved collaboration, streamlined workflows, and faster development cycles.",
+      },
+      {
+        subHeading: "Rich Ecosystem and Community Support:",
+        paragraph:
+          " Each component of the MEAN stack has a robust ecosystem and benefits from active community support. MongoDB, Express.js, Angular, and Node.js all have extensive libraries and modules, facilitating rapid development and troubleshooting.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "MEAN Stack developing Services?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "Expert MEAN Stack Developers:",
+        paragraph:
+          "Our skilled team excels in utilizing MongoDB for flexible data storage, ensuring adaptability to evolving data requirements.",
+      },
+      {
+        subHeading: "Robust Server-Side Logic with Express.js:",
+        paragraph:
+          "We leverage Express.js to implement resilient server-side logic, optimizing the efficiency and performance of your applications.",
+      },
+      {
+        subHeading: "Efficient Runtime Execution with Node.js:",
+        paragraph:
+          "Our developers harness the power of Node.js for efficient runtime executive ,contributing to the overall performance of your web application.",
+      },
+    ],
+  },
+];
+export const WHY_CHOOSE_PHP = [
+  {
+    id: 0,
+    heading: "Why Choose PHP?",
+    panel: "panel1",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "PHP is chosen for its server-side scripting prowess, seamlessly creating dynamic web content.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "Renowned for simplicity and versatility, PHP powers numerous websites and applications.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "With its widespread use and constant evolution, PHP ensures efficient, scalable, and cost-effective solutions for diverse web development needs.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    heading: "Benefits Of PHP?",
+    panel: "panel2",
+    details: [
+      {
+        subHeading: "Versatility:",
+        paragraph: " Adaptable for various web development tasks..",
+      },
+      {
+        subHeading: "Cost-Effective: ",
+        paragraph: "Open-source nature reduces development expenses.",
+      },
+      {
+        subHeading: "Scalability:",
+        paragraph: "Supports growth with ease of expansion.",
+      },
+      {
+        subHeading: "Community Support:",
+        paragraph: "Large community ensures ongoing updates and assistance.",
+      },
+      {
+        subHeading: "Integration: ",
+        paragraph: "  Easily integrates with databases and other technologies.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    heading: "PHP developing Services?",
+    panel: "panel3",
+    details: [
+      {
+        subHeading: "",
+        paragraph:
+          "Our PHP services encompass dynamic web development, utilizing server-side scripting to create interactive content.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "From custom applications to website enhancements, we leverage PHP's versatility to meet diverse needs.",
+      },
+      {
+        subHeading: "",
+        paragraph:
+          "Our commitment to simplicity and quality ensures effective solutions in this widely adopted and fundamental web development language.",
+      },
+    ],
+  },
+];
 export const serviceUiUxContent = [
   {
     id: 0,

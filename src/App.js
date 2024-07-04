@@ -20,7 +20,12 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/services">
           <Route index element={<Services />} />
-          <Route path="web-development" element={<WebDevelopment />} />
+          <Route path="web-development">
+            <Route index element={<WebDevelopment />} />
+            <Route path="mean" element={<MeanStack />} />
+            <Route path="mern" element={<MernStack />} />
+            <Route path="php" element={<Php />} />
+          </Route>
           <Route path="ui-ux-design" element={<UiUxDesigning />} />
           <Route
             path="mobile-app-development"
@@ -28,9 +33,6 @@ function App() {
           />
           <Route path="digital-marketing" element={<DigitalMarketing />} />
         </Route>
-          <Route path="mean" element={<MeanStack />} />
-          <Route path="mern" element={<MernStack />} />
-          <Route path="php" element={<Php />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

@@ -37,7 +37,7 @@ const WhyChooseOurServices = ({ data }) => {
               >
                 <UiAndUxHeading>{designing.heading}</UiAndUxHeading>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails className="customAccordianDetails">
                 {designing.details.map((detail) =>
                   detail.subHeading === "" ? (
                     <Box>

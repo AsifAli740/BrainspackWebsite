@@ -17,7 +17,7 @@ import {
   ServicesText,
 } from "./ServicesCompStyled";
 // import SERVICES_PROVIDED from "../HomePageFolder/Constants";
-import { SERVICES_PROVIDED } from "../HomePageFolder/Constants";
+import { OUR_SERVICES, SERVICES_PROVIDED } from "../HomePageFolder/Constants";
 import { IconBox, IconBoxImage } from "../HomePageFolder/homePageStyled";
 import { Link, NavLink } from "react-router-dom";
 import "../ExternalCss/GetKnowUs.css";
@@ -33,7 +33,7 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                 <Box>
                   <ServicesText>Services</ServicesText>
                 </Box>
-                {SERVICES_PROVIDED.map((service) => (
+                {OUR_SERVICES.map((service) => (
                   <Box>
                     <Link className="services" to={service.link}>
                       {service.name}
