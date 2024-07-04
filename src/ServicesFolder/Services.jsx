@@ -5,6 +5,7 @@ import BrainspackServices from '../HomePageFolder/BrainspackServices';
 import ServicesOfBrainspack from '../ReUseComponents/ServicesOfBrainspack';
 import TechServicesComp from '../HomePageFolder/TechServices';
 import FooterComp from '../HomePageFolder/Footer';
+import { Outlet } from 'react-router-dom';
 
 function Services(props) {
     return (
@@ -15,6 +16,7 @@ function Services(props) {
         <ServicesOfBrainspack />
         <TechServicesComp />
         <FooterComp />
+        <Outlet/>
 
         
             

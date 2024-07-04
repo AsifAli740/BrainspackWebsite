@@ -1,10 +1,21 @@
 import React from 'react';
+import ServicePageHeaderLink from '../ServicePageHeaderLink';
+import NavbarComp from '../../ReUseComponents/NavbarComp';
+
+import FooterComp from '../../HomePageFolder/Footer';
 
 function Php(props) {
     return (
-        <div>
-            php
-        </div>
+        <>
+              <NavbarComp />
+            <ServicePageHeaderLink
+        activeText={"Services"}
+        headerHeading={"PHP"}
+        nestedActiveText={"PHP"}
+      />
+
+<FooterComp />
+        </>
     );
 }
 

@@ -23,6 +23,7 @@ import {
 } from "./aboutUsStyled";
 import FooterComp from "../HomePageFolder/Footer";
 import MyCarousel from "../CarasoulStepper";
+import Php from "../ServicesFolder/WebDevelopmentSkills/Php";
 
 function AboutUsPage() {
   return (
@@ -72,6 +73,7 @@ function AboutUsPage() {
       <CounterItems />
 
       <FooterComp />
+      <Php />
     </>
   );
 }
