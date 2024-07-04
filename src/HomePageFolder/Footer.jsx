@@ -24,6 +24,7 @@ import {
   SocialMediaBox,
   LinksAndContentBox,
   AcUnitIconBox,
+  FooterCompanyFullAddress,
 } from "./homePageStyled";
 import { Box, Fab, Typography } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
@@ -85,10 +86,10 @@ const FooterComp = () => {
                     </ContactBoxDetailsEach>
                     <ContactBoxDetailsEach>
                       <LocationOnIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>
+                      <FooterCompanyFullAddress>
                         SCF-15, First Floor, opposite Bus Stand Road, Sarojini
                         Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
-                      </FooterAddress>
+                      </FooterCompanyFullAddress>
                     </ContactBoxDetailsEach>
                   </ContactBoxDetails>
                 </FooterContactBox>
