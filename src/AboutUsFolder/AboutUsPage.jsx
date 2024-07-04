@@ -74,8 +74,6 @@ function AboutUsPage() {
       <CounterItems />
 
       <FooterComp />
-
-      <TeamCarousal />
     </>
   );
 }

@@ -5,16 +5,28 @@ import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
 import ServicesComp from "../../ReUseComponents/ServicesComp";
 import { SERVICES_PROVIDED } from "../../HomePageFolder/Constants";
 import NavbarComp from "../../ReUseComponents/NavbarComp";
+import NavbarComp from "../../ReUseComponents/NavbarComp";
+import ServicePageHeaderLink from "../ServicePageHeaderLink";
+import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
+import { serviceMeanContent } from "../../Utils/constant";
 import FooterComp from "../../HomePageFolder/Footer";
 
 function MeanStack(props) {
   return (
     <>
+      <NavbarComp />
+      <ServicePageHeaderLink
+        activeText={"Services"}
+        headerHeading={"MEAN Stack"}
+        nestedActiveText={"Mean Stack"}
+      />
       <ServicesComp
         serviceName={SERVICES_PROVIDED[4].name}
         serviceText={SERVICES_PROVIDED[4].text}
         servicesImage={SERVICES_PROVIDED[4].image}
       />
+      <ServiceWebDetailsComp content={serviceMeanContent} />
+
       <WhyChooseUs
         data={WHY_CHOOSE_MEAN}
         title={
@@ -22,6 +34,8 @@ function MeanStack(props) {
         }
       />
       <WhyChooseOurServices data={WHY_CHOOSE_MEAN_STACK} />
+
+      <FooterComp />
     </>
   );
 }

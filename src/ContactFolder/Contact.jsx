@@ -12,6 +12,7 @@ function Contact(props) {
       <AboutPageHeaderBg activeText={"Contact"} headerHeading={"Contact Us"} />
       <GetInTouch />
       <FooterComp />
+      <MernStack />
     </>
   );
 }

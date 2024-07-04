@@ -43,6 +43,15 @@ import iosImage from "../Assets/images/resources/ios-image-1.webp";
 import mobileImage from "../Assets/images/resources/mobile-image-1.jpg";
 import androidImage from "../Assets/images/resources/android-image-1.avif";
 
+//   Mean Stack Image Imported :------
+
+import mongoDBImage from "../Assets/images/resources/mongo_db.webp";
+import expressJSImage from "../Assets/images/resources/express_js.png";
+
+
+
+
+
 export const headerLinks = [
   {
     links: "/",
@@ -1069,4 +1078,67 @@ export const serviceMobileContent = [
     subHeading:
       "Android is a mobile operating system developed by Google. Launched in 2008, it powers a majority of smartphones and tablets globally. Known for its open-source nature, Android allows customization and supports a vast range of apps through the Google Play Store. Regular updates enhance functionality and security. The platform has a diverse ecosystem of devices and offers a user-friendly interface, making it a dominant force in the mobile industry.",
   },
+];
+
+export const serviceMeanContent = [
+  {
+    id: 0,
+    image: mongoDBImage,
+    heading: "Mongo DB",
+    subHeading:
+      "Mongo DB, a premier NoSQL database by Mongo DB Inc., employs BSON for flexible data storage in a document- oriented framework. Renowned for managing vast unstructured data with exceptional performance and scalability, Mongo DB’s dynamic, schema-less model, along with features like horizontal scaling and automatic sharding, makes it a top choice for contemporary, data-intensive applications, ensuring optimal efficiency in data processing and storage.",
+  },
+  {
+    id: 1,
+    image: expressJSImage,
+    heading: "Express.js",
+    subHeading:
+      "Express.js, a resilient and streamlined web application framework for Node.js, streamlines the development of scalable and modular web applications and APIs. Prioritizing performance and flexibility, it equips developers with essential features and middleware to adeptly manage routing, HTTP requests, and responses. Its unobtrusive design and expansive ecosystem position Express.js as a favored tool for crafting server-side applications, empowering developers to create code that is both robust and easily maintainable.",
+  },
+  {
+    id: 2,
+    image: angularImage,
+    heading: "Angular",
+    subHeading:
+      "Angular, an open-source front-end framework crafted by Google, employs TypeScript to elevate web development with static typing, enhancing tooling, code maintainability, and scalability. Angular's structural design facilitates the development of modular, dynamic, and high- performance web applications, integrating functionalities such as bidirectional data binding, dependency injection, and an extensive library of pre-built components. This synergy establishes Angular as a potent and effective resource for developers in contemporary web development, streamlining the creation of resilient and engaging user interfaces.",
+  },
+  {
+    id: 3,
+    image: nodeJsImage,
+    heading: "Node.js",
+    subHeading:
+      "Node.js serves as a versatile runtime environment, executing server-side JavaScript for the development of scalable and efficient network applications. Its foundation on the V8 JavaScript engine enables support for asynchronous, event-driven programming, particularly adept at managing concurrent requests. Embraced for server-side application development, Node.js boasts a robust ecosystem of packages, recognized for its lightweight architecture and rapid execution.",
+  },
+ 
+];
+export const serviceMernContent = [
+  {
+    id: 0,
+    image: mongoDBImage,
+    heading: "Mongo DB",
+    subHeading:
+      "Mongo DB, a premier NoSQL database by Mongo DB Inc., employs BSON for flexible data storage in a document- oriented framework. Renowned for managing vast unstructured data with exceptional performance and scalability, Mongo DB’s dynamic, schema-less model, along with features like horizontal scaling and automatic sharding, makes it a top choice for contemporary, data-intensive applications, ensuring optimal efficiency in data processing and storage.",
+  },
+  {
+    id: 1,
+    image: expressJSImage,
+    heading: "Express.js",
+    subHeading:
+      "Express.js, a resilient and streamlined web application framework for Node.js, streamlines the development of scalable and modular web applications and APIs. Prioritizing performance and flexibility, it equips developers with essential features and middleware to adeptly manage routing, HTTP requests, and responses. Its unobtrusive design and expansive ecosystem position Express.js as a favored tool for crafting server-side applications, empowering developers to create code that is both robust and easily maintainable.",
+  },
+  {
+    id: 2,
+    image: reactImage,
+    heading: "React JS",
+    subHeading:
+      "ReactJS, meticulously crafted and sustained by Facebook, stands as a declarative and highly efficient JavaScript library tailored for constructing sophisticated user interfaces.Developers harness its capabilities to construct reusable UI components that adeptly and seamlessly respond to dynamic data changes. Powered by a virtual DOM, React ensures optimal rendering performance, while its modular, component- based architecture fosters the creation of scalable and maintainable applications. Embraced across the industry for crafting contemporary web solutions, ReactJS is celebrated for its simplicity, adaptability, and an expansive ecosystem of libraries.",
+  },
+  {
+    id: 3,
+    image: nodeJsImage,
+    heading: "Node.js",
+    subHeading:
+      "Node.js serves as a versatile runtime environment, executing server-side JavaScript for the development of scalable and efficient network applications. Its foundation on the V8 JavaScript engine enables support for asynchronous, event-driven programming, particularly adept at managing concurrent requests. Embraced for server-side application development, Node.js boasts a robust ecosystem of packages, recognized for its lightweight architecture and rapid execution.",
+  },
+ 
 ];

@@ -33,7 +33,6 @@ function App() {
           />
           <Route path="digital-marketing" element={<DigitalMarketing />} />
         </Route>
-
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
@@ -41,3 +40,8 @@ function App() {
 }
 
 export default App;
+{
+  /* <Route path="/mean"  element={<MeanStack />}/>
+        <Route path="/mern"  element={<MernStack />}/>
+        <Route path="/php"  element={<Php />}/>  */
+}
