@@ -12,6 +12,7 @@ import LaunchingComp from "./Launching";
 import TechServicesComp from "./TechServices";
 import FooterComp from "./Footer";
 import CustomizedSteppers from "../ReUseComponents/Stepper";
+import MeanStack from "../ServicesFolder/WebDevelopmentSkills/MeanStack";
 
 const HomePage = (props) => {
   return (
@@ -28,6 +29,7 @@ const HomePage = (props) => {
       <HelpingContainer />
       <FooterComp />
       <CustomizedSteppers />
+      <MeanStack />
     </>
   );
 };

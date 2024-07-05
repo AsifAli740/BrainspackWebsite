@@ -33,7 +33,7 @@ function MobileAppDevelopment(props) {
       />
       <ServiceWebDetailsComp content={serviceMobileContent} />
 
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <FooterComp />
     </>
   );

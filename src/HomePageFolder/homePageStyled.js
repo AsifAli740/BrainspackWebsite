@@ -108,14 +108,35 @@ export const LaunchingWrapper = styled(Box)(() => ({
   backgroundImage: `url(${businessImg})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  backgroundColor:"rgba(27,21,37,1)",
   backgroundPosition: "center",
-  opacity: 0.5,
-  mixBlendMode: "luminosity",
+  // opacity: 0.5,
+  // mixBlendMode: "luminosity",
+  backgroundBlendMode:"luminosity"
 }));
-export const BusinessTextBox = styled(Typography)(() => ({}));
+export const BusinessTextBox = styled(Box)(() => ({
+  display:"flex",
+  flexDirection:"column",
+  alignItems:"center"
+  
+}));
+export const BusinessTextBoxWrapper = styled(Box)(() => ({
+  height:"inherit",
+  backgroundColor:"rgba(64,58,74,0.5)",
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"center"
+}));
 
 export const BusinessText = styled(Typography)(() => ({
-  color: "red !important",
+  color: "#2be4ac !important",
+  fontSize:"36px"
+}));
+export const LaunchingHeading = styled(Typography)(() => ({
+  color: "white !important",
+  fontSize:"105px",
+  fontWeight:"700",
+  letterSpacing:"8px"
 }));
 
 //   ================================= TECH SERVICES ================================================
@@ -485,6 +506,18 @@ export const FooterAddress = styled(Typography)(() => ({
   color: "#aea8b9 ",
   fontSize: "16px !important",
   fontWeight: "500 !important",
+  cursor:"pointer",
+  transition:"all 500ms ease",
+  "&:hover":{
+    color:"white"
+  }
+}));
+export const FooterCompanyFullAddress = styled(Typography)(() => ({
+  color: "#aea8b9 ",
+  fontSize: "16px !important",
+  fontWeight: "500 !important",
+  cursor:"pointer",
+  
 }));
 
 export const FooterLogo = styled(Box)(() => ({
