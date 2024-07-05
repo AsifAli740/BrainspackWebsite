@@ -2,58 +2,81 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Box, Button, CardActionArea, CardActions } from "@mui/material";
+import { Box, CardActionArea } from "@mui/material";
 import { TEAM_DETAILS } from "./TeamCarasoulConstant";
 import {
+  CustomTeamCard,
+  CustomTeamCardBox,
+  MeetTeamBox,
+  MeetTeamContainer,
   TeamCarasoulContainer,
   TeamCarasoulWrapper,
+  TeamMembersDesignation,
+  TeamMembersName,
+  TeamMembersText,
 } from "./TeamCarasoulStyled";
 import { GetKnowUsTitle } from "../HomePageFolder/GetKnowUs/GetKnowUsStyled";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
+import "../ExternalCss/GetKnowUs.css";
 
 const TeamCarousal = () => {
   var settings = {
     dots: true,
+    // dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    height: true,
   };
   return (
     <>
       <TeamCarasoulWrapper>
         <TeamCarasoulContainer>
-          <Box display={"flex"} alignItems={"center"} gap={"10px"}>
-            <Box component={"img"} src={twoDots} />
-            <GetKnowUsTitle>Get to know us</GetKnowUsTitle>
-          </Box>
-          <Slider {...settings}>
-            {TEAM_DETAILS.map((team) => (
-              <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image={team.image}
-                    alt="green iguana"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {team.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {team.designation}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            ))}
-          </Slider>
+          <MeetTeamContainer>
+            <MeetTeamBox>
+              <Box component={"img"} src={twoDots} />
+              <GetKnowUsTitle>Meet the team</GetKnowUsTitle>
+            </MeetTeamBox>
+            <Box>
+              <TeamMembersText>Team Members</TeamMembersText>
+            </Box>
+          </MeetTeamContainer>
+          <CustomTeamCardBox>
+            <Slider {...settings} style={{ margin: "0 20px" }}>
+              {TEAM_DETAILS.map((team) => (
+                <>
+                  <CustomTeamCard>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="400px"
+                        image={team.image}
+                        alt={team.name}
+                      />
+
+                      <CardContent>
+                        <Box
+                          display={"flex"}
+                          flexDirection={"column"}
+                          justifyContent={"center"}
+                          alignItems={"center"}
+                        >
+                          <TeamMembersName>{team.name}</TeamMembersName>
+                          <TeamMembersDesignation>
+                            {team.designation}
+                          </TeamMembersDesignation>
+                        </Box>
+                      </CardContent>
+                    </CardActionArea>
+                  </CustomTeamCard>
+                </>
+              ))}
+            </Slider>
+          </CustomTeamCardBox>
         </TeamCarasoulContainer>
       </TeamCarasoulWrapper>
     </>

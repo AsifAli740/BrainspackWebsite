@@ -48,9 +48,12 @@ import androidImage from "../Assets/images/resources/android-image-1.avif";
 import mongoDBImage from "../Assets/images/resources/mongo_db.webp";
 import expressJSImage from "../Assets/images/resources/express_js.png";
 
-
-
-
+// Development Process Images
+import Development from "../Assets/images/resources/development2.jpg";
+import Planning from "../Assets/images/resources/planing.avif";
+import Design from "../Assets/images/resources/design.jpg";
+import QA from "../Assets/images/resources/launch.jpg";
+import Maintenance from "../Assets/images/resources/maintenance.jpg";
 
 export const headerLinks = [
   {
@@ -68,34 +71,6 @@ export const headerLinks = [
   {
     links: "/Contact",
     item: "Contact",
-  },
-];
-
-export const DEVELOPMENT_PROCESS = [
-  {
-    id: 0,
-    name: "Planning",
-    icon: <SupportAgentIcon sx={{ color: "white" }} />,
-  },
-  {
-    id: 1,
-    name: "Design",
-    icon: <DesignServicesIcon />,
-  },
-  {
-    id: 2,
-    name: "Development",
-    icon: <DeveloperModeIcon />,
-  },
-  {
-    id: 3,
-    name: "Q/A launch",
-    icon: <QuestionAnswerIcon />,
-  },
-  {
-    id: 4,
-    name: "Maintenance",
-    icon: <AutoFixOffIcon />,
   },
 ];
 
@@ -1109,7 +1084,6 @@ export const serviceMeanContent = [
     subHeading:
       "Node.js serves as a versatile runtime environment, executing server-side JavaScript for the development of scalable and efficient network applications. Its foundation on the V8 JavaScript engine enables support for asynchronous, event-driven programming, particularly adept at managing concurrent requests. Embraced for server-side application development, Node.js boasts a robust ecosystem of packages, recognized for its lightweight architecture and rapid execution.",
   },
- 
 ];
 export const serviceMernContent = [
   {
@@ -1140,5 +1114,41 @@ export const serviceMernContent = [
     subHeading:
       "Node.js serves as a versatile runtime environment, executing server-side JavaScript for the development of scalable and efficient network applications. Its foundation on the V8 JavaScript engine enables support for asynchronous, event-driven programming, particularly adept at managing concurrent requests. Embraced for server-side application development, Node.js boasts a robust ecosystem of packages, recognized for its lightweight architecture and rapid execution.",
   },
- 
+];
+
+export const DEVELOPMENT_PROCESS_IMAGES = [
+  {
+    id: 1,
+    image: Planning,
+    name: "Planning",
+    detail:
+      "Strateging actions to achieve goals efficiently and effectively with foresight",
+  },
+  {
+    id: 2,
+    image: Design,
+    name: "Design",
+    detail:
+      "Creating purposeful visual and functional solutions with thoughtful intention and aesthetics",
+  },
+  {
+    id: 3,
+    image: Development,
+    name: "Development",
+    detail:
+      "Evolving,coding and refining to enhance MEAN stack applications seamlessly",
+  },
+  {
+    id: 4,
+    image: QA,
+    name: "Q/A launch",
+    detail: "Exploring the ins and outs of MEAN stack applications effectively",
+  },
+  {
+    id: 5,
+    image: Maintenance,
+    name: "Maintenance",
+    detail:
+      "Sustaining and optimizing MEAN stack applications for enduring performance and reliability",
+  },
 ];
