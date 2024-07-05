@@ -104,7 +104,13 @@ export const ServiceCardContentWrapper = styled(CardContent)(() => ({
 export const CardHeading = styled(Typography)(() => ({
 fontSize:"19px !important",
 fontWeight:"700 !important",
-padding:"0px 33px !important"
+padding:"0px 33px !important",
+color:"white",
+
+cursor:"pointer",
+"&:hover":{
+  color:"black"
+}
 
   }));
 export const CardSubHeading = styled(Typography)(() => ({

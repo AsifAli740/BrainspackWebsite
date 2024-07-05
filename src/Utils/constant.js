@@ -77,21 +77,25 @@ export const headerLinks = [
 export const serviceCardContent = [
   {
     icons: "icons",
+    serviceLinks:"/services/web-development",
     heading: "Web Development",
     subHeading: "Creating websites using coding and design techniques.",
   },
   {
     icons: "icons",
+    serviceLinks:"/services/ui-ux-design",
     heading: "UI/UX Designing",
     subHeading: "Expert Web Designing for Impactful Digital Experiences.",
   },
   {
     icons: "icons",
+    serviceLinks:"/services/mobile-app-development",
     heading: "Mobile Application",
     subHeading: "Unleashing Innovation in the Palm of Your Hand.",
   },
   {
     icons: "icons",
+    serviceLinks:"/services/digital-marketing",
     heading: "Digital Marketing",
     subHeading: "Strategic Promotion for Online Triumph.",
   },

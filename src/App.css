@@ -60,6 +60,10 @@
   font-weight: 700;
   border-bottom: 3px solid #2be4ac;
   padding-bottom: 3px;
+  transition: all 500ms ease;
+}
+.exploreLink:hover{
+  color: #2be4ac;
 }
 .AboutHomeLink{
   text-decoration: none;
@@ -82,4 +86,17 @@
 .webDevelop:hover .webDev-options{
   display: block;
 }
+
+.imageServiceBox:hover .scaleImage{
+  transform: scale(1.02) !important;
+}
+.imageServiceBox{
+  transition: all 500ms ease;
+
+}
+.imageServiceBox:hover .serviceHeadingText{
+  display: none;
+}
+
+
 

@@ -17,6 +17,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 // import "./App.css";
 import "../../ExternalCss/GetKnowUs.css";
 import { CustomBtn } from "../../ReUseComponents/NavbarStyled";
+import { Link } from "react-router-dom";
 const GetKnowUs = () => {
   return (
     <>
@@ -92,7 +93,9 @@ const GetKnowUs = () => {
               </Box>
             </Box>
             <Box>
+              <Link to={"/about"}>
               <CustomBtn variant="contained">Discover more</CustomBtn>
+              </Link>
             </Box>
           </GetKnowUsContentBox>
         </GetKnowUsWrapper>
