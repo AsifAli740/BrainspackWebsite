@@ -17,8 +17,10 @@ import {
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { serviceCardContent } from "../Utils/constant";
+import { useNavigate } from "react-router-dom";
 
 function ServicesOfBrainspack(props) {
+  const navigate = useNavigate()
   return (
     <BrainspackServiceContainer>
       <BrainspackService>
@@ -48,7 +50,7 @@ function ServicesOfBrainspack(props) {
                                 <Typography>
                                     {ele.icons}
                                 </Typography>
-                                <CardHeading>
+                                <CardHeading onClick={()=>navigate(ele.serviceLinks)}>
                                     {ele.heading}
                                 </CardHeading>
                                 <CardSubHeading>
