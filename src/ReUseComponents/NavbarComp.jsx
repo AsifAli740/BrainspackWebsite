@@ -75,7 +75,7 @@ function NavbarComp() {
             <LogoWrapper>
               <BrainspackLogoWrapper></BrainspackLogoWrapper>
             </LogoWrapper>
-            <ListsBox>
+            <ListsBox className="navListParent">
               <MainMenuList className="border-btm">
                 <Navlinks className="setBorderBtm" to={"/"}>
                   {"Home"}

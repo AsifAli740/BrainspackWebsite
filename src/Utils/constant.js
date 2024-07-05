@@ -74,6 +74,34 @@ export const headerLinks = [
   },
 ];
 
+export const DEVELOPMENT_PROCESS = [
+  {
+    id: 0,
+    name: "Planning",
+    icon: <SupportAgentIcon sx={{ color: "white" }} />,
+  },
+  {
+    id: 1,
+    name: "Design",
+    icon: <DesignServicesIcon />,
+  },
+  {
+    id: 2,
+    name: "Development",
+    icon: <DeveloperModeIcon />,
+  },
+  {
+    id: 3,
+    name: "Q/A launch",
+    icon: <QuestionAnswerIcon />,
+  },
+  {
+    id: 4,
+    name: "Maintenance",
+    icon: <AutoFixOffIcon />,
+  },
+];
+
 export const serviceCardContent = [
   {
     icons: "icons",

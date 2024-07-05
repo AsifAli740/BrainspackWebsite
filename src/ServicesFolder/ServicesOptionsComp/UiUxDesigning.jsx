@@ -9,6 +9,7 @@ import WhyChooseOurServices from "../../ReUseComponents/WhyChooseOurServices";
 import { WHY_CHOOSE, WHY_CHOOSE_UI_DESIGNING } from "../../Utils/constant";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
 import { serviceUiUxContent } from "../../Utils/constant";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 const UiUxDesigning = () => {
   return (
@@ -19,6 +20,14 @@ const UiUxDesigning = () => {
         headerHeading={"Our Services"}
         nestedActiveText={"UI UX Designing"}
       />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[1].name}
+        serviceText={SERVICES_PROVIDED[1].text}
+        servicesImage={SERVICES_PROVIDED[1].image}
+      />
+      <ServiceWebDetailsComp content={serviceUiUxContent} />
+      <DevelopmentProcess />
+
       <WhyChooseUs
         data={WHY_CHOOSE}
         title={
@@ -26,12 +35,7 @@ const UiUxDesigning = () => {
         }
       />
       <WhyChooseOurServices data={WHY_CHOOSE_UI_DESIGNING} />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[1].name}
-        serviceText={SERVICES_PROVIDED[1].text}
-        servicesImage={SERVICES_PROVIDED[1].image}
-      />
-      <ServiceWebDetailsComp content={serviceUiUxContent} />
+
       {/* <WhyChooseUs /> */}
 
       <FooterComp />

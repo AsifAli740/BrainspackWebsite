@@ -33,13 +33,21 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                 <Box>
                   <ServicesText>Services</ServicesText>
                 </Box>
-                {OUR_SERVICES.map((service) => (
-                  <Box>
-                    <Link className="services" to={service.link}>
-                      {service.name}
-                    </Link>
-                  </Box>
-                ))}
+                <Box
+                  className="servicesParent"
+                  display={"flex"}
+                  flexDirection={"column"}
+                  justifyContent={"space-between"}
+                  height={"75%"}
+                >
+                  {OUR_SERVICES.map((service) => (
+                    <Box width={"100%"}>
+                      <NavLink className="services" to={service.link}>
+                        {service.name}
+                      </NavLink>
+                    </Box>
+                  ))}
+                </Box>
               </ServicesProvidedMiniBox>
             </ServicesProvidedBox>
             <ServicesProvidedImageContainer>

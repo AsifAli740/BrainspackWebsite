@@ -5,10 +5,11 @@ export const DevelopmentProcessContainer = styled(Box)(() => ({
   height: "700px",
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
 }));
 export const DevelopmentProcessWrapper = styled(Box)(() => ({
   width: "90%",
-  height: "700px",
+  height: "90%%",
   display: "flex",
   flexDirection: "column",
 }));
@@ -21,9 +22,11 @@ export const DevelopmentTextBox = styled(Typography)(() => ({
 
 export const DevelopmentIconsBox = styled(Box)(() => ({
   width: "30%",
-  height: "90%",
+  height: "80%",
   display: "flex",
-  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "space-between",
 }));
 
 export const DevelopmentText = styled(Typography)(() => ({

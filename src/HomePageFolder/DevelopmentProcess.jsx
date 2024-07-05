@@ -17,7 +17,7 @@ import {
   DEVELOPMENT_PROCESS,
   DEVELOPMENT_PROCESS_IMAGES,
 } from "../Utils/constant";
-import CustomizedSteppers from "../ReUseComponents/Stepper";
+import CustomStepper from "../ReUseComponents/Stepper2";
 const DevelopmentProcess = () => {
   var settings = {
     dots: false,
@@ -42,7 +42,22 @@ const DevelopmentProcess = () => {
             width={"100%"}
           >
             <DevelopmentIconsBox>
-              <CustomizedSteppers />
+              {/* {DEVELOPMENT_PROCESS.map((icons) => (
+                <Box display={"flex"}>
+                  <Fab>{icons.icon}</Fab>
+                  <Box
+                    position={"absolute"}
+                    height={"100px"}
+                    width={"100px"}
+                    borderRight={"1px solid red"}
+                  ></Box>
+                  <Box display={"flex"} alignItems={"center"}>
+                    <Typography variant="h6">{icons.name}</Typography>
+                  </Box>
+                </Box>
+              ))} */}
+
+              <CustomStepper />
             </DevelopmentIconsBox>
             <DevelopmentImagesBox position={"relative"}>
               <Slider {...settings}>

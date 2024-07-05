@@ -8,6 +8,8 @@ import ServicePageHeaderLink from "../ServicePageHeaderLink";
 import FrontendBackendContainer from "../FrontendBackendContainer";
 import { WHY_CHOOSE_WEB } from "../../Utils/constant";
 import { Outlet } from "react-router-dom";
+import FrontAndBackendDetailsComp from "../../ReUseComponents/FrontAndBackendDetails";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function WebDevelopment(props) {
   return (
@@ -24,7 +26,9 @@ function WebDevelopment(props) {
         serviceText={SERVICES_PROVIDED[0].text}
         servicesImage={SERVICES_PROVIDED[0].image}
       />
+      <FrontAndBackendDetailsComp />
       <FrontendBackendContainer />
+      <DevelopmentProcess />
       <WhyChooseUs
         data={WHY_CHOOSE_WEB}
         title={"Excellence Through Tailored Web Development Services."}

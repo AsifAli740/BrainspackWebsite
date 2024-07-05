@@ -1,4 +1,10 @@
-import { styled, Box, Typography, Accordion } from "@mui/material";
+import {
+  styled,
+  Box,
+  Typography,
+  Accordion,
+  AccordionDetails,
+} from "@mui/material";
 import WhyChooseUsImage from "../Assets/images/services/service-details-benefits-img.jpg";
 export const WhyChooseUsWrapper = styled(Box)(() => ({
   width: "100%",
@@ -56,8 +62,7 @@ export const UiAndUxWrapper = styled(Box)(() => ({
 }));
 export const UiAndUxBox = styled(Box)(() => ({
   width: "90%",
-  // minHeight: "450px",
-  marginBottom: "30px",
+  paddingBottom: "100px",
 }));
 export const UiAndUxHeading = styled(Typography)(() => ({
   fontSize: "19px !important",
@@ -70,17 +75,17 @@ export const UiAndUxSubHeading = styled(Typography)(() => ({
   color: "#777181 ! important",
 }));
 export const UiAndUxParagraph = styled(Typography)(() => ({
-  fontSize: "16px !important",
+  fontSize: "17px !important",
   fontWeight: "400 !important",
   color: "#777181 ! important",
+  // lineHeight: "30px !important",
 }));
 
 export const CustomAccordian = styled(Accordion)(() => ({
   padding: "20px !important",
 }));
-export const CustomAccordianDetails = styled(Accordion)(() => ({
+export const CustomAccordianDetails = styled(AccordionDetails)(() => ({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
-  height: "200px",
+  gap: "15px",
 }));

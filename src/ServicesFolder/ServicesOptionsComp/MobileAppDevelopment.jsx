@@ -9,6 +9,7 @@ import { WHY_CHOOSE_MOBILE, WHY_CHOOSE_MOBILE_APP } from "../../Utils/constant";
 import WhyChooseOurServices from "../../ReUseComponents/WhyChooseOurServices";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
 import { serviceMobileContent } from "../../Utils/constant";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function MobileAppDevelopment(props) {
   return (
@@ -19,6 +20,13 @@ function MobileAppDevelopment(props) {
         headerHeading={"Our Services"}
         nestedActiveText={"Mobile App Development"}
       />
+      <ServicesComp
+        serviceName={SERVICES_PROVIDED[2].name}
+        serviceText={SERVICES_PROVIDED[2].text}
+        servicesImage={SERVICES_PROVIDED[2].image}
+      />
+      <ServiceWebDetailsComp content={serviceMobileContent} />
+      <DevelopmentProcess />
       <WhyChooseUs
         data={WHY_CHOOSE_MOBILE}
         title={
@@ -26,14 +34,6 @@ function MobileAppDevelopment(props) {
         }
       />
       <WhyChooseOurServices data={WHY_CHOOSE_MOBILE_APP} />
-      <ServicesComp
-        serviceName={SERVICES_PROVIDED[2].name}
-        serviceText={SERVICES_PROVIDED[2].text}
-        servicesImage={SERVICES_PROVIDED[2].image}
-      />
-      <ServiceWebDetailsComp content={serviceMobileContent} />
-
-      {/* <WhyChooseUs /> */}
       <FooterComp />
     </>
   );

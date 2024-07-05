@@ -101,8 +101,10 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   },
   [`&.${stepConnectorClasses.completed}`]: {
     [`& .${stepConnectorClasses.line}`]: {
-      // backgroundImage:
-      //   "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
+      backgroundImage:
+        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
+      backgroundImage:
+        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
     },
   },
   [`& .${stepConnectorClasses.line}`]: {
@@ -182,7 +184,7 @@ export default function CustomizedSteppers() {
     <>
       <Stack>
         <Stepper
-          alternativeLabel
+          // alternativeLabel
           activeStep={5}
           orientation="vertical"
           connector={<ColorlibConnector />}

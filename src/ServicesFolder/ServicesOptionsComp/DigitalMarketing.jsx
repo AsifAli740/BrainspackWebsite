@@ -12,6 +12,7 @@ import {
   serviceDigitalContent,
 } from "../../Utils/constant";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function DigitalMarketing(props) {
   const [digital, setDigital] = useState();
@@ -30,6 +31,7 @@ function DigitalMarketing(props) {
         servicesImage={SERVICES_PROVIDED[3].image}
       />
       <ServiceWebDetailsComp content={serviceDigitalContent} />
+      <DevelopmentProcess />
       <WhyChooseUs
         data={WHY_CHOOSE_DIGITAL}
         title={

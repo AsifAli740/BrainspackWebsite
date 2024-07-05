@@ -5,7 +5,7 @@ export const ServicesCompWrapper = styled(Box)(() => ({
   height: "auto",
   display: "flex",
   justifyContent: "center",
-  padding:"50px 0px"
+  padding: "50px 0px",
 }));
 export const ServicesCompBox = styled(Box)(() => ({
   width: "90%",
@@ -77,11 +77,17 @@ export const ServicesProvidedContactUs = styled(Box)(() => ({
 export const ServicesCompRightBox = styled(Box)(() => ({
   width: "65%",
   height: "auto",
+  display: "flex",
+  flexDirection: "column",
+  gap: "30px",
 }));
 
 export const ServicesCompContentBox = styled(Box)(() => ({
   width: "100%",
   height: "auto",
+  display: "flex",
+  flexDirection: "column",
+  gap: "15px",
 }));
 export const ServicesCompContentName = styled(Typography)(() => ({
   fontSize: "41px !important",
@@ -92,4 +98,33 @@ export const ServicesCompContentText = styled(Typography)(() => ({
   fontSize: "19px !important",
   fontWeight: "400 !important",
   color: "#777181 !important",
+  lineHeight: "32px !important",
+}));
+
+// ___________________________________________________________________________________
+//FrontAndBackend Details
+export const FrontAndBackendContainer = styled(Box)(() => ({
+  width: "100%",
+  height: "550px",
+  display: "flex",
+  justifyContent: "flex-end",
+}));
+export const FrontAndBackendBox = styled(Box)(() => ({
+  width: "63.5%",
+  height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-around",
+}));
+export const FrontAndBackendTextName = styled(Typography)(() => ({
+  fontSize: "21px !important",
+  fontWeight: "700 !important",
+  color: "#1b1525 !important",
+}));
+export const FrontAndBackendTextDetails = styled(Typography)(() => ({
+  width: "90%",
+  fontSize: "19px !important",
+  fontWeight: "400 !important",
+  color: "#777181 !important",
+  lineHeight: "30px !important",
 }));
