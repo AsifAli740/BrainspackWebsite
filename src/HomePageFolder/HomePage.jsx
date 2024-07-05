@@ -7,14 +7,11 @@ import MainSlider from "./MainSlider";
 import ServicesOfBrainspack from "../ReUseComponents/ServicesOfBrainspack";
 import CounterItems from "../ReUseComponents/CounterItems";
 import HelpingContainer from "./HelpingContainer";
-// import GetKnowUs from "../HomePageFolder/GetKnowUs/GetKnowUs";
 import LaunchingComp from "./Launching";
 import TechServicesComp from "./TechServices";
 import FooterComp from "./Footer";
-import CustomizedSteppers from "../ReUseComponents/Stepper";
-import MeanStack from "../ServicesFolder/WebDevelopmentSkills/MeanStack";
 
-const HomePage = (props) => {
+const HomePage = () => {
   return (
     <>
       <NavbarComp />
@@ -28,8 +25,6 @@ const HomePage = (props) => {
       <CounterItems />
       <HelpingContainer />
       <FooterComp />
-      <CustomizedSteppers />
-      <MeanStack />
     </>
   );
 };

@@ -5,7 +5,6 @@ import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
 import ServicesComp from "../../ReUseComponents/ServicesComp";
 import { SERVICES_PROVIDED } from "../../HomePageFolder/Constants";
 import NavbarComp from "../../ReUseComponents/NavbarComp";
-import NavbarComp from "../../ReUseComponents/NavbarComp";
 import ServicePageHeaderLink from "../ServicePageHeaderLink";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
 import { serviceMeanContent } from "../../Utils/constant";

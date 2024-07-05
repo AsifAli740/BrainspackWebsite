@@ -72,6 +72,7 @@ function AboutUsPage() {
       <LaunchingComp />
       <OurVisionMission />
       <CounterItems />
+      <TeamCarousal />
 
       <FooterComp />
     </>
