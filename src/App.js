@@ -11,10 +11,12 @@ import DigitalMarketing from "./ServicesFolder/ServicesOptionsComp/DigitalMarket
 import MeanStack from "./ServicesFolder/WebDevelopmentSkills/MeanStack";
 import MernStack from "./ServicesFolder/WebDevelopmentSkills/MernStack";
 import Php from "./ServicesFolder/WebDevelopmentSkills/Php";
+import ScrollToTop from "./ReUseComponents/ScrollToTop";
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />

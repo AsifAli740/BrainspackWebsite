@@ -24,22 +24,24 @@ export const ServicesWrapper = styled(Box)(() => ({
   alignItems: "center",
 }));
 export const ServicesBox = styled(Box)(() => ({
-  width: "90%",
-  height: "60%",
+  width: "86%",
+  height: "360px",
   display: "flex",
   justifyContent: "space-between",
 }));
 
-export const ServicesCard = styled(Card)(() => ({
+export const ServicesCard = styled(Box)(() => ({
   width: "31.5%",
-  height: "100%",
+  height: "360px",
+
 }));
-export const ServicesCardMedia = styled(CardMedia)(() => ({
+export const ServicesCardMedia = styled(Box)(() => ({
   width: "100%",
-  height: "100%",
+  height: "360px",
 }));
 export const ServicesHeading = styled(Typography)(() => ({
-  color: "black",
+  color: "white",
+  fontWeight:"700"
 }));
 
 export const SliderWrapper = styled(Box)(() => ({
@@ -96,7 +98,11 @@ export const GetSolution = styled(Typography)(() => ({
   fontSize: "19px !important",
   fontWeight: "400 !important",
 }));
-export const ExploreBrainspackLink = styled(Typography)(() => ({}));
+export const ExploreBrainspackLink = styled(Typography)(() => ({
+  "&:hover":{
+    color:"green !important"
+  }
+}));
 export const LaunchingContainer = styled(Box)(() => ({
   height: "500px",
   width: "100%",

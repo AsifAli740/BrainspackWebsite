@@ -15,7 +15,8 @@ function MainSlider(props) {
             </BrainspackSliderPPPHeading>
             ack
           </BrainspackSliderHeading>
-          <CustomBtn>Discover more</CustomBtn>
+         
+            <Link to={"/about"}> <CustomBtn>Discover more</CustomBtn></Link>
         </MainSliderBox>
       </SliderWrapper>
       <GetSolutionContainer>
