@@ -107,6 +107,19 @@
 .imageServiceBox:hover .serviceHeadingText{
   display: none;
 }
+.imageServiceBox:hover .blackWrapper{
+  height: 360px;
+}
+.imageServiceBox:hover .secondBlackWrapper{
+  opacity: 0.1;
+}
+.imageServiceBox:hover .jskl{
+  display: block;
+}
+
+.service-card:hover .card-link{
+  color:black !important
+}
 
 
 
