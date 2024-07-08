@@ -22,6 +22,7 @@ import {
 } from "./aboutUsStyled";
 import FooterComp from "../HomePageFolder/Footer";
 import TeamCarousal from "./TeamCarousal";
+import AboutBusinessComp from "./AboutBusinessComp";
 
 function AboutUsPage() {
   return (
@@ -66,6 +67,7 @@ function AboutUsPage() {
           </ServiceProvideImageBox>
         </ServiceProvideBox>
       </ServiceProvideWrapper>
+      <AboutBusinessComp />
       <OurVisionMission />
       <CounterItems />
       <TeamCarousal />

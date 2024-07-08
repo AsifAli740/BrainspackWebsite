@@ -45,12 +45,12 @@ function ServicesOfBrainspack(props) {
         <ServiceCardWrapper>
             {
                 serviceCardContent.map((ele)=>(
-                    <ServiceCard>
+                    <ServiceCard className="service-card">
                             <ServiceCardContentWrapper>
                                 <Typography>
                                     {ele.icons}
                                 </Typography>
-                                <CardHeading onClick={()=>navigate(ele.serviceLinks)}>
+                                <CardHeading className="card-link" onClick={()=>navigate(ele.serviceLinks)}>
                                     {ele.heading}
                                 </CardHeading>
                                 <CardSubHeading>
