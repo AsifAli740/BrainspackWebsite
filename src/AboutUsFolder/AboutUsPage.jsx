@@ -10,7 +10,6 @@ import {
   GetKnowUsTitle2,
 } from "../HomePageFolder/GetKnowUs/GetKnowUsStyled";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import LaunchingComp from "../HomePageFolder/Launching";
 import {
   ServiceProvideBox,
   ServiceProvideContent,
@@ -25,6 +24,7 @@ import FooterComp from "../HomePageFolder/Footer";
 import MyCarousel from "../CarasoulStepper";
 import Php from "../ServicesFolder/WebDevelopmentSkills/Php";
 import TeamCarousal from "./TeamCarousal";
+import AboutBusinessComp from "./AboutBusinessComp";
 
 function AboutUsPage() {
   return (
@@ -69,7 +69,7 @@ function AboutUsPage() {
           </ServiceProvideImageBox>
         </ServiceProvideBox>
       </ServiceProvideWrapper>
-      <LaunchingComp />
+      <AboutBusinessComp />
       <OurVisionMission />
       <CounterItems />
       <TeamCarousal />

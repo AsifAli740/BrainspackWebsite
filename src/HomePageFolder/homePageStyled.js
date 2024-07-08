@@ -587,4 +587,22 @@ export const SocialMediaFab = styled(Fab)(() => ({
   color: "#aea8b9 !important",
   height: "50px !important",
   width: "50px !important",
-}));
+  }));
+  
+  
+  // ==================== AboutUsBusinessComp STYLING ==============================
+  
+  export const BrainspackHeading = styled(Typography)(() => ({
+    fontWeight:500,
+    fontSize:"35px",
+    color:"white",
+    marginBottom:"20px"
+    }));
+  
+  export const BusinessSubHeading = styled(Typography)(() => ({
+    fontWeight:400,
+    fontSize:"20px",
+    color:"white",
+    textAlign:"center",
+    lineHeight:"32px"
+    }));
