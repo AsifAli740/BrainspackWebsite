@@ -66,6 +66,7 @@ const GetInTouch = () => {
                 <ContactUsIconsBox>
                   <Box>
                     <EmailIcon
+                      className="iconButton"
                       sx={{ height: "25px", width: "25px", color: "#55ad88" }}
                     />
                   </Box>

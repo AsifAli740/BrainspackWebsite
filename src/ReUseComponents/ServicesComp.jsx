@@ -15,8 +15,11 @@ import {
   ServicesProvidedImageWrapper,
   ServicesProvidedMiniBox,
   ServicesText,
+  EasySolutionsText,
+  HaveAnyQuesText,
+  ContactNumberText,
 } from "./ServicesCompStyled";
-// import SERVICES_PROVIDED from "../HomePageFolder/Constants";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { OUR_SERVICES, SERVICES_PROVIDED } from "../HomePageFolder/Constants";
 import { IconBox, IconBoxImage } from "../HomePageFolder/homePageStyled";
 import { Link, NavLink } from "react-router-dom";
@@ -30,21 +33,49 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
           <ServicesCompLeftBox>
             <ServicesProvidedBox>
               <ServicesProvidedMiniBox>
-                <Box>
+                <Box height={"5%"} padding={"30px 0px 0px 10px"}>
                   <ServicesText>Services</ServicesText>
                 </Box>
                 <Box
                   className="servicesParent"
                   display={"flex"}
                   flexDirection={"column"}
-                  justifyContent={"space-between"}
-                  height={"75%"}
+                  gap={"10px"}
                 >
                   {OUR_SERVICES.map((service) => (
-                    <Box width={"100%"}>
-                      <NavLink className="services" to={service.link}>
-                        {service.name}
-                      </NavLink>
+                    <Box>
+                      <Box className="parentLink">
+                        <NavLink
+                          className={`services ${service?.class}`}
+                          to={service.link}
+                        >
+                          {service.name}
+
+                          <ArrowRightAltIcon
+                            className="arrow-right"
+                            sx={{ color: "#55ad88" }}
+                          />
+                        </NavLink>
+                        <Box className="innerChild">
+                          {service.child
+                            ? service.child.map((child) => {
+                                return (
+                                  <NavLink
+                                    className={`services ${child.class}`}
+                                    to={child.link}
+                                  >
+                                    {child.name}
+
+                                    <ArrowRightAltIcon
+                                      className="arrow-right"
+                                      sx={{ color: "#55ad88" }}
+                                    />
+                                  </NavLink>
+                                );
+                              })
+                            : ""}
+                        </Box>
+                      </Box>
                     </Box>
                   ))}
                 </Box>
@@ -57,13 +88,17 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                     <IconBoxImage></IconBoxImage>
                   </IconBox>
                   <Box>
-                    <Typography variant="h5">
+                    <EasySolutionsText>
                       Easy solutions to your tech problem
-                    </Typography>
+                    </EasySolutionsText>
                   </Box>
                   <Box>
-                    <Typography variant="h6">Have any question?</Typography>
-                    <Typography variant="h6">Free +91-9168117671</Typography>
+                    <HaveAnyQuesText variant="h6">
+                      Have any question?
+                    </HaveAnyQuesText>
+                    <ContactNumberText variant="h6">
+                      Free +91-9168117671
+                    </ContactNumberText>
                   </Box>
                 </ServicesProvidedImageWrapper>
               </ServicesProvidedImageBox>

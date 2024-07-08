@@ -105,25 +105,25 @@ export const DEVELOPMENT_PROCESS = [
 export const serviceCardContent = [
   {
     icons: "icons",
-    serviceLinks:"/services/web-development",
+    serviceLinks: "/services/web-development",
     heading: "Web Development",
     subHeading: "Creating websites using coding and design techniques.",
   },
   {
     icons: "icons",
-    serviceLinks:"/services/ui-ux-design",
+    serviceLinks: "/services/ui-ux-design",
     heading: "UI/UX Designing",
     subHeading: "Expert Web Designing for Impactful Digital Experiences.",
   },
   {
     icons: "icons",
-    serviceLinks:"/services/mobile-app-development",
+    serviceLinks: "/services/mobile-app-development",
     heading: "Mobile Application",
     subHeading: "Unleashing Innovation in the Palm of Your Hand.",
   },
   {
     icons: "icons",
-    serviceLinks:"/services/digital-marketing",
+    serviceLinks: "/services/digital-marketing",
     heading: "Digital Marketing",
     subHeading: "Strategic Promotion for Online Triumph.",
   },
@@ -664,11 +664,11 @@ export const WHY_CHOOSE_MOBILE_APP = [
         paragraph:
           "Tailored interfaces enhance user satisfaction and streamline interactions.",
       },
-      {
-        subHeading: "Data Analytics :",
-        paragraph:
-          " Gain valuable insights into user behavior and preferences for informed decision-making Responsive design ensures your website functions seamlessly on various devices, catering to the growing number of mobile users.",
-      },
+      // {
+      //   subHeading: "Data Analytics",
+      //   paragraph:
+      //     " Gain valuable insights into user behavior and preferences for informed decision-making Responsive design ensures your website functions seamlessly on various devices, catering to the growing number of mobile users.",
+      // },
     ],
   },
   {

@@ -22,18 +22,18 @@ export const ServicesCompLeftBox = styled(Box)(() => ({
 }));
 export const ServicesProvidedBox = styled(Box)(() => ({
   width: "100%",
-  height: "300px",
+  height: "auto",
   backgroundColor: "#F7F7F9",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
 }));
 export const ServicesProvidedMiniBox = styled(Box)(() => ({
-  width: "80%",
-  height: "80%",
+  width: "87%",
+  height: "auto",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
+  gap: "20px",
 }));
 export const ServicesText = styled(Typography)(() => ({
   fontSize: "22px !important",
@@ -43,27 +43,46 @@ export const ServicesText = styled(Typography)(() => ({
 export const ServicesProvidedImageContainer = styled(Box)(() => ({
   width: "100%",
   height: "400px",
-  backgroundColor: "#1b1525",
+  backgroundColor: "rgba(27,21,37)",
+  backgroundImage: `url(${serviceNeedhelp})`,
+  backgroundSize: "100% 100%",
+  backgroundPosition: "center",
+  mixBlendMode: "luminosity",
 }));
 
 export const ServicesProvidedImageBox = styled(Box)(() => ({
   width: "100%",
   height: "400px",
-  backgroundImage: `url(${serviceNeedhelp})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "100% 100%",
-  backgroundColor: "#1b1525",
-  backgroundPosition: "center",
-  mixBlendMode: "luminosity",
+  backgroundColor: "rgba(27,21,37)",
   opacity: "0.5",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  //   gap: "20px",
 }));
 export const ServicesProvidedImageWrapper = styled(Box)(() => ({
-  width: "70%",
+  width: "40%",
   height: "80%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "space-between",
+}));
+export const EasySolutionsText = styled(Typography)(() => ({
+  fontSize: "26px !important",
+  fontWeight: "700 !important",
+  color: "#ffffff !important",
+  textAlign: "center",
+}));
+export const HaveAnyQuesText = styled(Typography)(() => ({
+  fontSize: "14px !important",
+  fontWeight: "400 !important",
+  color: "#ffffff !important",
+  textAlign: "center",
+}));
+export const ContactNumberText = styled(Typography)(() => ({
+  fontSize: "16px !important",
+  fontWeight: "700 !important",
+  color: "#ffffff !important",
 }));
 export const ServicesProvidedContactUs = styled(Box)(() => ({
   width: "100%",
