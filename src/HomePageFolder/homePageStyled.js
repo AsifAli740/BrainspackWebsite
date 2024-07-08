@@ -38,6 +38,7 @@ export const ServicesCard = styled(Box)(() => ({
 export const ServicesCardMedia = styled(Box)(() => ({
   width: "100%",
   height: "360px",
+  transition:"all 200ms ease"
 }));
 export const ServicesHeading = styled(Typography)(() => ({
   color: "white",
