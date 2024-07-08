@@ -218,6 +218,6 @@ export const CustomBtn = styled(Button)(() => ({
   textTransform: "none !important",
   "&:hover": {
     backgroundColor: "black !important",
-    transition: "all 0.5s linear",
+    transition: "all 0.5s linear !important",
   },
 }));

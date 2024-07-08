@@ -33,7 +33,6 @@ export const ServicesBox = styled(Box)(() => ({
 export const ServicesCard = styled(Box)(() => ({
   width: "31.5%",
   height: "360px",
-
 }));
 export const ServicesCardMedia = styled(Box)(() => ({
   width: "100%",
@@ -42,7 +41,7 @@ export const ServicesCardMedia = styled(Box)(() => ({
 }));
 export const ServicesHeading = styled(Typography)(() => ({
   color: "white",
-  fontWeight:"700"
+  fontWeight: "700",
 }));
 
 export const SliderWrapper = styled(Box)(() => ({
@@ -100,14 +99,16 @@ export const GetSolution = styled(Typography)(() => ({
   fontWeight: "400 !important",
 }));
 export const ExploreBrainspackLink = styled(Typography)(() => ({
-  "&:hover":{
-    color:"green !important"
-  }
+  "&:hover": {
+    color: "green !important",
+  },
 }));
+// _________________________________________________________________________________
+//LAUNCHING COMPONENT
+
 export const LaunchingContainer = styled(Box)(() => ({
   height: "500px",
   width: "100%",
-  backgroundColor: "#1b1525",
 }));
 export const LaunchingWrapper = styled(Box)(() => ({
   height: "500px",
@@ -115,35 +116,32 @@ export const LaunchingWrapper = styled(Box)(() => ({
   backgroundImage: `url(${businessImg})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundColor:"rgba(27,21,37,1)",
+  backgroundColor: "rgba(27,21,37,1)",
   backgroundPosition: "center",
-  // opacity: 0.5,
-  // mixBlendMode: "luminosity",
-  backgroundBlendMode:"luminosity"
+  backgroundBlendMode: "luminosity",
 }));
 export const BusinessTextBox = styled(Box)(() => ({
-  display:"flex",
-  flexDirection:"column",
-  alignItems:"center"
-  
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 }));
 export const BusinessTextBoxWrapper = styled(Box)(() => ({
-  height:"inherit",
-  backgroundColor:"rgba(64,58,74,0.5)",
-  display:"flex",
-  justifyContent:"center",
-  alignItems:"center"
+  height: "inherit",
+  backgroundColor: "rgba(64,58,74,0.5)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
 }));
 
 export const BusinessText = styled(Typography)(() => ({
   color: "#2be4ac !important",
-  fontSize:"36px"
+  fontSize: "36px",
 }));
 export const LaunchingHeading = styled(Typography)(() => ({
   color: "white !important",
-  fontSize:"105px",
-  fontWeight:"700",
-  letterSpacing:"8px"
+  fontSize: "105px",
+  fontWeight: "700",
+  letterSpacing: "8px",
 }));
 
 //   ================================= TECH SERVICES ================================================
@@ -513,18 +511,17 @@ export const FooterAddress = styled(Typography)(() => ({
   color: "#aea8b9 ",
   fontSize: "16px !important",
   fontWeight: "500 !important",
-  cursor:"pointer",
-  transition:"all 500ms ease",
-  "&:hover":{
-    color:"white"
-  }
+  cursor: "pointer",
+  transition: "all 500ms ease",
+  "&:hover": {
+    color: "white",
+  },
 }));
 export const FooterCompanyFullAddress = styled(Typography)(() => ({
   color: "#aea8b9 ",
   fontSize: "16px !important",
   fontWeight: "500 !important",
-  cursor:"pointer",
-  
+  cursor: "pointer",
 }));
 
 export const FooterLogo = styled(Box)(() => ({

@@ -93,6 +93,24 @@ export const OUR_SERVICES = [
     id: 1,
     name: "Web Development",
     link: "/services/web-development",
+    class: "web",
+    child: [
+      {
+        name: "MEAN Stack",
+        class: "disabled",
+        link: "/services/web-development/mean",
+      },
+      {
+        name: "MERN Stack",
+        class: "disabled",
+        link: "/services/web-development/mern",
+      },
+      {
+        name: "PHP",
+        class: "disabled",
+        link: "/services/web-development/php",
+      },
+    ],
   },
   {
     id: 2,

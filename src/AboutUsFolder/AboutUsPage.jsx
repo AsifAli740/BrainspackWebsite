@@ -3,7 +3,7 @@ import NavbarComp from "../ReUseComponents/NavbarComp";
 import AboutPageHeaderBg from "../ReUseComponents/AboutPageHeaderBg";
 import OurVisionMission from "./OurVisionMission";
 import CounterItems from "../ReUseComponents/CounterItems";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import {
   GetKnowUsTitle,
@@ -21,8 +21,6 @@ import {
   ShapingFutureText,
 } from "./aboutUsStyled";
 import FooterComp from "../HomePageFolder/Footer";
-import MyCarousel from "../CarasoulStepper";
-import Php from "../ServicesFolder/WebDevelopmentSkills/Php";
 import TeamCarousal from "./TeamCarousal";
 import AboutBusinessComp from "./AboutBusinessComp";
 
