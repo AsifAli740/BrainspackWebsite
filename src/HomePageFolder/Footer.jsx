@@ -67,7 +67,8 @@ const FooterComp = () => {
                   </LinksTextBox>
                   <LinksTextBoxDetails>
                     <FooterAddress>About us</FooterAddress>
-                    <FooterAddress>Meet our team</FooterAddress>
+                    <FooterAddress>
+                      Meet our team</FooterAddress>
                     <FooterAddress>Contacts</FooterAddress>
                   </LinksTextBoxDetails>
                 </FooterLinksBox>

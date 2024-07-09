@@ -141,7 +141,7 @@
 .imageServiceBox:hover .serviceHeadingText{
   display: none;
 }
-.imageServiceBox:hover .blackWrapper{
+/* .imageServiceBox:hover .blackWrapper{
   height: 360px;
 }
 .imageServiceBox:hover .secondBlackWrapper{
@@ -149,12 +149,44 @@
 }
 .imageServiceBox:hover .jskl{
   display: block;
-}
+} */
 
 .service-card:hover .card-link{
   color:black !important
 }
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.9;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+.container:hover .overlay-top {
+  bottom: 0;
+  height: 100%;}
+
+.overlay-top{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(33,37,41,0.5); */
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  
+}
 
 
 .getToKnowUsAnimation{
@@ -189,4 +221,26 @@
 @keyframes slideInRight {
   0%   {transform: translate3d(100%, 0, 0);visibility: visible;}
   100% {transform: translate3d(0, 0, 0);visibility: visible;}
+}
+.text {
+  color: white;
+  width: 74%;
+  /* font-size: 20px; */
+  position: absolute; 
+  height: 270px;
+   top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 200px !important; */
+  
+}
+
+
+.Learn-more:hover{
+  color: #2be4ac !important;
 }
