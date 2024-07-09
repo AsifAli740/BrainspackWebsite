@@ -189,6 +189,39 @@
 }
 
 
+.getToKnowUsAnimation{
+  animation-name: slideInLeft;  
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+  visibility: visible;
+}
+@keyframes slideInLeft {
+  0%   {transform: translate3d(-100%, 0, 0);visibility: visible;}
+  100% {transform: translate3d(0, 0, 0);visibility: visible;}
+}
+
+.trustedAnimation{
+  animation-name: fadeInUp;
+  animation-delay: 300ms;
+  visibility: visible;
+}
+@keyframes fadeInUp {
+  0%   {transform: translateY(20px);opacity: 0;}
+  100%   {transform: translateY(0px);opacity: 1;}
+}
+
+.aboutUsAnimation{
+  animation-name: slideInRight;  
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+  visibility: visible;
+  
+
+}
+@keyframes slideInRight {
+  0%   {transform: translate3d(100%, 0, 0);visibility: visible;}
+  100% {transform: translate3d(0, 0, 0);visibility: visible;}
+}
 .text {
   color: white;
   width: 74%;

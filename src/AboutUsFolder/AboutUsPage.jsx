@@ -61,7 +61,7 @@ function AboutUsPage() {
               </ServiceProvideContent>
             </Box>
           </ServiceProvideContentBox>
-          <ServiceProvideImageBox>
+          <ServiceProvideImageBox className="aboutUsAnimation">
             <ServiceProvideImageBox1></ServiceProvideImageBox1>
             <ServiceProvideImageBox2></ServiceProvideImageBox2>
           </ServiceProvideImageBox>

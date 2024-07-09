@@ -37,7 +37,7 @@ export const ServicesCard = styled(Box)(() => ({
 export const ServicesCardMedia = styled(Box)(() => ({
   width: "100%",
   height: "360px",
-  transition:"all 200ms ease"
+  transition: "all 200ms ease",
 }));
 export const ServicesHeading = styled(Typography)(() => ({
   color: "white",
@@ -47,16 +47,14 @@ export const ServicesHeading = styled(Typography)(() => ({
 export const SliderWrapper = styled(Box)(() => ({
   width: "100%",
   height: "731px",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundImage: `url(${mainSliderOneImg})`,
+  // display: "flex",
+  // justifyContent: "center",
+  // alignItems: "center",
 }));
 export const MainSliderBox = styled(Box)(() => ({
   width: "70%",
   height: "272px",
   padding: "10px",
-
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -591,22 +589,21 @@ export const SocialMediaFab = styled(Fab)(() => ({
   color: "#aea8b9 !important",
   height: "50px !important",
   width: "50px !important",
-  }));
-  
-  
-  // ==================== AboutUsBusinessComp STYLING ==============================
-  
-  export const BrainspackHeading = styled(Typography)(() => ({
-    fontWeight:500,
-    fontSize:"35px",
-    color:"white",
-    marginBottom:"20px"
-    }));
-  
-  export const BusinessSubHeading = styled(Typography)(() => ({
-    fontWeight:400,
-    fontSize:"20px",
-    color:"white",
-    textAlign:"center",
-    lineHeight:"32px"
-    }));
+}));
+
+// ==================== AboutUsBusinessComp STYLING ==============================
+
+export const BrainspackHeading = styled(Typography)(() => ({
+  fontWeight: 500,
+  fontSize: "35px",
+  color: "white",
+  marginBottom: "20px",
+}));
+
+export const BusinessSubHeading = styled(Typography)(() => ({
+  fontWeight: 400,
+  fontSize: "20px",
+  color: "white",
+  textAlign: "center",
+  lineHeight: "32px",
+}));

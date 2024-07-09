@@ -37,8 +37,8 @@ const FooterComp = () => {
   return (
     <>
       <FooterWrapper>
-        <LeftFooterImageBox></LeftFooterImageBox>
-        <RightFooterImageBox></RightFooterImageBox>
+        <LeftFooterImageBox className="getToKnowUsAnimation"></LeftFooterImageBox>
+        <RightFooterImageBox className="aboutUsAnimation"></RightFooterImageBox>
         <FooterTextWrapper>
           <ChallengesWrapper>
             <ChallengesBox>
