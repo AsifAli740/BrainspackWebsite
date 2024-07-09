@@ -5,21 +5,38 @@ import serviceImage1 from "../Assets/images/services/service-details-img-1.jpg";
 import serviceImage2 from "../Assets/images/services/service-details-img-2.jpg";
 import serviceImage3 from "../Assets/images/services/service-details-img-3.jpg";
 import serviceImage4 from "../Assets/images/services/service-details-img-4.jpg";
+
+// ============
+import LaptopIcon from "@mui/icons-material/Laptop";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import BrowseGalleryIcon from "@mui/icons-material/BrowseGallery";
 export const SERVICES_CONTENT = [
   {
     id: 0,
     name: "Web Development",
     image: imageFeature1,
+    subHeading: "Crafting websites, apps and digital solutions tailored for businesses",
+    icons: <LaptopIcon sx={{ fontSize: "50px", color: "#55ad88" }} />,
+    link:"/services/web-development"
+
   },
   {
     id: 1,
     name: "Mobile App Development",
     image: imageFeature2,
+    subHeading: "Unleashing Innovation in the Palm of Your Hand.",
+    icons: <AcUnitIcon sx={{ fontSize: "50px", color: "#55ad88" }} />,
+    link:"/services/mobile-app-development"
+
   },
   {
     id: 2,
     name: "Digital Marketing",
     image: imageFeature3,
+    subHeading: "Strategic Promotion for Online Triumph.",
+    icons: <BrowseGalleryIcon sx={{ fontSize: "50px", color: "#55ad88" }} />,
+    link:"/services/digital-marketing"
+
   },
 ];
 

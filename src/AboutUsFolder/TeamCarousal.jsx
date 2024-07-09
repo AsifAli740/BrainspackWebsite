@@ -34,7 +34,7 @@ const TeamCarousal = () => {
   };
   return (
     <>
-      <TeamCarasoulWrapper>
+      <TeamCarasoulWrapper id="#c1">
         <TeamCarasoulContainer>
           <MeetTeamContainer>
             <MeetTeamBox>
