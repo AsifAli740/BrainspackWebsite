@@ -22,7 +22,7 @@ const GetKnowUs = () => {
     <>
       <GetKnowUsContainer>
         <GetKnowUsWrapper>
-          <GetKnowUsImageBox>
+          <GetKnowUsImageBox className="getToKnowUsAnimation">
             <Box
               component={"img"}
               height={"600px"}

@@ -36,7 +36,7 @@ function HelpingContainer(props) {
   return (
     <HelpingContainerWrapper>
       <TrustedSourceWrapper>
-        <TrustedSourceBox>
+        <TrustedSourceBox className="trustedAnimation">
           <TrustedSourceTextBox>
             <TrustedSourceText>Trusted source in IT services</TrustedSourceText>
           </TrustedSourceTextBox>

@@ -27,7 +27,10 @@ const TechServicesComp = () => {
     <>
       <TechServicesContainer>
         <TechServicesWrapper>
-          <TechServicesImageBox position={"relative"}>
+          <TechServicesImageBox
+            position={"relative"}
+            className="getToKnowUsAnimation"
+          >
             <Box
               component={"img"}
               height={"95%"}
