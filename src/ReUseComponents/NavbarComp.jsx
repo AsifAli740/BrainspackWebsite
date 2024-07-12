@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   AboutContactLink,
   AboutContactLinkWrapper,
@@ -55,10 +55,14 @@ function NavbarComp() {
               </EmailBox>
             </AddressEmailWrapper>
             <AboutContactLinkWrapper>
+              <Link className="link-style" to={"/about"}>
               <AboutLink>About</AboutLink>
+              </Link>
               <Slash>/</Slash>
 
+              <Link className="link-style" to={"/contact"}>
               <ContactLink>Contact</ContactLink>
+              </Link>
             </AboutContactLinkWrapper>
           </NavbarTopLeft>
         </NavbarTopLeftWrapper>

@@ -8,6 +8,7 @@ import {
   LaunchingHeading,
 } from "./homePageStyled";
 import { CustomBtn } from "./homePageStyled";
+import { Link } from "react-router-dom";
 
 const LaunchingComp = () => {
   return (
@@ -26,7 +27,9 @@ const LaunchingComp = () => {
               <LaunchingHeading >LAUNCHING</LaunchingHeading>
             </Box>
             <Box>
+              <Link to={"/contact"}>
               <CustomBtn>Contact us now</CustomBtn>
+              </Link>
             </Box>
           </BusinessTextBox>
             </BusinessTextBoxWrapper>

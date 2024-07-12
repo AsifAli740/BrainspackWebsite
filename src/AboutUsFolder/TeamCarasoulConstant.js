@@ -10,7 +10,7 @@ import Shivansh from "../Assets/images/team/shivansh-1.jpg";
 import Asif from "../Assets/images/team/asif-ali.jpg";
 import Sagar from "../Assets/images/team/sagar.jpg";
 import Meet from "../Assets/images/team/harmeet.jpg";
-import Shubham from "../Assets/images/team/shubham-badmash.jpg";
+import Shubham from "../Assets/images/team/shubham.jpg";
 import Virat from "../Assets/images/team/virat-maidh.jpg";
 export const TEAM_DETAILS = [
   {

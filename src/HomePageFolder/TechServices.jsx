@@ -21,6 +21,7 @@ import {
   Offerings,
 } from "./GetKnowUs/GetKnowUsStyled";
 import { TECH_SERVICES } from "../Utils/constant";
+import { Link } from "react-router-dom";
 
 const TechServicesComp = () => {
   return (
@@ -43,9 +44,11 @@ const TechServicesComp = () => {
                   Tech solutions bringing your business ideas to digital life
                 </TechServicesText>
                 <Box>
+                  <Link to={"/about"}>
                   <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
                     Learn more
                   </LearnMoreBtn>
+                  </Link>
                 </Box>
               </TechServicesTextBox>
             </AbsoluteBox>
