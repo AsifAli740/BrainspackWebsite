@@ -19,6 +19,7 @@ import { CustomBtn } from "../../ReUseComponents/NavbarStyled";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css";
+import DiscoverMore from "../../ReUseComponents/DiscoverMore";
 const GetKnowUs = () => {
   return (
     <>
@@ -96,9 +97,8 @@ const GetKnowUs = () => {
               </Box>
             </Box>
             <Box>
-              <Link to={"/about"}>
-                <CustomBtn className="customButton">Discover more</CustomBtn>
-              </Link>
+            <DiscoverMore path={"/about"} text="Discover more" />
+
             </Box>
           </GetKnowUsContentBox>
         </GetKnowUsWrapper>
