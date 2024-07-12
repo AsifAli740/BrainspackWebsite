@@ -187,6 +187,7 @@
   transition: .5s ease;
   
 }
+
 .overlay-heading{
   color: white !important;
   transition: all 800ms ease;
@@ -254,4 +255,33 @@
 
 .Learn-more:hover{
   color: #2be4ac !important;
+}
+
+.animated{
+  opacity: 1 !important;
+  animation-duration: 2s !important;
+}
+.mainSliderMainImages{
+  transform: scale(1) !important;
+  /* transition: transform 7000ms ease, opacity 1500ms ease-in, -webkit-transform 7000ms ease !important; */
+}
+/* .mainSliderOne{
+  mix-blend-mode: overlay !important;
+  transform: translateX(470px) !important;
+  opacity: 0;
+} */
+
+.swiper-slide-active .mainSliderThree{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1000ms ease;
+  transition-delay: 2000ms;
+}
+
+.slick-dots {
+  bottom: -60px !important;
+}
+.slick-dots li button:before{
+  font-size: 20px !important;
+  color: #55AD88 !important;
 }

@@ -20,6 +20,7 @@ import { Box } from "@mui/material";
 import mainSliderShape1 from "../Assets/images/shapes/main-slider-shape-1.png";
 import mainSliderShape2 from "../Assets/images/shapes/main-slider-shape-2.png";
 import mainSliderShape3 from "../Assets/images/shapes/main-slider-shape-3.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function MainSlider(props) {
   var settings = {
@@ -47,7 +48,7 @@ function MainSlider(props) {
   ];
   return (
     <>
-      <SliderWrapper position={"relative"}>
+      <SliderWrapper position={"relative"} className="swiper-slide-active">
         <Slider {...settings}>
           {IMAGES.map((product) => (
             <>
@@ -56,6 +57,7 @@ function MainSlider(props) {
                 height={"731px"}
                 width={"100%"}
                 src={product.image}
+                className="mainSliderMainImages"
               />
 
               <MainSliderBox position={"absolute"} top={"200px"} left={"200px"}>
@@ -73,14 +75,23 @@ function MainSlider(props) {
                 </Link>
               </MainSliderBox>
               <Box
-                component={"img"}
                 height={"400px"}
                 width={"45%"}
-                src={mainSliderShape1}
                 position={"absolute"}
                 top={"0px"}
                 right={"0px"}
-              />
+              >
+                {/* <ScrollAnimation animateIn="slideInRight"> */}
+                <Box
+                  component={"img"}
+                  height={"400px"}
+                  width={"100%"}
+                  src={mainSliderShape1}
+                  className="animate__animated animate__slideInRight "
+                  // className="mainSliderOne"
+                />
+                {/* </ScrollAnimation> */}
+              </Box>
               <Box
                 component={"img"}
                 height={"400px"}
@@ -89,6 +100,7 @@ function MainSlider(props) {
                 position={"absolute"}
                 bottom={"0px"}
                 right={"0px"}
+                className="mainSliderTwo"
               />
               <Box
                 component={"img"}
@@ -97,6 +109,9 @@ function MainSlider(props) {
                 src={mainSliderShape3}
                 position={"absolute"}
                 bottom={"0px"}
+                left={"0px"}
+                sx={{ mixBlendMode: "overlay", opacity: 0, zIndex: 1 }}
+                className="mainSliderThree"
               />
             </>
           ))}

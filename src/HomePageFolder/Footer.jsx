@@ -26,20 +26,41 @@ import {
   AcUnitIconBox,
   FooterCompanyFullAddress,
 } from "./homePageStyled";
-import { Box, Fab, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MessageIcon from "@mui/icons-material/Message";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import ScrollAnimation from "react-animate-on-scroll";
+import footerImg1 from "../Assets/images/shapes/site-footer-shape-1.png";
+import footerImg2 from "../Assets/images/shapes/site-footer-shape-2.png";
 import { Link } from "react-router-dom";
 const FooterComp = () => {
   return (
     <>
       <FooterWrapper>
-        <LeftFooterImageBox className="getToKnowUsAnimation"></LeftFooterImageBox>
-        <RightFooterImageBox className="aboutUsAnimation"></RightFooterImageBox>
+        <LeftFooterImageBox>
+          <ScrollAnimation animateIn="slideInLeft">
+            <Box
+              component={"img"}
+              height={"388px"}
+              width={"100%"}
+              src={footerImg1}
+            />
+          </ScrollAnimation>
+        </LeftFooterImageBox>
+        <RightFooterImageBox>
+          <ScrollAnimation animateIn="slideInRight">
+            <Box
+              component={"img"}
+              height={"600px"}
+              width={"100%"}
+              src={footerImg2}
+            />
+          </ScrollAnimation>
+        </RightFooterImageBox>
         <FooterTextWrapper>
           <ChallengesWrapper>
             <ChallengesBox>
@@ -55,7 +76,7 @@ const FooterComp = () => {
               </IconAndBtnBox>
               <Box>
                 <Link to={"/about"}>
-                <CustomBtn>Discover More</CustomBtn>
+                  <CustomBtn>Discover More</CustomBtn>
                 </Link>
               </Box>
             </ChallengesBox>
@@ -69,14 +90,13 @@ const FooterComp = () => {
                     <FooterLinks>Links</FooterLinks>
                   </LinksTextBox>
                   <LinksTextBoxDetails>
-                  <Link className="link-style" to={"/about"}>
-                    <FooterAddress>About us</FooterAddress>
-                  </Link>
-                    <FooterAddress>
-                      Meet our team</FooterAddress>
-                      <Link className="link-style" to={"/contact"}>
-
-                    <FooterAddress>Contacts</FooterAddress>
+                    <Link className="link-style" to={"/about"}>
+                      <FooterAddress>About us</FooterAddress>
+                      <FooterAddress>Meet our team</FooterAddress>
+                    </Link>
+                    <FooterAddress>Meet our team</FooterAddress>
+                    <Link className="link-style" to={"/contact"}>
+                      <FooterAddress>Contacts</FooterAddress>
                     </Link>
                   </LinksTextBoxDetails>
                 </FooterLinksBox>

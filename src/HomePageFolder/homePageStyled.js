@@ -235,7 +235,7 @@ export const TrustedSourceWrapper = styled(Box)(() => ({
   height: "200px",
   position: "absolute",
   zIndex: "2",
-  top: "-100px",
+  // top: "-100px",
   left: "80px",
   backgroundColor: "#55ad88",
   display: "flex",
@@ -245,9 +245,11 @@ export const TrustedSourceWrapper = styled(Box)(() => ({
 export const TrustedSourceBox = styled(Box)(() => ({
   width: "80%",
   height: "70%",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
+  border: "1px solid red",
+  // display: "flex",
+
+  // justifyContent: "space-between",
+  // alignItems: "center",
 }));
 export const TrustedSourceTextBox = styled(Box)(() => ({
   width: "30%",
@@ -323,7 +325,7 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
   right: "0px",
   width: "390px",
   height: "500px",
-  backgroundImage: `url(${helpingBlackImage})`,
+  // backgroundImage: `url(${helpingBlackImage})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
 }));
@@ -439,9 +441,9 @@ export const FooterWrapper = styled(Box)(({ theme }) => ({
 export const LeftFooterImageBox = styled(Box)(() => ({
   height: "388px",
   width: "388px",
-  backgroundImage: `url(${footerImg1})`,
+  // backgroundImage: `url(${footerImg1})`,
   backgroundRepeat: "no-repeat",
-  opacity: "0.1",
+  opacity: "0.2",
   backgroundPosition: "top center",
   backgroundBlendMode: "luminosity",
   backgroundSize: "cover",
@@ -450,11 +452,11 @@ export const LeftFooterImageBox = styled(Box)(() => ({
   left: 0,
 }));
 export const RightFooterImageBox = styled(Box)(() => ({
-  width: "460px",
-  height: "600px",
-  backgroundImage: `url(${footerImg2})`,
+  width: "40%",
+  height: "inherit",
+  // backgroundImage: `url(${footerImg2})`,
   backgroundRepeat: "no-repeat",
-  opacity: "0.1",
+  opacity: "0.2",
   backgroundPosition: "bottom center",
   backgroundSize: "cover",
   backgroundBlendMode: "luminosity",

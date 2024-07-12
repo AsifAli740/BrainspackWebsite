@@ -21,6 +21,7 @@ import {
   Offerings,
 } from "./GetKnowUs/GetKnowUsStyled";
 import { TECH_SERVICES } from "../Utils/constant";
+import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 
 const TechServicesComp = () => {
@@ -30,8 +31,28 @@ const TechServicesComp = () => {
         <TechServicesWrapper>
           <TechServicesImageBox
             position={"relative"}
-            className="getToKnowUsAnimation"
+            // className="getToKnowUsAnimation"
           >
+            <ScrollAnimation animateIn="slideInLeft">
+              <Box
+                component={"img"}
+                height={"95%"}
+                width={"85%"}
+                src={techServices}
+              />
+              <AbsoluteBox>
+                <TechServicesTextBox>
+                  <TechServicesText>
+                    Tech solutions bringing your business ideas to digital life
+                  </TechServicesText>
+                  <Box>
+                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
+                      Learn more
+                    </LearnMoreBtn>
+                  </Box>
+                </TechServicesTextBox>
+              </AbsoluteBox>
+            </ScrollAnimation>
             <Box
               component={"img"}
               height={"95%"}
@@ -45,9 +66,9 @@ const TechServicesComp = () => {
                 </TechServicesText>
                 <Box>
                   <Link to={"/about"}>
-                  <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
-                    Learn more
-                  </LearnMoreBtn>
+                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
+                      Learn more
+                    </LearnMoreBtn>
                   </Link>
                 </Box>
               </TechServicesTextBox>
