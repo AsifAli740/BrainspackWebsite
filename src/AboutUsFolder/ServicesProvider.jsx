@@ -53,18 +53,9 @@ const ServicesProvider = () => {
               </ServiceProvideContent>
             </Box>
           </ServiceProvideContentBox>
-          <ServiceProvideImageBox>
-            <ServiceProvideImageBox2>
-              <ScrollAnimation animateIn="slideInRight">
-                <ServiceProvideImageBox1></ServiceProvideImageBox1>
-                <Box
-                  component={"img"}
-                  height={"100%"}
-                  width={"100%"}
-                  src={serviceProvide}
-                />
-              </ScrollAnimation>
-            </ServiceProvideImageBox2>
+          <ServiceProvideImageBox className="aboutUsAnimation">
+            <ServiceProvideImageBox1></ServiceProvideImageBox1>
+            <ServiceProvideImageBox2></ServiceProvideImageBox2>
           </ServiceProvideImageBox>
         </ServiceProvideBox>
       </ServiceProvideWrapper>

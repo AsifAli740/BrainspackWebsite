@@ -41,7 +41,7 @@ const FooterComp = () => {
   return (
     <>
       <FooterWrapper>
-        <LeftFooterImageBox>
+        <LeftFooterImageBox className="leftFooterImageBox">
           <ScrollAnimation animateIn="slideInLeft">
             <Box
               component={"img"}
@@ -51,7 +51,7 @@ const FooterComp = () => {
             />
           </ScrollAnimation>
         </LeftFooterImageBox>
-        <RightFooterImageBox>
+        <RightFooterImageBox className="rightFooterImageBox">
           <ScrollAnimation animateIn="slideInRight">
             <Box
               component={"img"}
@@ -81,57 +81,59 @@ const FooterComp = () => {
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
-          <FooterContentWrapper>
-            <FooterContentBox>
-              <FooterLogo></FooterLogo>
-              <LinksAndContentBox>
-                <FooterLinksBox>
-                  <LinksTextBox>
-                    <FooterLinks>Links</FooterLinks>
-                  </LinksTextBox>
-                  <LinksTextBoxDetails>
-                    <Link className="link-style" to={"/about"}>
-                      <FooterAddress>About us</FooterAddress>
+          <FooterContentWrapper className="footerContentWrapper">
+            <ScrollAnimation animateIn="fadeInUp">
+              <FooterContentBox>
+                <FooterLogo></FooterLogo>
+                <LinksAndContentBox>
+                  <FooterLinksBox>
+                    <LinksTextBox>
+                      <FooterLinks>Links</FooterLinks>
+                    </LinksTextBox>
+                    <LinksTextBoxDetails>
+                      <Link className="link-style" to={"/about"}>
+                        <FooterAddress>About us</FooterAddress>
+                      </Link>
                       <FooterAddress>Meet our team</FooterAddress>
-                    </Link>
-                    <FooterAddress>Meet our team</FooterAddress>
-                    <Link className="link-style" to={"/contact"}>
-                      <FooterAddress>Contacts</FooterAddress>
-                    </Link>
-                  </LinksTextBoxDetails>
-                </FooterLinksBox>
-                <FooterContactBox>
-                  <ContactBox>
-                    <FooterLinks>Contact</FooterLinks>
-                  </ContactBox>
-                  <ContactBoxDetails>
-                    <ContactBoxDetailsEach>
-                      <PhoneIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>+91-9168117671</FooterAddress>
-                    </ContactBoxDetailsEach>
-                    <ContactBoxDetailsEach>
-                      <MessageIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>info@brainspack.com</FooterAddress>
-                    </ContactBoxDetailsEach>
-                    <ContactBoxDetailsEach>
-                      <LocationOnIcon sx={{ color: "#55ad88" }} />
-                      <FooterCompanyFullAddress>
-                        SCF-15, First Floor, opposite Bus Stand Road, Sarojini
-                        Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
-                      </FooterCompanyFullAddress>
-                    </ContactBoxDetailsEach>
-                  </ContactBoxDetails>
-                </FooterContactBox>
-              </LinksAndContentBox>
-              <SocialMediaBox>
-                <SocialMediaFab>
-                  <LinkedInIcon />
-                </SocialMediaFab>
-                <SocialMediaFab>
-                  <InstagramIcon />
-                </SocialMediaFab>
-              </SocialMediaBox>
-            </FooterContentBox>
+                      <Link className="link-style" to={"/contact"}>
+                        <FooterAddress>Contacts</FooterAddress>
+                      </Link>
+                    </LinksTextBoxDetails>
+                  </FooterLinksBox>
+                  <FooterContactBox>
+                    <ContactBox>
+                      <FooterLinks>Contact</FooterLinks>
+                    </ContactBox>
+                    <ContactBoxDetails>
+                      <ContactBoxDetailsEach>
+                        <PhoneIcon sx={{ color: "#55ad88" }} />
+                        <FooterAddress>+91-9168117671</FooterAddress>
+                      </ContactBoxDetailsEach>
+                      <ContactBoxDetailsEach>
+                        <MessageIcon sx={{ color: "#55ad88" }} />
+                        <FooterAddress>info@brainspack.com</FooterAddress>
+                      </ContactBoxDetailsEach>
+                      <ContactBoxDetailsEach>
+                        <LocationOnIcon sx={{ color: "#55ad88" }} />
+                        <FooterCompanyFullAddress>
+                          SCF-15, First Floor, opposite Bus Stand Road, Sarojini
+                          Colony, PART-1, Model Town, Yamuna Nagar, Haryana
+                          135001
+                        </FooterCompanyFullAddress>
+                      </ContactBoxDetailsEach>
+                    </ContactBoxDetails>
+                  </FooterContactBox>
+                </LinksAndContentBox>
+                <SocialMediaBox>
+                  <SocialMediaFab>
+                    <LinkedInIcon />
+                  </SocialMediaFab>
+                  <SocialMediaFab>
+                    <InstagramIcon />
+                  </SocialMediaFab>
+                </SocialMediaBox>
+              </FooterContentBox>
+            </ScrollAnimation>
           </FooterContentWrapper>
         </FooterTextWrapper>
       </FooterWrapper>

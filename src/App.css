@@ -257,19 +257,13 @@
   color: #2be4ac !important;
 }
 
-.animated{
-  opacity: 1 !important;
-  animation-duration: 2s !important;
-}
-.mainSliderMainImages{
-  transform: scale(1) !important;
-  /* transition: transform 7000ms ease, opacity 1500ms ease-in, -webkit-transform 7000ms ease !important; */
-}
-/* .mainSliderOne{
-  mix-blend-mode: overlay !important;
-  transform: translateX(470px) !important;
-  opacity: 0;
+
+/* .mainSliderMainImages{
+  transform: translate3d(-3891px, 0px, 0px);
+  transition-duration: 300ms;
+  
 } */
+
 
 .swiper-slide-active .mainSliderThree{
   opacity: 1;
@@ -285,3 +279,44 @@
   font-size: 20px !important;
   color: #55AD88 !important;
 }
+.animated{
+  opacity: 1 !important;
+  /* animation-duration: 2s !important; */
+}
+.leftFooterImageBox .animated{
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.rightFooterImageBox .animated{
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.footerContentWrapper .animated{
+  height: 100% !important;
+  /* animation-duration: s !important; */
+  animation-delay: 100ms !important;
+}
+.getKnowUsImageBox .animated{
+  visibility: visible;
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.techServicesImageBox .animated{
+  visibility: visible;
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.helpingLineImageWrapper .animated{
+  visibility: visible;
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.phoneIcon:hover{
+  color: red !important;
+}
+
+.animate__slideInRight{
+  /* animation-iteration-count: infinite; */
+animation-iteration-count: infinite;
+  animation-duration: 10s;
+} 

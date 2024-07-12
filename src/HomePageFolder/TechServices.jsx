@@ -31,7 +31,7 @@ const TechServicesComp = () => {
         <TechServicesWrapper>
           <TechServicesImageBox
             position={"relative"}
-            // className="getToKnowUsAnimation"
+            className="techServicesImageBox"
           >
             <ScrollAnimation animateIn="slideInLeft">
               <Box
@@ -40,39 +40,22 @@ const TechServicesComp = () => {
                 width={"85%"}
                 src={techServices}
               />
+
               <AbsoluteBox>
                 <TechServicesTextBox>
                   <TechServicesText>
                     Tech solutions bringing your business ideas to digital life
                   </TechServicesText>
                   <Box>
-                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
-                      Learn more
-                    </LearnMoreBtn>
+                    <Link to={"/about"}>
+                      <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
+                        Learn more
+                      </LearnMoreBtn>
+                    </Link>
                   </Box>
                 </TechServicesTextBox>
               </AbsoluteBox>
             </ScrollAnimation>
-            <Box
-              component={"img"}
-              height={"95%"}
-              width={"85%"}
-              src={techServices}
-            />
-            <AbsoluteBox>
-              <TechServicesTextBox>
-                <TechServicesText>
-                  Tech solutions bringing your business ideas to digital life
-                </TechServicesText>
-                <Box>
-                  <Link to={"/about"}>
-                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
-                      Learn more
-                    </LearnMoreBtn>
-                  </Link>
-                </Box>
-              </TechServicesTextBox>
-            </AbsoluteBox>
           </TechServicesImageBox>
           <TechServicesTextWrapper>
             <Box display={"flex"} alignItems={"center"} gap={"10px"}>

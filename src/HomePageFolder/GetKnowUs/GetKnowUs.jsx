@@ -24,7 +24,7 @@ const GetKnowUs = () => {
     <>
       <GetKnowUsContainer>
         <GetKnowUsWrapper>
-          <GetKnowUsImageBox>
+          <GetKnowUsImageBox className="getKnowUsImageBox">
             <ScrollAnimation animateIn="slideInLeft">
               <Box
                 component={"img"}
