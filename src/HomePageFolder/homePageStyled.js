@@ -43,7 +43,42 @@ export const ServicesHeading = styled(Typography)(() => ({
   color: "white",
   fontWeight: "700",
 }));
+export const OverlayWrapper = styled(Box)(() => ({
+  position: "absolute",
+  bottom: "0",
+  left: "0",
+  right: "0",
+  backgroundColor: "#212529",
+  overflow: "hidden",
+  width: "100%",
+  height: "0",
+  transition: ".5s ease",
+  opacity: "0.9", 
+}))
+export const OverlayTop = styled(Box)(() => ({
+  
+}))
+export const OverlapContentWrapper = styled(Box)(() => ({
+  width:"100%",
+  height:"inherit",
+  padding:"20px"
+}))
 
+export const OverlapText = styled(Box)(() => ({
+ 
+}))
+export const OverlayTextHeading = styled(Typography)(() => ({
+   fontWeight: "700",
+    width:"80%",
+    fontSize:"24px"
+ 
+}))
+export const OverlayTextSubHeading = styled(Typography)(() => ({
+  fontSize: "17px",
+    color: "#aea8b9",
+    lineHeight: "30px"
+ 
+}))
 export const SliderWrapper = styled(Box)(() => ({
   width: "100%",
   height: "731px",

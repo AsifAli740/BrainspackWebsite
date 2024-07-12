@@ -33,6 +33,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MessageIcon from "@mui/icons-material/Message";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Link } from "react-router-dom";
 const FooterComp = () => {
   return (
     <>
@@ -53,7 +54,9 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
+                <Link to={"/about"}>
                 <CustomBtn>Discover More</CustomBtn>
+                </Link>
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
@@ -66,10 +69,15 @@ const FooterComp = () => {
                     <FooterLinks>Links</FooterLinks>
                   </LinksTextBox>
                   <LinksTextBoxDetails>
+                  <Link className="link-style" to={"/about"}>
                     <FooterAddress>About us</FooterAddress>
+                  </Link>
                     <FooterAddress>
                       Meet our team</FooterAddress>
+                      <Link className="link-style" to={"/contact"}>
+
                     <FooterAddress>Contacts</FooterAddress>
+                    </Link>
                   </LinksTextBoxDetails>
                 </FooterLinksBox>
                 <FooterContactBox>
