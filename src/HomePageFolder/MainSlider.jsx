@@ -3,10 +3,12 @@ import {
   BrainspackSliderHeading,
   BrainspackSliderPPPHeading,
   CustomBtn,
+  DiscoverMoreBtn,
   ExploreBrainspackLink,
   GetSolution,
   GetSolutionContainer,
   MainSliderBox,
+  OverlayTop,
   SliderWrapper,
 } from "./homePageStyled";
 import { Link } from "react-router-dom";
@@ -16,11 +18,12 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../Assets/images/backgrounds/main-slider-1-1.jpg";
 import image2 from "../Assets/images/backgrounds/main-slider-1-2.jpg";
 import image3 from "../Assets/images/backgrounds/main-slider-1-3.jpg";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import mainSliderShape1 from "../Assets/images/shapes/main-slider-shape-1.png";
 import mainSliderShape2 from "../Assets/images/shapes/main-slider-shape-2.png";
 import mainSliderShape3 from "../Assets/images/shapes/main-slider-shape-3.png";
 import ScrollAnimation from "react-animate-on-scroll";
+import DiscoverMore from "../ReUseComponents/DiscoverMore";
 
 function MainSlider(props) {
   var settings = {
@@ -69,10 +72,7 @@ function MainSlider(props) {
                   ack
                 </BrainspackSliderHeading>
 
-                <Link to={"/about"}>
-                  {" "}
-                  <CustomBtn>Discover more</CustomBtn>
-                </Link>
+                <DiscoverMore path={"/about"} text="Discover more" />
               </MainSliderBox>
               <Box
                 height={"400px"}
