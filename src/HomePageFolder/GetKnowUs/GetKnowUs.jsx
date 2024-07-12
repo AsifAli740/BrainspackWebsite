@@ -17,25 +17,29 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import "../../ExternalCss/GetKnowUs.css";
 import { CustomBtn } from "../../ReUseComponents/NavbarStyled";
 import { Link } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 const GetKnowUs = () => {
   return (
     <>
       <GetKnowUsContainer>
         <GetKnowUsWrapper>
-          <GetKnowUsImageBox className="getToKnowUsAnimation">
-            <Box
-              component={"img"}
-              height={"600px"}
-              width={"85%"}
-              src={getToKnowUs}
-            />
-            <Box
-              component={"img"}
-              height={"300px"}
-              width={"60%"}
-              src={getToKnowUsSmall}
-              sx={{ position: "absolute", right: "0px", bottom: "0px" }}
-            />
+          <GetKnowUsImageBox>
+            <ScrollAnimation animateIn="slideInLeft">
+              <Box
+                component={"img"}
+                height={"600px"}
+                width={"85%"}
+                src={getToKnowUs}
+              />
+              <Box
+                component={"img"}
+                height={"300px"}
+                width={"60%"}
+                src={getToKnowUsSmall}
+                sx={{ position: "absolute", right: "0px", bottom: "0px" }}
+              />
+            </ScrollAnimation>
           </GetKnowUsImageBox>
           <GetKnowUsContentBox>
             <Box display={"flex"} flexDirection={"column"} gap={"10px"}>

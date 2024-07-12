@@ -20,11 +20,11 @@
     height:40px;
     width:40px
   }
-  .slick-dots li button:before {
+  /* .slick-dots li button:before {
    font-size: "30px !important";
    border:1px solid blue
 
-}
+} */
 .slick-slide>div{
   position: relative;
 }

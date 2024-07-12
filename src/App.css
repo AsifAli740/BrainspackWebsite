@@ -188,40 +188,6 @@
   
 }
 
-
-.getToKnowUsAnimation{
-  animation-name: slideInLeft;  
-  animation-duration: 2500ms;
-  animation-delay: 100ms;
-  visibility: visible;
-}
-@keyframes slideInLeft {
-  0%   {transform: translate3d(-100%, 0, 0);visibility: visible;}
-  100% {transform: translate3d(0, 0, 0);visibility: visible;}
-}
-
-.trustedAnimation{
-  animation-name: fadeInUp;
-  animation-delay: 300ms;
-  visibility: visible;
-}
-@keyframes fadeInUp {
-  0%   {transform: translateY(20px);opacity: 0;}
-  100%   {transform: translateY(0px);opacity: 1;}
-}
-
-.aboutUsAnimation{
-  animation-name: slideInRight;  
-  animation-duration: 2500ms;
-  animation-delay: 100ms;
-  visibility: visible;
-  
-
-}
-@keyframes slideInRight {
-  0%   {transform: translate3d(100%, 0, 0);visibility: visible;}
-  100% {transform: translate3d(0, 0, 0);visibility: visible;}
-}
 .text {
   color: white;
   width: 74%;
@@ -243,4 +209,33 @@
 
 .Learn-more:hover{
   color: #2be4ac !important;
+}
+
+.animated{
+  opacity: 1 !important;
+  animation-duration: 2s !important;
+}
+.mainSliderMainImages{
+  transform: scale(1) !important;
+  /* transition: transform 7000ms ease, opacity 1500ms ease-in, -webkit-transform 7000ms ease !important; */
+}
+/* .mainSliderOne{
+  mix-blend-mode: overlay !important;
+  transform: translateX(470px) !important;
+  opacity: 0;
+} */
+
+.swiper-slide-active .mainSliderThree{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1000ms ease;
+  transition-delay: 2000ms;
+}
+
+.slick-dots {
+  bottom: -60px !important;
+}
+.slick-dots li button:before{
+  font-size: 20px !important;
+  color: #55AD88 !important;
 }

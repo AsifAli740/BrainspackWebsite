@@ -143,7 +143,7 @@ export const ServiceProvideImageBox1 = styled(Box)(() => ({
 export const ServiceProvideImageBox2 = styled(Box)(() => ({
   width: "92%",
   height: "100%",
-  backgroundImage: `url(${serviceProvide})`,
+  // backgroundImage: `url(${serviceProvide})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
   zIndex: "4",

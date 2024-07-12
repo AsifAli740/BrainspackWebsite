@@ -31,27 +31,49 @@ import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import { Box, Typography } from "@mui/material";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+import ScrollAnimation from "react-animate-on-scroll";
+import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png";
 
 function HelpingContainer(props) {
   return (
     <HelpingContainerWrapper>
-      <TrustedSourceWrapper>
-        <TrustedSourceBox className="trustedAnimation">
-          <TrustedSourceTextBox>
-            <TrustedSourceText>Trusted source in IT services</TrustedSourceText>
-          </TrustedSourceTextBox>
-          <IconBox>
-            <IconBoxImage></IconBoxImage>
-          </IconBox>
-          <QueryBox>
-            <AnyQuestionText>Have any question?</AnyQuestionText>
-            <NumberText>Free +91-9168117671</NumberText>
-          </QueryBox>
-        </TrustedSourceBox>
-      </TrustedSourceWrapper>
+      <ScrollAnimation animateIn="fadeInUp">
+        <TrustedSourceWrapper>
+          <TrustedSourceBox>
+            <Box
+              display={"flex"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+              height={"140px"}
+            >
+              <TrustedSourceTextBox>
+                <TrustedSourceText>
+                  Trusted source in IT services
+                </TrustedSourceText>
+              </TrustedSourceTextBox>
+              <IconBox>
+                <IconBoxImage></IconBoxImage>
+              </IconBox>
+              <QueryBox>
+                <AnyQuestionText>Have any question?</AnyQuestionText>
+                <NumberText>Free +91-9168117671</NumberText>
+              </QueryBox>
+            </Box>
+          </TrustedSourceBox>
+        </TrustedSourceWrapper>
+      </ScrollAnimation>
       <HelpingContainerImageBox></HelpingContainerImageBox>
       <HelpingContentWrapper>
-        <HelpingLineImageWrapper></HelpingLineImageWrapper>
+        <HelpingLineImageWrapper>
+          <ScrollAnimation animateIn="slideInRight">
+            <Box
+              component={"img"}
+              width={"390px"}
+              height={"500px"}
+              src={helpingBlackImage}
+            />
+          </ScrollAnimation>
+        </HelpingLineImageWrapper>
         <HelpingContent>
           <HelpingContentBox>
             <Box>

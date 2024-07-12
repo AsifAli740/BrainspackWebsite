@@ -21,6 +21,7 @@ import {
   Offerings,
 } from "./GetKnowUs/GetKnowUsStyled";
 import { TECH_SERVICES } from "../Utils/constant";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const TechServicesComp = () => {
   return (
@@ -29,26 +30,28 @@ const TechServicesComp = () => {
         <TechServicesWrapper>
           <TechServicesImageBox
             position={"relative"}
-            className="getToKnowUsAnimation"
+            // className="getToKnowUsAnimation"
           >
-            <Box
-              component={"img"}
-              height={"95%"}
-              width={"85%"}
-              src={techServices}
-            />
-            <AbsoluteBox>
-              <TechServicesTextBox>
-                <TechServicesText>
-                  Tech solutions bringing your business ideas to digital life
-                </TechServicesText>
-                <Box>
-                  <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
-                    Learn more
-                  </LearnMoreBtn>
-                </Box>
-              </TechServicesTextBox>
-            </AbsoluteBox>
+            <ScrollAnimation animateIn="slideInLeft">
+              <Box
+                component={"img"}
+                height={"95%"}
+                width={"85%"}
+                src={techServices}
+              />
+              <AbsoluteBox>
+                <TechServicesTextBox>
+                  <TechServicesText>
+                    Tech solutions bringing your business ideas to digital life
+                  </TechServicesText>
+                  <Box>
+                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
+                      Learn more
+                    </LearnMoreBtn>
+                  </Box>
+                </TechServicesTextBox>
+              </AbsoluteBox>
+            </ScrollAnimation>
           </TechServicesImageBox>
           <TechServicesTextWrapper>
             <Box display={"flex"} alignItems={"center"} gap={"10px"}>
