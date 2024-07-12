@@ -1,6 +1,5 @@
 import { Box, Typography, styled } from "@mui/material";
 import ContactDetails from "../Assets/images/resources/contact-details-img.jpg";
-import { LineWeight } from "@mui/icons-material";
 
 export const GetInTouchContainer = styled(Box)(({ theme }) => ({
   width: "100%",

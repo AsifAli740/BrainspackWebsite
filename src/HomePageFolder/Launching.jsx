@@ -4,27 +4,35 @@ import {
   LaunchingWrapper,
   BusinessText,
   BusinessTextBox,
+  BusinessTextBoxWrapper,
+  LaunchingHeading,
 } from "./homePageStyled";
 import { CustomBtn } from "./homePageStyled";
+import { Link } from "react-router-dom";
 
 const LaunchingComp = () => {
   return (
     <>
       <LaunchingContainer>
         <LaunchingWrapper>
-          <BusinessTextBox>
-            <Box>
+            <BusinessTextBoxWrapper >
+          <BusinessTextBox >
+
+            <Box >
               <BusinessText variant="h5">
                 Business from great idea to
               </BusinessText>
             </Box>
             <Box>
-              <Typography variant="h1">Launching</Typography>
+              <LaunchingHeading >LAUNCHING</LaunchingHeading>
             </Box>
             <Box>
+              <Link to={"/contact"}>
               <CustomBtn>Contact us now</CustomBtn>
+              </Link>
             </Box>
           </BusinessTextBox>
+            </BusinessTextBoxWrapper>
         </LaunchingWrapper>
       </LaunchingContainer>
     </>

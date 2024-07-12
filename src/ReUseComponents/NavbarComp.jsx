@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   AboutContactLink,
   AboutContactLinkWrapper,
@@ -34,7 +34,7 @@ import MainSlider from "../HomePageFolder/MainSlider";
 import { Box } from "@mui/material";
 
 function NavbarComp() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <MainContainer>
       <Navbar>
@@ -55,10 +55,14 @@ function NavbarComp() {
               </EmailBox>
             </AddressEmailWrapper>
             <AboutContactLinkWrapper>
+              <Link className="link-style" to={"/about"}>
               <AboutLink>About</AboutLink>
+              </Link>
               <Slash>/</Slash>
 
+              <Link className="link-style" to={"/contact"}>
               <ContactLink>Contact</ContactLink>
+              </Link>
             </AboutContactLinkWrapper>
           </NavbarTopLeft>
         </NavbarTopLeftWrapper>
@@ -75,8 +79,7 @@ function NavbarComp() {
             <LogoWrapper>
               <BrainspackLogoWrapper></BrainspackLogoWrapper>
             </LogoWrapper>
-            <ListsBox>
-              {/* {headerLinks.map((ele) => ( */}
+            <ListsBox className="navListParent">
               <MainMenuList className="border-btm">
                 <Navlinks className="setBorderBtm" to={"/"}>
                   {"Home"}
@@ -100,11 +103,18 @@ function NavbarComp() {
                     zIndex: "999",
                     display: "none",
                     boxShadow: "0px 0px 65px 0px rgba(0, 0, 0, 0.1)",
-                    
-                    cursor:"pointer"
+
+                    cursor: "pointer",
                   }}
                 >
-                  <ServiceOptions onClick={()=>navigate("/web-development")} className="options webDevelop">
+                  <ServiceOptions
+                    onClick={(e) => {
+                      console.log("web-devloymsjkdhga");
+                      e.stopPropagation();
+                      navigate("/services/web-development");
+                    }}
+                    className="options webDevelop"
+                  >
                     <Box
                       className="webDev-options"
                       sx={{
@@ -112,30 +122,60 @@ function NavbarComp() {
                         height: "165px",
                         bgcolor: "white",
                         position: "absolute",
-                        top:"0px",
-                        left:"100%",
-                        display:"none"
+                        top: "0px",
+                        left: "100%",
+                        display: "none",
                       }}
                     >
-                      <ServiceOptions onClick={()=>navigate("/mean")} className="options">
-                   MEAN Stack
-                  </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/mern")}  className="options">
-                    MERN Stack
-                  </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/php")} className="options">
-                    PHP
-                  </ServiceOptions>
+                      <ServiceOptions
+                        onClick={(e) => {
+                          e.stopPropagation();
+
+                          navigate("/services/web-development/mean");
+                        }}
+                        className="options"
+                      >
+                        MEAN Stack
+                      </ServiceOptions>
+                      <ServiceOptions
+                        onClick={(e) => {
+                          e.stopPropagation();
+
+                          navigate("/services/web-development/mern");
+                        }}
+                        className="options"
+                      >
+                        MERN Stack
+                      </ServiceOptions>
+                      <ServiceOptions
+                        onClick={(e) => {
+                          e.stopPropagation();
+
+                          navigate("/services/web-development/php");
+                        }}
+                        className="options"
+                      >
+                        PHP
+                      </ServiceOptions>
                     </Box>
                     Web Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/ui-ux-design")} className="options">
+                  <ServiceOptions
+                    onClick={() => navigate("/services/ui-ux-design")}
+                    className="options"
+                  >
                     UI/UX Desiging
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/mobile-app-development")} className="options">
+                  <ServiceOptions
+                    onClick={() => navigate("/services/mobile-app-development")}
+                    className="options"
+                  >
                     Mobile App Development
                   </ServiceOptions>
-                  <ServiceOptions onClick={()=>navigate("/digital-marketing")} className="options">
+                  <ServiceOptions
+                    onClick={() => navigate("/services/digital-marketing")}
+                    className="options"
+                  >
                     Digital Marketing
                   </ServiceOptions>
                 </Box>
@@ -144,11 +184,10 @@ function NavbarComp() {
                 </Navlinks>
               </MainMenuList>
               <MainMenuList className="border-btm">
-                <Navlinks className="setBorderBtm" to={"/Contact"}>
+                <Navlinks className="setBorderBtm" to={"/contact"}>
                   {"Contact"}
                 </Navlinks>
               </MainMenuList>
-              {/* ))} */}
             </ListsBox>
           </MenuListWrapper>
         </MainMenu>

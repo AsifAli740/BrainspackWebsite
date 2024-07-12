@@ -14,15 +14,15 @@ import getToKnowUsSmall from "../../Assets/images/resources/get-to-know-small-im
 import twoDots from "../../Assets/images/shapes/section-title-shape.png";
 import { Box, Typography } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-// import "./App.css";
 import "../../ExternalCss/GetKnowUs.css";
 import { CustomBtn } from "../../ReUseComponents/NavbarStyled";
+import { Link } from "react-router-dom";
 const GetKnowUs = () => {
   return (
     <>
       <GetKnowUsContainer>
         <GetKnowUsWrapper>
-          <GetKnowUsImageBox>
+          <GetKnowUsImageBox className="getToKnowUsAnimation">
             <Box
               component={"img"}
               height={"600px"}
@@ -92,7 +92,9 @@ const GetKnowUs = () => {
               </Box>
             </Box>
             <Box>
-              <CustomBtn variant="contained">Discover more</CustomBtn>
+              <Link to={"/about"}>
+                <CustomBtn className="customButton">Discover more</CustomBtn>
+              </Link>
             </Box>
           </GetKnowUsContentBox>
         </GetKnowUsWrapper>

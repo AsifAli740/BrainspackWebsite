@@ -169,3 +169,17 @@ export const ServiceProvideContent = styled(Typography)(() => ({
   lineHeight: "32px !important",
   fontWeight: "500 !important",
 }));
+
+// Launching About Us
+
+export const BrainspackHeading = styled(Typography)(() => ({
+  color: "#ffffff !important",
+  fontSize: "32px !important",
+  fontWeight: "500 !important",
+}));
+export const BrainspackAboutUs = styled(Typography)(() => ({
+  color: "#ffffff !important",
+  fontSize: "19px !important",
+  fontWeight: "500 !important",
+  lineHeight: "30px !important",
+}));

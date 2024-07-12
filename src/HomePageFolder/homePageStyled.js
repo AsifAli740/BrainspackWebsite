@@ -24,37 +24,72 @@ export const ServicesWrapper = styled(Box)(() => ({
   alignItems: "center",
 }));
 export const ServicesBox = styled(Box)(() => ({
-  width: "90%",
-  height: "60%",
+  width: "86%",
+  height: "360px",
   display: "flex",
   justifyContent: "space-between",
 }));
 
-export const ServicesCard = styled(Card)(() => ({
+export const ServicesCard = styled(Box)(() => ({
   width: "31.5%",
-  height: "100%",
+  height: "360px",
 }));
-export const ServicesCardMedia = styled(CardMedia)(() => ({
+export const ServicesCardMedia = styled(Box)(() => ({
   width: "100%",
-  height: "100%",
+  height: "360px",
+  transition: "all 200ms ease",
 }));
 export const ServicesHeading = styled(Typography)(() => ({
-  color: "black",
+  color: "white",
+  fontWeight: "700",
 }));
+export const OverlayWrapper = styled(Box)(() => ({
+  position: "absolute",
+  bottom: "0",
+  left: "0",
+  right: "0",
+  backgroundColor: "#212529",
+  overflow: "hidden",
+  width: "100%",
+  height: "0",
+  transition: ".5s ease",
+  opacity: "0.9", 
+}))
+export const OverlayTop = styled(Box)(() => ({
+  
+}))
+export const OverlapContentWrapper = styled(Box)(() => ({
+  width:"100%",
+  height:"inherit",
+  padding:"20px"
+}))
 
+export const OverlapText = styled(Box)(() => ({
+ 
+}))
+export const OverlayTextHeading = styled(Typography)(() => ({
+   fontWeight: "700",
+    width:"80%",
+    fontSize:"24px"
+ 
+}))
+export const OverlayTextSubHeading = styled(Typography)(() => ({
+  fontSize: "17px",
+    color: "#aea8b9",
+    lineHeight: "30px"
+ 
+}))
 export const SliderWrapper = styled(Box)(() => ({
   width: "100%",
   height: "731px",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundImage: `url(${mainSliderOneImg})`,
+  // display: "flex",
+  // justifyContent: "center",
+  // alignItems: "center",
 }));
 export const MainSliderBox = styled(Box)(() => ({
   width: "70%",
   height: "272px",
   padding: "10px",
-
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -96,11 +131,17 @@ export const GetSolution = styled(Typography)(() => ({
   fontSize: "19px !important",
   fontWeight: "400 !important",
 }));
-export const ExploreBrainspackLink = styled(Typography)(() => ({}));
+export const ExploreBrainspackLink = styled(Typography)(() => ({
+  "&:hover": {
+    color: "green !important",
+  },
+}));
+// _________________________________________________________________________________
+//LAUNCHING COMPONENT
+
 export const LaunchingContainer = styled(Box)(() => ({
   height: "500px",
   width: "100%",
-  backgroundColor: "#1b1525",
 }));
 export const LaunchingWrapper = styled(Box)(() => ({
   height: "500px",
@@ -108,14 +149,32 @@ export const LaunchingWrapper = styled(Box)(() => ({
   backgroundImage: `url(${businessImg})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  backgroundColor: "rgba(27,21,37,1)",
   backgroundPosition: "center",
-  opacity: 0.5,
-  mixBlendMode: "luminosity",
+  backgroundBlendMode: "luminosity",
 }));
-export const BusinessTextBox = styled(Typography)(() => ({}));
+export const BusinessTextBox = styled(Box)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+}));
+export const BusinessTextBoxWrapper = styled(Box)(() => ({
+  height: "inherit",
+  backgroundColor: "rgba(64,58,74,0.5)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
 
 export const BusinessText = styled(Typography)(() => ({
-  color: "red !important",
+  color: "#2be4ac !important",
+  fontSize: "36px",
+}));
+export const LaunchingHeading = styled(Typography)(() => ({
+  color: "white !important",
+  fontSize: "105px",
+  fontWeight: "700",
+  letterSpacing: "8px",
 }));
 
 //   ================================= TECH SERVICES ================================================
@@ -485,6 +544,17 @@ export const FooterAddress = styled(Typography)(() => ({
   color: "#aea8b9 ",
   fontSize: "16px !important",
   fontWeight: "500 !important",
+  cursor: "pointer",
+  transition: "all 500ms ease",
+  "&:hover": {
+    color: "white",
+  },
+}));
+export const FooterCompanyFullAddress = styled(Typography)(() => ({
+  color: "#aea8b9 ",
+  fontSize: "16px !important",
+  fontWeight: "500 !important",
+  cursor: "pointer",
 }));
 
 export const FooterLogo = styled(Box)(() => ({
@@ -554,4 +624,21 @@ export const SocialMediaFab = styled(Fab)(() => ({
   color: "#aea8b9 !important",
   height: "50px !important",
   width: "50px !important",
+}));
+
+// ==================== AboutUsBusinessComp STYLING ==============================
+
+export const BrainspackHeading = styled(Typography)(() => ({
+  fontWeight: 500,
+  fontSize: "35px",
+  color: "white",
+  marginBottom: "20px",
+}));
+
+export const BusinessSubHeading = styled(Typography)(() => ({
+  fontWeight: 400,
+  fontSize: "20px",
+  color: "white",
+  textAlign: "center",
+  lineHeight: "32px",
 }));

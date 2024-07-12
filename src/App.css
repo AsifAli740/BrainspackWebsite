@@ -48,18 +48,62 @@
     transform: rotate(360deg);
   }
 }
-.active{
+.navListParent .active{
   border-bottom: 3px solid green;
   padding-top: 3px;
   color: #1B1525 !important;
 }
+.servicesParent .active{
+  color: black !important;
+  background-color: white !important;
+  height: 50px !important;
+  width: 100% !important;
+}
+.servicesParent .active .arrow-right{
+ display: block !important;
+}
 
+.services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px !important;
+  padding: 0px 10px;
+}
+.services:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  height: 50px !important;
+  display: flex;
+  align-items: center;
+  transition: all 500ms ease;
+}
+
+.services:hover .arrow-right{
+  display: block !important;
+}
+.arrow-right{
+  display: none !important;
+}
+.innerChild{
+  display: none;
+}
+.parentLink:hover .innerChild{
+  display: block !important;
+  
+
+}
 .exploreLink{
   text-decoration: none;
   color: white;
   font-weight: 700;
   border-bottom: 3px solid #2be4ac;
   padding-bottom: 3px;
+  transition: all 500ms ease;
+}
+.exploreLink:hover{
+  color: #2be4ac;
 }
 .AboutHomeLink{
   text-decoration: none;
@@ -83,3 +127,131 @@
   display: block;
 }
 
+.services{
+  width: 100%;
+  height: 30px;
+}
+.imageServiceBox:hover .scaleImage{
+  transform: scale(1.02) !important;
+}
+.imageServiceBox{
+  transition: all 500ms ease;
+
+}
+.imageServiceBox:hover .serviceHeadingText{
+  display: none;
+}
+/* .imageServiceBox:hover .blackWrapper{
+  height: 360px;
+}
+.imageServiceBox:hover .secondBlackWrapper{
+  opacity: 0.1;
+}
+.imageServiceBox:hover .jskl{
+  display: block;
+} */
+
+.service-card:hover .card-link{
+  color:black !important
+}
+
+ .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.9;
+} 
+
+.container:hover .overlay {
+  height: 100%;
+}
+.container:hover .overlay-top {
+  bottom: 0;
+  height: 100%;}
+
+.overlay-top{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(33,37,41,0.5); */
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  
+}
+.overlay-heading{
+  color: white !important;
+  transition: all 800ms ease;
+  cursor: pointer;
+  width: fit-content !important;
+}
+.overlay-heading:hover{
+  color:#2be4ac !important
+}
+.link-style{
+  text-decoration: none;
+}
+
+.getToKnowUsAnimation{
+  animation-name: slideInLeft;  
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+  visibility: visible;
+}
+@keyframes slideInLeft {
+  0%   {transform: translate3d(-100%, 0, 0);visibility: visible;}
+  100% {transform: translate3d(0, 0, 0);visibility: visible;}
+}
+
+.trustedAnimation{
+  animation-name: fadeInUp;
+  animation-delay: 300ms;
+  visibility: visible;
+}
+@keyframes fadeInUp {
+  0%   {transform: translateY(20px);opacity: 0;}
+  100%   {transform: translateY(0px);opacity: 1;}
+}
+
+.aboutUsAnimation{
+  animation-name: slideInRight;  
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+  visibility: visible;
+  
+
+}
+@keyframes slideInRight {
+  0%   {transform: translate3d(100%, 0, 0);visibility: visible;}
+  100% {transform: translate3d(0, 0, 0);visibility: visible;}
+}
+.text {
+  /* color: white !important; */
+  width: 74%;
+  /* font-size: 20px; */
+  position: absolute; 
+  height: 270px;
+   top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 200px !important; */
+  
+}
+
+
+.Learn-more:hover{
+  color: #2be4ac !important;
+}

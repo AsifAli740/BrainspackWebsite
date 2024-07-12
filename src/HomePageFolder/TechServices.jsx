@@ -21,13 +21,17 @@ import {
   Offerings,
 } from "./GetKnowUs/GetKnowUsStyled";
 import { TECH_SERVICES } from "../Utils/constant";
+import { Link } from "react-router-dom";
 
 const TechServicesComp = () => {
   return (
     <>
       <TechServicesContainer>
         <TechServicesWrapper>
-          <TechServicesImageBox position={"relative"}>
+          <TechServicesImageBox
+            position={"relative"}
+            className="getToKnowUsAnimation"
+          >
             <Box
               component={"img"}
               height={"95%"}
@@ -40,9 +44,11 @@ const TechServicesComp = () => {
                   Tech solutions bringing your business ideas to digital life
                 </TechServicesText>
                 <Box>
+                  <Link to={"/about"}>
                   <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
                     Learn more
                   </LearnMoreBtn>
+                  </Link>
                 </Box>
               </TechServicesTextBox>
             </AbsoluteBox>

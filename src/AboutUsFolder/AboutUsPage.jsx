@@ -3,14 +3,13 @@ import NavbarComp from "../ReUseComponents/NavbarComp";
 import AboutPageHeaderBg from "../ReUseComponents/AboutPageHeaderBg";
 import OurVisionMission from "./OurVisionMission";
 import CounterItems from "../ReUseComponents/CounterItems";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import {
   GetKnowUsTitle,
   GetKnowUsTitle2,
 } from "../HomePageFolder/GetKnowUs/GetKnowUsStyled";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import LaunchingComp from "../HomePageFolder/Launching";
 import {
   ServiceProvideBox,
   ServiceProvideContent,
@@ -22,7 +21,8 @@ import {
   ShapingFutureText,
 } from "./aboutUsStyled";
 import FooterComp from "../HomePageFolder/Footer";
-import MyCarousel from "../CarasoulStepper";
+import TeamCarousal from "./TeamCarousal";
+import AboutBusinessComp from "./AboutBusinessComp";
 
 function AboutUsPage() {
   return (
@@ -61,15 +61,16 @@ function AboutUsPage() {
               </ServiceProvideContent>
             </Box>
           </ServiceProvideContentBox>
-          <ServiceProvideImageBox>
+          <ServiceProvideImageBox className="aboutUsAnimation">
             <ServiceProvideImageBox1></ServiceProvideImageBox1>
             <ServiceProvideImageBox2></ServiceProvideImageBox2>
           </ServiceProvideImageBox>
         </ServiceProvideBox>
       </ServiceProvideWrapper>
-      <LaunchingComp />
+      <AboutBusinessComp />
       <OurVisionMission />
       <CounterItems />
+      <TeamCarousal />
 
       <FooterComp />
     </>

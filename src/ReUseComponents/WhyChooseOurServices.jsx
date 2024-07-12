@@ -7,6 +7,7 @@ import { Box } from "@mui/material";
 import "../ExternalCss/GetKnowUs.css";
 import {
   CustomAccordian,
+  CustomAccordianDetails,
   UiAndUxBox,
   UiAndUxHeading,
   UiAndUxParagraph,
@@ -37,16 +38,16 @@ const WhyChooseOurServices = ({ data }) => {
               >
                 <UiAndUxHeading>{designing.heading}</UiAndUxHeading>
               </AccordionSummary>
-              <AccordionDetails>
+              <CustomAccordianDetails>
                 {designing.details.map((detail) =>
                   detail.subHeading === "" ? (
                     <Box>
                       <UiAndUxParagraph>{detail.paragraph}</UiAndUxParagraph>
                     </Box>
                   ) : (
-                    <Box display={"flex"}>
+                    <Box display={"flex"} gap={"10px"}>
                       <Box>
-                        <UiAndUxSubHeading variant="subtitle1">
+                        <UiAndUxSubHeading>
                           {detail.subHeading}
                         </UiAndUxSubHeading>
                       </Box>
@@ -56,7 +57,7 @@ const WhyChooseOurServices = ({ data }) => {
                     </Box>
                   )
                 )}
-              </AccordionDetails>
+              </CustomAccordianDetails>
             </CustomAccordian>
           ))}
         </UiAndUxBox>

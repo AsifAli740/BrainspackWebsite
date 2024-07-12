@@ -11,32 +11,39 @@ import DigitalMarketing from "./ServicesFolder/ServicesOptionsComp/DigitalMarket
 import MeanStack from "./ServicesFolder/WebDevelopmentSkills/MeanStack";
 import MernStack from "./ServicesFolder/WebDevelopmentSkills/MernStack";
 import Php from "./ServicesFolder/WebDevelopmentSkills/Php";
+import ScrollToTop from "./ReUseComponents/ScrollToTop";
 
 function App() {
   return (
     <>
-      
+    <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/about" element={<AboutUsPage />}/>
-        <Route path="/services" index element={<Services />}/>
-        <Route path="/web-development" index element={<WebDevelopment />}/>
-        <Route path="/ui-ux-design"  element={<UiUxDesigning />}/>
-        <Route path="/mobile-app-development"   element={<MobileAppDevelopment />}/>
-        <Route path="/mean"  element={<MeanStack />}/>
-        <Route path="/mern"  element={<MernStack />}/>
-        <Route path="/php"  element={<Php />}/>
-
-        <Route path="/digital-marketing"  element={<DigitalMarketing />}/>
-
-
-
-        <Route path="/contact" element={<Contact />}/>
-
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/services">
+          <Route index element={<Services />} />
+          <Route path="web-development">
+            <Route index element={<WebDevelopment />} />
+            <Route path="mean" element={<MeanStack />} />
+            <Route path="mern" element={<MernStack />} />
+            <Route path="php" element={<Php />} />
+          </Route>
+          <Route path="ui-ux-design" element={<UiUxDesigning />} />
+          <Route
+            path="mobile-app-development"
+            element={<MobileAppDevelopment />}
+          />
+          <Route path="digital-marketing" element={<DigitalMarketing />} />
+        </Route>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      
     </>
   );
 }
 
 export default App;
+{
+  /* <Route path="/mean"  element={<MeanStack />}/>
+        <Route path="/mern"  element={<MernStack />}/>
+        <Route path="/php"  element={<Php />}/>  */
+}

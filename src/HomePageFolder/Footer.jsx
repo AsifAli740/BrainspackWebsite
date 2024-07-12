@@ -24,6 +24,7 @@ import {
   SocialMediaBox,
   LinksAndContentBox,
   AcUnitIconBox,
+  FooterCompanyFullAddress,
 } from "./homePageStyled";
 import { Box, Fab, Typography } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
@@ -32,12 +33,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MessageIcon from "@mui/icons-material/Message";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Link } from "react-router-dom";
 const FooterComp = () => {
   return (
     <>
       <FooterWrapper>
-        <LeftFooterImageBox></LeftFooterImageBox>
-        <RightFooterImageBox></RightFooterImageBox>
+        <LeftFooterImageBox className="getToKnowUsAnimation"></LeftFooterImageBox>
+        <RightFooterImageBox className="aboutUsAnimation"></RightFooterImageBox>
         <FooterTextWrapper>
           <ChallengesWrapper>
             <ChallengesBox>
@@ -52,7 +54,9 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
+                <Link to={"/about"}>
                 <CustomBtn>Discover More</CustomBtn>
+                </Link>
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
@@ -65,9 +69,15 @@ const FooterComp = () => {
                     <FooterLinks>Links</FooterLinks>
                   </LinksTextBox>
                   <LinksTextBoxDetails>
+                  <Link className="link-style" to={"/about"}>
                     <FooterAddress>About us</FooterAddress>
-                    <FooterAddress>Meet our team</FooterAddress>
+                  </Link>
+                    <FooterAddress>
+                      Meet our team</FooterAddress>
+                      <Link className="link-style" to={"/contact"}>
+
                     <FooterAddress>Contacts</FooterAddress>
+                    </Link>
                   </LinksTextBoxDetails>
                 </FooterLinksBox>
                 <FooterContactBox>
@@ -85,10 +95,10 @@ const FooterComp = () => {
                     </ContactBoxDetailsEach>
                     <ContactBoxDetailsEach>
                       <LocationOnIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>
+                      <FooterCompanyFullAddress>
                         SCF-15, First Floor, opposite Bus Stand Road, Sarojini
                         Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
-                      </FooterAddress>
+                      </FooterCompanyFullAddress>
                     </ContactBoxDetailsEach>
                   </ContactBoxDetails>
                 </FooterContactBox>
