@@ -22,6 +22,7 @@ import {
 } from "./GetKnowUs/GetKnowUsStyled";
 import { TECH_SERVICES } from "../Utils/constant";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-router-dom";
 
 const TechServicesComp = () => {
   return (
@@ -52,6 +53,26 @@ const TechServicesComp = () => {
                 </TechServicesTextBox>
               </AbsoluteBox>
             </ScrollAnimation>
+            <Box
+              component={"img"}
+              height={"95%"}
+              width={"85%"}
+              src={techServices}
+            />
+            <AbsoluteBox>
+              <TechServicesTextBox>
+                <TechServicesText>
+                  Tech solutions bringing your business ideas to digital life
+                </TechServicesText>
+                <Box>
+                  <Link to={"/about"}>
+                    <LearnMoreBtn endIcon={<ArrowRightAltIcon />}>
+                      Learn more
+                    </LearnMoreBtn>
+                  </Link>
+                </Box>
+              </TechServicesTextBox>
+            </AbsoluteBox>
           </TechServicesImageBox>
           <TechServicesTextWrapper>
             <Box display={"flex"} alignItems={"center"} gap={"10px"}>

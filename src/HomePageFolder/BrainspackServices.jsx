@@ -5,6 +5,12 @@ import {
   ServicesHeading,
   ServicesCardMedia,
   LearnMoreBtn,
+  OverlayWrapper,
+  OverlayTop,
+  OverlapContentWrapper,
+  OverlapText,
+  OverlayTextHeading,
+  OverlayTextSubHeading,
 } from "./homePageStyled";
 import { SERVICES_CONTENT } from "./Constants";
 import { Box, Typography } from "@mui/material";
@@ -49,19 +55,19 @@ const BrainspackServices = () => {
                   // className="image"
                   className="scaleImage"
                 />
-                <Box className="overlay"></Box>
-                <Box class="overlay-top">
-                    <Box sx={{width:"100%",height:"inherit",padding:"20px"}}>
-                  <Box class="text">
+                <OverlayWrapper className="overlay"></OverlayWrapper>
+                <OverlayTop className="overlay-top">
+                    <OverlapContentWrapper>
+                  <OverlapText className="text">
                     <Typography>{service.icons}</Typography>
-                    <Typography sx={{ fontWeight: "700", width:"80%",fontSize:"24px" }}>
+                    <Link className="link-style" to={service.link}>
+                    <OverlayTextHeading className="overlay-heading" >
                       {service.name}
-                    </Typography>
-                    <Typography sx={{ fontSize: "17px",
-    color: "#aea8b9",
-    lineHeight: "30px" }}>
+                    </OverlayTextHeading>
+                    </Link>
+                    <OverlayTextSubHeading>
                       {service.subHeading}
-                    </Typography>
+                    </OverlayTextSubHeading>
                     <Box >
                       <Link to={service.link}>
                   <LearnMoreBtn className="Learn-more" sx={{color:"#55ad88!important"}} endIcon={<ArrowRightAltIcon />}>
@@ -70,9 +76,9 @@ const BrainspackServices = () => {
                       </Link>
                 </Box>
 
-                    </Box>
-                  </Box>
-                </Box>
+                    </OverlapText>
+                  </OverlapContentWrapper>
+                </OverlayTop>
                 <Box
                   display={"flex"}
                   justifyContent={"center"}

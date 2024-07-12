@@ -36,6 +36,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ScrollAnimation from "react-animate-on-scroll";
 import footerImg1 from "../Assets/images/shapes/site-footer-shape-1.png";
 import footerImg2 from "../Assets/images/shapes/site-footer-shape-2.png";
+import { Link } from "react-router-dom";
 const FooterComp = () => {
   return (
     <>
@@ -74,7 +75,9 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
-                <CustomBtn>Discover More</CustomBtn>
+                <Link to={"/about"}>
+                  <CustomBtn>Discover More</CustomBtn>
+                </Link>
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
@@ -87,9 +90,14 @@ const FooterComp = () => {
                     <FooterLinks>Links</FooterLinks>
                   </LinksTextBox>
                   <LinksTextBoxDetails>
-                    <FooterAddress>About us</FooterAddress>
+                    <Link className="link-style" to={"/about"}>
+                      <FooterAddress>About us</FooterAddress>
+                      <FooterAddress>Meet our team</FooterAddress>
+                    </Link>
                     <FooterAddress>Meet our team</FooterAddress>
-                    <FooterAddress>Contacts</FooterAddress>
+                    <Link className="link-style" to={"/contact"}>
+                      <FooterAddress>Contacts</FooterAddress>
+                    </Link>
                   </LinksTextBoxDetails>
                 </FooterLinksBox>
                 <FooterContactBox>
