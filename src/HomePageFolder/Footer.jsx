@@ -43,7 +43,7 @@ const FooterComp = () => {
   return (
     <>
       <FooterWrapper>
-        <LeftFooterImageBox>
+        <LeftFooterImageBox className="leftFooterImageBox">
           <ScrollAnimation animateIn="slideInLeft">
             <Box
               component={"img"}
@@ -53,7 +53,7 @@ const FooterComp = () => {
             />
           </ScrollAnimation>
         </LeftFooterImageBox>
-        <RightFooterImageBox>
+        <RightFooterImageBox className="rightFooterImageBox">
           <ScrollAnimation animateIn="slideInRight">
             <Box
               component={"img"}
@@ -77,12 +77,11 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
-              <DiscoverMore path={"/about"} text="Discover more" />
-
+                <DiscoverMore path={"/about"} text="Discover more" />
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
-          <FooterContentWrapper>
+          <FooterContentWrapper className="footerContentWrapper">
             <FooterContentBox>
               <FooterLogo></FooterLogo>
               <LinksAndContentBox>
@@ -93,8 +92,8 @@ const FooterComp = () => {
                   <LinksTextBoxDetails>
                     <Link className="link-style" to={"/about"}>
                       <FooterAddress>About us</FooterAddress>
-                      <FooterAddress>Meet our team</FooterAddress>
                     </Link>
+
                     <FooterAddress>Meet our team</FooterAddress>
                     <Link className="link-style" to={"/contact"}>
                       <FooterAddress>Contacts</FooterAddress>
@@ -125,17 +124,19 @@ const FooterComp = () => {
                 </FooterContactBox>
               </LinksAndContentBox>
               <SocialMediaBox>
-                <Link to={"https://www.linkedin.com/company/brainspack/?originalSubdomain=in"}>
-                <Box className="icon-wrapper">
-                <Box className="icon-overlay">
-                </Box>
-                  <LinkedInIcon sx={{zIndex:"2"}} />
-                </Box>
+                <Link
+                  to={
+                    "https://www.linkedin.com/company/brainspack/?originalSubdomain=in"
+                  }
+                >
+                  <Box className="icon-wrapper">
+                    <Box className="icon-overlay"></Box>
+                    <LinkedInIcon sx={{ zIndex: "2" }} />
+                  </Box>
                 </Link>
                 <Box className="icon-wrapper">
-                <Box className="icon-overlay">
-                </Box>
-                  <InstagramIcon sx={{zIndex:"2"}} />
+                  <Box className="icon-overlay"></Box>
+                  <InstagramIcon sx={{ zIndex: "2" }} />
                 </Box>
               </SocialMediaBox>
             </FooterContentBox>
