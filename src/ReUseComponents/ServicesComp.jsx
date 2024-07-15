@@ -21,9 +21,10 @@ import {
 } from "./ServicesCompStyled";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { OUR_SERVICES, SERVICES_PROVIDED } from "../HomePageFolder/Constants";
-import { IconBox, IconBoxImage } from "../HomePageFolder/homePageStyled";
+import { DiscoverMoreBtn, IconBox, IconBoxImage } from "../HomePageFolder/homePageStyled";
 import { Link, NavLink } from "react-router-dom";
 import "../ExternalCss/GetKnowUs.css";
+import { CustomBtn, CustomBtnWebDevelopment } from "./NavbarStyled";
 
 const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
   return (
@@ -61,7 +62,8 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                             ? service.child.map((child) => {
                                 return (
                                   <NavLink
-                                    className={`services ${child.class}`}
+                                  // style={{border:"1px solid red"}}
+                                    className={`nested-service ${child.class}`}
                                     to={child.link}
                                   >
                                     {child.name}
@@ -103,11 +105,23 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                 </ServicesProvidedImageWrapper>
               </ServicesProvidedImageBox>
             </ServicesProvidedImageContainer>
-            <ServicesProvidedContactUs>
+            {/* <ServicesProvidedContactUs>
               <Link className="contactUs" to={"/Contact"}>
                 Contact Us
               </Link>
-            </ServicesProvidedContactUs>
+            </ServicesProvidedContactUs> */}
+             <Link to={"/contact"}>
+                  {" "}
+
+                  <CustomBtnWebDevelopment className="discover-button"> 
+                  <Box className="discover-web-dev-overlay">
+                    </Box>
+                    <DiscoverMoreBtn className="typo">
+
+                    {"Contact us"}
+                    </DiscoverMoreBtn>
+                    </CustomBtnWebDevelopment>
+                </Link>
           </ServicesCompLeftBox>
           <ServicesCompRightBox>
             <Box
