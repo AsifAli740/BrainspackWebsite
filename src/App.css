@@ -316,8 +316,6 @@
 }
 
 .animate__slideInRight{
-  /* animation-iteration-count: infinite; */
-animation-iteration-count: infinite;
   animation-duration: 10s;
 } 
 
@@ -371,4 +369,31 @@ animation-iteration-count: infinite;
 
 .icon-wrapper:hover{
   color: #55AD88 !important;
+}
+.counterContainer .animated{
+  animation-delay: 200ms !important;
+}
+
+.counting{
+  color:#2be4ac !important;
+  font-weight: 400 !important;
+  font-size: 40px !important;
+}
+.trustWrapper2 .animated{
+  width: 100% !important;
+  height: 100% !important;
+}
+.counterItem:hover{
+  cursor: pointer;
+}
+.counterItem:hover .customFabIcon{
+  background-color: #55AD88 !important;
+}
+.counterItem:hover .customIcons {
+  color:white !important;
+ 
+}
+.counterItem:hover .customIcons{
+  color:white !important;
+  transform: scale(0.9) rotateY(360deg) !important;
 }

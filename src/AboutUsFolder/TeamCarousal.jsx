@@ -24,12 +24,11 @@ import "../ExternalCss/GetKnowUs.css";
 const TeamCarousal = () => {
   var settings = {
     dots: true,
-    // dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     height: true,
   };
   return (
