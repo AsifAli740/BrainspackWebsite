@@ -221,3 +221,17 @@ export const CustomBtn = styled(Button)(() => ({
     transition: "all 0.5s linear !important",
   },
 }));
+export const CustomBtnWebDevelopment = styled(Button)(() => ({
+  height: "70px",
+  width: "444px",
+  backgroundColor: "#55ad88 !important",
+  color: "white",
+  borderRadius: "0px !important",
+  fontSize: "18px !important",
+  fontWeight: "700 !important",
+  textTransform: "none !important",
+  "&:hover": {
+    backgroundColor: "black !important",
+    transition: "all 0.5s linear !important",
+  },
+}));

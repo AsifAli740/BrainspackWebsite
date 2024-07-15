@@ -44,10 +44,10 @@ const GetInTouch = () => {
                 <Offerings>Ignite Your Digital Journey Today.</Offerings>
               </Box>
               <ContactUsIconsBoxEach>
-                <ContactUsIconsBox>
-                  <TrialBox>
+                <ContactUsIconsBox className="iconWrapper">
+                  <TrialBox >
                     <PhoneInTalkIcon
-                      className="phoneIcon"
+                      className="change-icon-color"
                       sx={{ height: "25px", width: "25px", color: "#55ad88" }}
                     />
                   </TrialBox>
@@ -63,10 +63,10 @@ const GetInTouch = () => {
               </ContactUsIconsBoxEach>
 
               <ContactUsIconsBoxEach>
-                <ContactUsIconsBox>
+                <ContactUsIconsBox className="iconWrapper">
                   <Box>
                     <EmailIcon
-                      className="iconButton"
+                      className="change-icon-color"
                       sx={{ height: "25px", width: "25px", color: "#55ad88" }}
                     />
                   </Box>
@@ -81,9 +81,10 @@ const GetInTouch = () => {
                 </ContactUsDetailsBox>
               </ContactUsIconsBoxEach>
               <ContactUsIconsBoxEach>
-                <ContactUsIconsBox>
+                <ContactUsIconsBox className="iconWrapper">
                   <Box>
                     <PlaceIcon
+                    className="change-icon-color"
                       sx={{ height: "25px", width: "100px", color: "#55ad88" }}
                     />
                   </Box>

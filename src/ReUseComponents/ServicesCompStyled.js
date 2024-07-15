@@ -43,7 +43,7 @@ export const ServicesText = styled(Typography)(() => ({
 export const ServicesProvidedImageContainer = styled(Box)(() => ({
   width: "100%",
   height: "400px",
-  backgroundColor: "rgba(27,21,37)",
+  backgroundColor: "rgba(64,58,74,0.8)",
   backgroundImage: `url(${serviceNeedhelp})`,
   backgroundSize: "100% 100%",
   backgroundPosition: "center",
@@ -53,9 +53,8 @@ export const ServicesProvidedImageContainer = styled(Box)(() => ({
 export const ServicesProvidedImageBox = styled(Box)(() => ({
   width: "100%",
   height: "400px",
-  backgroundColor: "rgba(27,21,37)",
-  opacity: "0.5",
-  display: "flex",
+  backgroundColor: "rgba(27,21,37,0.7)",
+    display: "flex",
   justifyContent: "center",
   alignItems: "center",
 }));
