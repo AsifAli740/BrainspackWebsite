@@ -9,6 +9,7 @@ import {
 } from "./homePageStyled";
 import { CustomBtn } from "./homePageStyled";
 import { Link } from "react-router-dom";
+import DiscoverMore from "../ReUseComponents/DiscoverMore";
 
 const LaunchingComp = () => {
   return (
@@ -27,9 +28,8 @@ const LaunchingComp = () => {
               <LaunchingHeading >LAUNCHING</LaunchingHeading>
             </Box>
             <Box>
-              <Link to={"/contact"}>
-              <CustomBtn>Contact us now</CustomBtn>
-              </Link>
+            <DiscoverMore path={"/contact"} text="Contact us now" />
+
             </Box>
           </BusinessTextBox>
             </BusinessTextBoxWrapper>
