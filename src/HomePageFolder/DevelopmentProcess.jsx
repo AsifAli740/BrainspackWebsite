@@ -68,7 +68,7 @@ const DevelopmentProcess = () => {
                       height={"400px"}
                       width={"100%"}
                       src={images.image}
-                      backgroundSize={"contain"}
+                      // backgroundSize={"contain"}
                     />
                     <Box
                       height={"150px"}

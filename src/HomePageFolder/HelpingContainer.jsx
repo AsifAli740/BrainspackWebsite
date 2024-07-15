@@ -26,6 +26,7 @@ import {
   TrustedSourceText,
   TrustedSourceTextBox,
   TrustedSourceWrapper,
+  TrustedSourceWrapper2,
 } from "./homePageStyled";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
 import { Box, Typography } from "@mui/material";
@@ -37,33 +38,34 @@ import helpingBlackImage from "../Assets/images/shapes/helping-shape-1.png";
 function HelpingContainer(props) {
   return (
     <HelpingContainerWrapper>
-      {/* <Box height={"200px"} width={"90%"} position={"absolute"}> */}
-      {/* <ScrollAnimation animateIn="fadeInUp"> */}
-      <TrustedSourceWrapper className="aboutUsAnimation">
-        <TrustedSourceBox>
-          <Box
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            height={"140px"}
-          >
-            <TrustedSourceTextBox>
-              <TrustedSourceText>
-                Trusted source in IT services
-              </TrustedSourceText>
-            </TrustedSourceTextBox>
-            <IconBox>
-              <IconBoxImage></IconBoxImage>
-            </IconBox>
-            <QueryBox>
-              <AnyQuestionText>Have any question?</AnyQuestionText>
-              <NumberText>Free +91-9168117671</NumberText>
-            </QueryBox>
-          </Box>
-        </TrustedSourceBox>
+      <TrustedSourceWrapper className="trustWrapper2">
+        <ScrollAnimation animateIn="fadeInUp">
+          <TrustedSourceWrapper2>
+            <TrustedSourceBox>
+              <Box
+                display={"flex"}
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                height={"140px"}
+              >
+                <TrustedSourceTextBox>
+                  <TrustedSourceText>
+                    Trusted source in IT services
+                  </TrustedSourceText>
+                </TrustedSourceTextBox>
+                <IconBox>
+                  <IconBoxImage></IconBoxImage>
+                </IconBox>
+                <QueryBox>
+                  <AnyQuestionText>Have any question?</AnyQuestionText>
+                  <NumberText>Free +91-9168117671</NumberText>
+                </QueryBox>
+              </Box>
+            </TrustedSourceBox>
+          </TrustedSourceWrapper2>
+        </ScrollAnimation>
       </TrustedSourceWrapper>
-      {/* </ScrollAnimation> */}
-      {/* </Box> */}
+
       <HelpingContainerImageBox></HelpingContainerImageBox>
       <HelpingContentWrapper>
         <HelpingLineImageWrapper className="helpingLineImageWrapper">

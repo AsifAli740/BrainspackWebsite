@@ -103,7 +103,7 @@ export const BrainspackSliderPPPHeading = styled(Typography)(() => ({
 }));
 
 export const CustomBtn = styled(Button)(() => ({
-  position:"relative",
+  position: "relative",
   height: "60px",
   width: "220px",
   backgroundColor: "#55AD88 !important",
@@ -112,7 +112,7 @@ export const CustomBtn = styled(Button)(() => ({
   fontSize: "18px !important",
   fontWeight: "700 !important",
   textTransform: "none !important",
-  padding:"0px 0px !important"
+  padding: "0px 0px !important",
 }));
 export const DiscoverMoreBtn = styled(Typography)(() => ({
   color: "white !important",
@@ -238,6 +238,13 @@ export const TrustedSourceWrapper = styled(Box)(() => ({
   zIndex: "2",
   top: "-100px",
   left: "80px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+export const TrustedSourceWrapper2 = styled(Box)(() => ({
+  width: "100%",
+  height: "inherit",
   backgroundColor: "#55ad88",
   display: "flex",
   justifyContent: "center",

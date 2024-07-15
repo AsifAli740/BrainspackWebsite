@@ -81,16 +81,13 @@ function MainSlider(props) {
                 top={"0px"}
                 right={"0px"}
               >
-                {/* <ScrollAnimation animateIn="slideInRight"> */}
                 <Box
                   component={"img"}
                   height={"400px"}
                   width={"100%"}
                   src={mainSliderShape1}
                   className="animate__animated animate__slideInRight "
-                  // className="mainSliderOne"
                 />
-                {/* </ScrollAnimation> */}
               </Box>
               <Box
                 component={"img"}
@@ -100,7 +97,6 @@ function MainSlider(props) {
                 position={"absolute"}
                 bottom={"0px"}
                 right={"0px"}
-                className="mainSliderTwo"
               />
               <Box
                 component={"img"}
