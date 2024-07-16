@@ -146,25 +146,25 @@ export const serviceCardContent = [
 
 export const counterItemContent = [
   {
-    icons: <BusinessCenterIcon />,
+    icons: <BusinessCenterIcon sx={{fontSize:"35px"}} />,
     dataCount: "3",
     counterPlus: "+",
     counterTitle: "Years of experience",
   },
   {
-    icons: <PermDataSettingIcon />,
+    icons: <PermDataSettingIcon sx={{fontSize:"35px"}} />,
     dataCount: "700",
     counterPlus: "+",
     counterTitle: "IT problems solved",
   },
   {
-    icons: <ThumbUpIcon />,
+    icons: <ThumbUpIcon sx={{fontSize:"35px"}} />,
     dataCount: "11",
     counterPlus: "+",
     counterTitle: "Satisfied clients",
   },
   {
-    icons: <GroupsIcon />,
+    icons: <GroupsIcon sx={{fontSize:"35px"}} />,
     dataCount: "15",
     counterPlus: "+",
     counterTitle: "Pro team members",

@@ -119,6 +119,7 @@ export const DiscoverMoreBtn = styled(Typography)(() => ({
   fontSize: "18px !important",
   fontWeight: "700 !important",
 }));
+
 export const GetSolutionContainer = styled(Box)(() => ({
   width: "100%",
   height: "120px",

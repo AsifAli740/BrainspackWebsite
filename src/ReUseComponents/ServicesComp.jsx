@@ -63,7 +63,7 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                                 return (
                                   <NavLink
                                   // style={{border:"1px solid red"}}
-                                    className={`nested-service ${child.class}`}
+                                    className={`services ${child.class}`}
                                     to={child.link}
                                   >
                                     {child.name}

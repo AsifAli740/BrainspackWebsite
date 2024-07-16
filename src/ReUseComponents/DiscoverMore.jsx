@@ -10,7 +10,7 @@ function DiscoverMore({path, text}) {
             <Link to={path}>
                   {" "}
 
-                  <CustomBtn className="discover-button"> 
+                  <CustomBtn className="discover-button "> 
                   <Box className="discover-overlay">
                     </Box>
                     <DiscoverMoreBtn className="typo">

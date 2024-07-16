@@ -325,6 +325,15 @@
   transition: all 500ms ease;
   z-index: 1;
 }
+.discover-overlay-footer-btn{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 0px;
+  background-color: white !important;
+  transition: all 500ms ease;
+  z-index: 1;
+}
 .discover-web-dev-overlay{
   position: absolute;
   width: 100%;
@@ -338,8 +347,15 @@
 .discover-button:hover .discover-overlay{
   height: 60px;
 }
+.discover-button:hover .discover-overlay-footer-btn{
+  height: 60px;
+}
 .discover-button:hover .discover-web-dev-overlay{
   height: 70px;
+}
+
+.discover-button:hover .green-text{
+  color: #55AD88 !important;
 }
 
 .typo{
@@ -359,6 +375,8 @@
 
 .icon-wrapper{
   position: relative;
+  margin-bottom: 10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,6 +417,8 @@
 }
 .counterItem:hover .customIcons {
   color:white !important;
+  transform: rotate(360deg);
+  transition: all 800ms ease;
  
 }
 .counterItem:hover .customIcons{
@@ -411,3 +431,14 @@
   color:white !important
 }
 
+
+.Carousel-icons{
+  display: none;
+}
+
+.carousel-card:hover .Carousel-icons{
+  display: block !important;
+ 
+
+
+}
