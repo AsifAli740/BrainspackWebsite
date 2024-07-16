@@ -77,8 +77,18 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
-                <DiscoverMore path={"/about"} text="Discover more" />
-              </Box>
+              <Link to={"/about"}>
+                  {" "}
+
+                  <CustomBtn className="discover-button "> 
+                  <Box className="discover-overlay-footer-btn">
+                    </Box>
+                    <DiscoverMoreBtn className="typo green-text">
+
+                    Discover more
+                    </DiscoverMoreBtn>
+                    </CustomBtn>
+                </Link>              </Box>
             </ChallengesBox>
           </ChallengesWrapper>
           <FooterContentWrapper className="footerContentWrapper">

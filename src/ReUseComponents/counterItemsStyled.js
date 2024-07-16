@@ -60,5 +60,6 @@ export const FabIcon = styled(Fab)(() => ({
   backgroundColor: "white !important",
   width: "75px !important",
   height: "75px !important",
+  position:"relative",
   boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.05) !important",
 }));

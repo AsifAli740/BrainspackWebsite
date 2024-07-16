@@ -26,7 +26,7 @@ function CounterItems() {
               {counterItemContent.map((ele) => (
                 <CounterItem className="counterItem">
                   <Box className="customBox">
-                    <FabIcon className="customFabIcon" border="1px solid green">
+                    <FabIcon className="customFabIcon" >
                       <CounterIcon className="customIcons">
                         {ele.icons}
                       </CounterIcon>
