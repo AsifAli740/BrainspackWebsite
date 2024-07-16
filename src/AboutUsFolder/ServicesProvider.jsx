@@ -33,11 +33,12 @@ const ServicesProvider = () => {
             </Box>
             <Box>
               <ShapingFutureText>
-                <span>
-                  <FormatQuoteIcon />
+                <span className="quote1">
+                  {" "}
+                  <FormatQuoteIcon />{" "}
                 </span>
                 Shaping The Future of Business With Web.{" "}
-                <span>
+                <span className="quote">
                   <FormatQuoteIcon />
                 </span>
               </ShapingFutureText>

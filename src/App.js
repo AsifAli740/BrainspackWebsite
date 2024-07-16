@@ -43,8 +43,3 @@ function App() {
 }
 
 export default App;
-{
-  /* <Route path="/mean"  element={<MeanStack />}/>
-        <Route path="/mern"  element={<MernStack />}/>
-        <Route path="/php"  element={<Php />}/>  */
-}

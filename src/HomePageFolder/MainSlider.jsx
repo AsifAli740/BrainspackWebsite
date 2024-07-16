@@ -62,7 +62,6 @@ function MainSlider(props) {
                 src={product.image}
                 className="mainSliderMainImages"
               />
-
               <MainSliderBox position={"absolute"} top={"200px"} left={"200px"}>
                 <BrainspackSliderHeading>
                   Brains
@@ -71,7 +70,6 @@ function MainSlider(props) {
                   </BrainspackSliderPPPHeading>
                   ack
                 </BrainspackSliderHeading>
-
                 <DiscoverMore path={"/about"} text="Discover more" />
               </MainSliderBox>
               <Box
@@ -80,6 +78,7 @@ function MainSlider(props) {
                 position={"absolute"}
                 top={"0px"}
                 right={"0px"}
+                opacity={"0.3"}
               >
                 <Box
                   component={"img"}
@@ -100,6 +99,7 @@ function MainSlider(props) {
               />
               <Box
                 component={"img"}
+                opacity={"0.3"}
                 height={"200px"}
                 width={"20%"}
                 src={mainSliderShape3}

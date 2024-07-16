@@ -16,16 +16,17 @@ import {
   SpinningImage,
   VisionContent,
   VisionHeading,
-  
 } from "./aboutUsStyled";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import { ThemeConsumer } from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
+import ourVisionImage from "../Assets/images/resources/get-to-know-img-1.jpg";
+import { Box } from "@mui/material";
 
 function OurVisionMission(props) {
   return (
     <OurVisionMissionWrapper>
-       
-        <MissonImageBg></MissonImageBg>
+      <MissonImageBg></MissonImageBg>
       <OurVisionHeading>
         <TrendingUpIcon
           sx={{ fontSize: "50px", fontWeight: "900", color: "#55ad88" }}
@@ -34,7 +35,16 @@ function OurVisionMission(props) {
       </OurVisionHeading>
 
       <OurVisionImageIntroWrapper>
-        <OurVisionImageBox></OurVisionImageBox>
+        <OurVisionImageBox className="ourVisionImageBox">
+          <ScrollAnimation animateIn="slideInLeft">
+            <Box
+              component={"img"}
+              width={"100%"}
+              height={"540px"}
+              src={ourVisionImage}
+            />
+          </ScrollAnimation>
+        </OurVisionImageBox>
         <OurVisionIntroWrapper>
           <OurVisionBox>
             <VisionHeading>Our Vision:</VisionHeading>
