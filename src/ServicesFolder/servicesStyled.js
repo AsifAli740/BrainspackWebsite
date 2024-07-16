@@ -2,15 +2,14 @@ import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
 export const WebFrontContainer = styled(Box)(({}) => ({
   width: "100%",
-  height: "1600px",
-  // backgroundColor:"purple",
+  height: "1650px",
   display: "flex",
   justifyContent: "center",
+  marginTop: "30px",
 }));
 export const ServiceDetailContainer = styled(Box)(({}) => ({
   width: "100%",
   height: "auto",
-  // backgroundColor:"purple",
   display: "flex",
   justifyContent: "center",
 }));
@@ -27,14 +26,14 @@ export const FrontEndWrapper = styled(Box)(({}) => ({
   height: "auto",
   display: "flex",
   flexDirection: "column",
-//   justifyContent: "space-between",
+  gap: "10px",
 }));
 export const BackEndWrapper = styled(Box)(({}) => ({
   width: "100%",
   height: "420px",
   display: "flex",
   flexDirection: "column",
-//   justifyContent: "space-between",
+  gap: "15px",
 }));
 export const ServiceWebHeadingWrapper = styled(Box)(({}) => ({
   width: "100%",
@@ -52,7 +51,7 @@ export const ServiceFrontEndDetailWrapper = styled(Box)(({}) => ({
   height: "auto",
   display: "flex",
   justifyContent: "space-between",
-  marginBottom:"25px"
+  marginBottom: "25px",
 }));
 export const ServiceFrontEndImgWrapper = styled(Box)(({}) => ({
   width: "30%",
@@ -83,7 +82,6 @@ export const ServiceFrontEndContentWrapper = styled(Box)(({}) => ({
   flexDirection: "column",
   padding: "35px 40px",
   justifyContent: "space-between",
-  // alignItems:"center"
 }));
 export const FrontEndContentBox = styled(Box)(({}) => ({
   width: "90%",

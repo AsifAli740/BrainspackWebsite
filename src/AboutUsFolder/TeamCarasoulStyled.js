@@ -8,7 +8,7 @@ export const TeamCarasoulWrapper = styled(Box)(() => ({
 }));
 export const TeamCarasoulContainer = styled(Box)(() => ({
   width: "100%",
-  height: "80%",
+  height: "90%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-around",
@@ -40,13 +40,17 @@ export const TeamMembersDesignation = styled(Typography)(() => ({
   color: "#777181 !important",
   fontWeight: "400 !important",
 }));
+export const TeamMembersDetails = styled(Typography)(() => ({
+  fontSize: "18px !important",
+  color: "#777181 !important",
+  fontWeight: "400 !important",
+  lineHeight: "32px !important",
+  textAlign: "center",
+}));
 export const CustomTeamCardBox = styled(Box)(() => ({
   height: "500px",
   width: "95%",
   margin: "0 auto",
-  // border: "1px solid red",
-  // display: "flex !important",
-  // justifyContent: "space-between",
 }));
 export const CustomTeamCard = styled(Card)(() => ({
   margin: "0 20px",

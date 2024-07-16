@@ -411,3 +411,20 @@
   color:white !important
 }
 
+.ourVisionImageBox .animated{
+  visibility: visible !important;
+  animation-duration: 2500ms !important;
+  animation-delay: 100ms !important;
+}
+.quote1{
+  transition: 3s;
+  transform: rotate(180deg) !important;
+  color: red !important;
+}
+.quote{
+  /* font-size: 35px !important; */
+  color: #55AD88 !important;
+  
+}
+
+

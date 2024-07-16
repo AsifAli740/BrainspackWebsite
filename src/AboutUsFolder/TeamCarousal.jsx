@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import { Box, CardActionArea } from "@mui/material";
+import { Box, CardActionArea, Fade } from "@mui/material";
 import { TEAM_DETAILS } from "./TeamCarasoulConstant";
 import {
   CustomTeamCard,
@@ -14,6 +14,7 @@ import {
   TeamCarasoulContainer,
   TeamCarasoulWrapper,
   TeamMembersDesignation,
+  TeamMembersDetails,
   TeamMembersName,
   TeamMembersText,
 } from "./TeamCarasoulStyled";
@@ -28,12 +29,39 @@ const TeamCarousal = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     height: true,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
-      <TeamCarasoulWrapper id="#c1">
+      <TeamCarasoulWrapper>
         <TeamCarasoulContainer>
           <MeetTeamContainer>
             <MeetTeamBox>
@@ -42,6 +70,14 @@ const TeamCarousal = () => {
             </MeetTeamBox>
             <Box>
               <TeamMembersText>Team Members</TeamMembersText>
+            </Box>
+            <Box width={"85%"}>
+              <TeamMembersDetails>
+                Embarking on a collaborative journey to success, Brainspack
+                places your remarkable ideas at the forefront. Let's seamlessly
+                bring them to life, forging a pathway to unparalleled
+                achievements and enduring prosperity together.
+              </TeamMembersDetails>
             </Box>
           </MeetTeamContainer>
           <CustomTeamCardBox>
@@ -57,7 +93,7 @@ const TeamCarousal = () => {
                         alt={team.name}
                       />
 
-                      <CardContent>
+                      <CardContent sx={{ height: "100px" }}>
                         <Box
                           display={"flex"}
                           flexDirection={"column"}

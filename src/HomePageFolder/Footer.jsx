@@ -134,11 +134,15 @@ const FooterComp = () => {
                     <LinkedInIcon sx={{ zIndex: "2" }} />
                   </Box>
                 </Link>
-                <Link to={"https://www.instagram.com/brainspack?igsh=MTI2aHhqYXlmZmJzdQ=="}>
-                <Box className="icon-wrapper">
-                  <Box className="icon-overlay"></Box>
-                  <InstagramIcon sx={{ zIndex: "2" }} />
-                </Box>
+                <Link
+                  to={
+                    "https://www.instagram.com/brainspack?igsh=MTI2aHhqYXlmZmJzdQ=="
+                  }
+                >
+                  <Box className="icon-wrapper">
+                    <Box className="icon-overlay"></Box>
+                    <InstagramIcon sx={{ zIndex: "2" }} />
+                  </Box>
                 </Link>
               </SocialMediaBox>
             </FooterContentBox>

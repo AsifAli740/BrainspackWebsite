@@ -32,7 +32,7 @@ export const OurVisionImageIntroWrapper = styled(Box)(() => ({
 export const OurVisionImageBox = styled(Box)(() => ({
   width: "40%",
   height: "540px",
-  backgroundImage: `url(${ourVisionImage})`,
+  // backgroundImage: `url(${ourVisionImage})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
 }));

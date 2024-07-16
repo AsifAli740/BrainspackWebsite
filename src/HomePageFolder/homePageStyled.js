@@ -76,9 +76,6 @@ export const OverlayTextSubHeading = styled(Typography)(() => ({
 export const SliderWrapper = styled(Box)(() => ({
   width: "100%",
   height: "731px",
-  // display: "flex",
-  // justifyContent: "center",
-  // alignItems: "center",
 }));
 export const MainSliderBox = styled(Box)(() => ({
   width: "70%",
