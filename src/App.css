@@ -240,8 +240,8 @@
   height: 270px;
    top: 50%;
   left: 50%; 
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -442,9 +442,7 @@
   color: red !important;
 }
 .quote{
-  /* font-size: 35px !important; */
   color: #55AD88 !important;
-  
 }
 
 
@@ -459,3 +457,21 @@
 
 
 }
+
+.carousel-card:hover .team-shape-img{
+  right: 0px !important;
+  position: absolute;
+  transition: all 500ms ease;
+}
+
+.data-protection:hover .data-protect-icon{
+  font-size: 70px !important;
+  transition: all 500ms ease;
+  color: white;
+}
+.optimize:hover .optimize-icon{
+  font-size: 65px !important;
+  transition: all 500ms ease;
+  color: white;
+}
+

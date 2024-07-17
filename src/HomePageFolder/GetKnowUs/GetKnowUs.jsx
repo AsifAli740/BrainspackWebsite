@@ -20,10 +20,13 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css";
 import DiscoverMore from "../../ReUseComponents/DiscoverMore";
+import { MissonImageBg } from "../../AboutUsFolder/aboutUsStyled";
 const GetKnowUs = () => {
   return (
     <>
-      <GetKnowUsContainer>
+      <GetKnowUsContainer sx={{position:'relative'}}>
+      <MissonImageBg></MissonImageBg>
+
         <GetKnowUsWrapper>
           <GetKnowUsImageBox className="getKnowUsImageBox">
             <ScrollAnimation animateIn="slideInLeft">
