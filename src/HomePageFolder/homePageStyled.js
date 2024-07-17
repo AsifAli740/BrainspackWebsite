@@ -338,6 +338,8 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
   right: "0px",
   width: "390px",
   height: "500px",
+  zIndex: "1",
+  // backgroundImage: `url(${helpingBlackImage})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
 }));
@@ -393,7 +395,7 @@ export const HelpingPointsWrapper = styled(Box)(() => ({
 }));
 export const DataProtectionWrapper = styled(Box)(() => ({
   width: "50%",
-  height: "200px",
+  height: "220px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -415,9 +417,10 @@ export const DataProtectionText = styled(Typography)(() => ({
 }));
 export const OptimizeWrapper = styled(Box)(() => ({
   width: "50%",
-  height: "200px",
+  height: "220px",
   display: "flex",
   flexDirection: "column",
+  zIndex: "2",
   justifyContent: "space-between",
 }));
 export const OptimizeTitle = styled(Typography)(() => ({

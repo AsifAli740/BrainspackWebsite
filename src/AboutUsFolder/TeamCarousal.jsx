@@ -22,6 +22,7 @@ import {
 } from "./TeamCarasoulStyled";
 import { GetKnowUsTitle } from "../HomePageFolder/GetKnowUs/GetKnowUsStyled";
 import twoDots from "../Assets/images/shapes/section-title-shape.png";
+import teamshape from "../Assets/images/shapes/team-one-shape.png";
 import "../ExternalCss/GetKnowUs.css";
 import { Link } from "react-router-dom";
 
@@ -87,20 +88,27 @@ const TeamCarousal = () => {
             <Slider {...settings} style={{ margin: "0 20px" }}>
               {TEAM_DETAILS.map((team) => (
                 <>
-                  <CustomTeamCard  sx={{position:"relative"}}>
-                    <CardActionArea  className="carousel-card"   >
+                  <CustomTeamCard sx={{ position: "relative" }}>
+                    <CardActionArea className="carousel-card">
                       <CardMedia
                         component="img"
                         height="400px"
                         image={team.image}
                         alt={team.name}
-                       
                       />
-                      <Box className="Carousel-icons" sx={{position:"absolute",right:"20px" ,bottom:"120px"}}>
+                      <Box
+                        className="Carousel-icons"
+                        sx={{
+                          position: "absolute",
+                          right: "20px",
+                          bottom: "120px",
+                        }}
+                      >
                         <Link
                           to={
-                            "https://www.linkedin.com/company/brainspack/?originalSubdomain=in"
+                            team.link
                           }
+                          target="blank"
                         >
                           <Box className="icon-wrapper">
                             <Box className="icon-overlay"></Box>
@@ -119,12 +127,22 @@ const TeamCarousal = () => {
                         </Link>
                       </Box>
 
-                      <CardContent sx={{ height: "100px" }}>
+                      <CardContent className="team-name-box"   sx={{ height: "100px", position:"relative"
+                      // backgroundImage: `url(${teamshape})`, backgroundRepeat:"no-repeat",backgroundSize:"30% 100px"
+                     }}
+                      >
+                        <Box className="team-shape-img"  component={"img"} src={teamshape} sx={{    position: "absolute",
+    right: "-130px",
+    height: "90px",
+    width: "32%"}} />
                         <Box
                           display={"flex"}
                           flexDirection={"column"}
                           justifyContent={"center"}
                           alignItems={"center"}
+                          position= "absolute"
+                          top= "17px"
+                          left="100px"
                         >
                           <TeamMembersName>{team.name}</TeamMembersName>
                           <TeamMembersDesignation>
