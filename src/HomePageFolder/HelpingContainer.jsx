@@ -95,10 +95,10 @@ function HelpingContainer(props) {
               Empowering Global Businesses with Innovative Solutions.
             </EmpoweringBussiness>
             <HelpingPointsWrapper>
-              <DataProtectionWrapper>
-                <Box>
-                  <AdminPanelSettingsIcon
-                    sx={{ fontSize: "65px !important", color: "#2be4ac" }}
+              <DataProtectionWrapper className="data-protection">
+                <Box sx={{height:"75px"}}>
+                  <AdminPanelSettingsIcon className="data-protect-icon"
+                    sx={{ fontSize: "75px !important", color: "#2be4ac" }}
                   />
                 </Box>
                 <DataProtectionTitle>Data Protection :</DataProtectionTitle>
@@ -106,10 +106,10 @@ function HelpingContainer(props) {
                   Safeguarding Your Digital Assets with Vigilance.
                 </DataProtectionText>
               </DataProtectionWrapper>
-              <OptimizeWrapper>
-                <Box>
-                  <SettingsSuggestIcon
-                    sx={{ fontSize: "65px !important", color: "#2be4ac" }}
+              <OptimizeWrapper className="optimize">
+                <Box sx={{height:"75px"}}>
+                  <SettingsSuggestIcon className="optimize-icon"
+                    sx={{ fontSize: "75px !important", color: "#2be4ac" }}
                   />
                 </Box>
                 <OptimizeTitle>Optimize IT System :</OptimizeTitle>
