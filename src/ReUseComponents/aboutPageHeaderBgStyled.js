@@ -29,8 +29,11 @@ export const AboutLinkWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  [theme.breakpoints.between("xs", "sm")]: {
-    width: "35%",
+  [theme.breakpoints.down("sm")]: {
+    width: "30%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "30%",
   },
 }));
 export const ServiceLinkWrapper = styled(Box)(({ theme }) => ({
