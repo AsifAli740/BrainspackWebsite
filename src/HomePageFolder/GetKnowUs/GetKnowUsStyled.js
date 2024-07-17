@@ -37,6 +37,10 @@ export const GetKnowUsTitle2 = styled(Typography)(({ theme }) => ({
     fontSize: "30px !important",
     fontWeight: "700 !important",
   },
+  [theme.breakpoints.between("sm", "md")]: {
+    fontSize: "30px !important",
+    fontWeight: "700 !important",
+  },
 }));
 
 export const Offerings = styled(Typography)(({ theme }) => ({
@@ -44,6 +48,9 @@ export const Offerings = styled(Typography)(({ theme }) => ({
   fontSize: "18px !important",
   fontWeight: "400 !important",
   [theme.breakpoints.down("sm")]: {
+    fontSize: "16px !important",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     fontSize: "16px !important",
   },
 }));

@@ -5,6 +5,7 @@ import {
   CardMedia,
   Fab,
   Typography,
+  createTheme,
   styled,
 } from "@mui/material";
 import helpingLeftImage from "../Assets/images/backgrounds/helping-left-bg.jpg";
@@ -15,6 +16,17 @@ import footerImg1 from "../Assets/images/shapes/site-footer-shape-1.png";
 import footerImg2 from "../Assets/images/shapes/site-footer-shape-2.png";
 import brainspackLogo from "../Assets/images/resources/final-footer-brainspack-logo.svg";
 import trustedSourceIcon from "../Assets/images/icon/trusted-source-icon.png";
+// const theme = createTheme({
+//   breakpoints: {
+//     values: {
+//       xs: 0,
+//       sm: 700,
+//       md: 900,
+//       lg: 1200,
+//       xl: 1536,
+//     },
+//   },
+// });
 
 export const ServicesWrapper = styled(Box)(() => ({
   width: "100%",
@@ -251,10 +263,6 @@ export const TrustedSourceWrapper2 = styled(Box)(() => ({
 export const TrustedSourceBox = styled(Box)(() => ({
   width: "80%",
   height: "70%",
-  // display: "flex",
-
-  // justifyContent: "space-between",
-  // alignItems: "center",
 }));
 export const TrustedSourceTextBox = styled(Box)(() => ({
   width: "30%",
@@ -330,7 +338,6 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
   right: "0px",
   width: "390px",
   height: "500px",
-  // backgroundImage: `url(${helpingBlackImage})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.1",
 }));
@@ -431,22 +438,9 @@ export const OptimizeText = styled(Typography)(() => ({
 // ________________________________________________________________________________
 // FOOTER STYLING
 
-export const FooterWrapper = styled(Box)(({ theme }) => ({
-  width: "100%",
-  height: "600px",
-  backgroundColor: "#1b1525",
-  position: "relative",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  [theme.breakpoints.between("xs", "sm")]: {
-    height: "800px",
-  },
-}));
-export const LeftFooterImageBox = styled(Box)(() => ({
+export const LeftFooterImageBox = styled(Box)(({ theme }) => ({
   height: "388px",
   width: "388px",
-  // backgroundImage: `url(${footerImg1})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.2",
   backgroundPosition: "top center",
@@ -459,7 +453,6 @@ export const LeftFooterImageBox = styled(Box)(() => ({
 export const RightFooterImageBox = styled(Box)(() => ({
   width: "40%",
   height: "inherit",
-  // backgroundImage: `url(${footerImg2})`,
   backgroundRepeat: "no-repeat",
   opacity: "0.2",
   backgroundPosition: "bottom center",
@@ -469,6 +462,23 @@ export const RightFooterImageBox = styled(Box)(() => ({
   bottom: 0,
   right: 0,
 }));
+
+export const FooterWrapper = styled(Box)(({ theme }) => ({
+  width: "100%",
+  height: "600px",
+  backgroundColor: "#1b1525",
+  position: "relative",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    height: "1150px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "1150px",
+  },
+}));
+
 export const FooterTextWrapper = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "80%",
@@ -477,6 +487,11 @@ export const FooterTextWrapper = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   alignItems: "center",
   [theme.breakpoints.down("sm")]: {
+    width: "90%",
+    height: "85%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "90%",
     height: "85%",
   },
 }));
@@ -487,9 +502,13 @@ export const ChallengesWrapper = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   border: "1px solid #322d3b",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
     width: "100%",
-    height: "40%",
+    height: "300px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+    height: "300px",
   },
 }));
 export const ChallengesBox = styled(Box)(({ theme }) => ({
@@ -498,22 +517,30 @@ export const ChallengesBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     width: "100%",
-    height: "100%",
+    height: "80%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "80%",
   },
 }));
 export const IconAndBtnBox = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "56%",
   justifyContent: "space-between",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    height: "160px",
+    width: "100%",
     flexDirection: "column",
-    width: "90%",
-    display: "flex",
-    alignItems: "space-between",
-    gap: "20px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "160px",
+    width: "100%",
+    flexDirection: "column",
   },
 }));
 export const AcUnitIconBox = styled(Box)(({ theme }) => ({
@@ -523,23 +550,41 @@ export const AcUnitIconBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
   },
+  [theme.breakpoints.between("sm", "md")]: {
+    display: "flex",
+    justifyContent: "center",
+  },
 }));
 
-export const FooterContent = styled(Typography)(() => ({
+export const FooterContent = styled(Typography)(({ theme }) => ({
   color: "white ",
   fontSize: "25px !important",
   fontWeight: "600 !important",
+  [theme.breakpoints.down("sm")]: {
+    textAlign: "center",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    textAlign: "center",
+  },
 }));
 
-export const FooterContentWrapper = styled(Box)(() => ({
+export const FooterContentWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  height: "60%",
+  height: "65%",
 }));
-export const FooterContentBox = styled(Box)(() => ({
+export const FooterContentBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   width: "85%",
   height: "100%",
+  [theme.breakpoints.down("sm")]: {
+    width: "38%",
+    flexDirection: "column",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "38%",
+    flexDirection: "column",
+  },
 }));
 
 export const FooterLinks = styled(Typography)(() => ({
@@ -564,38 +609,82 @@ export const FooterCompanyFullAddress = styled(Typography)(() => ({
   cursor: "pointer",
 }));
 
-export const FooterLogo = styled(Box)(() => ({
+export const FooterLogo = styled(Box)(({ theme }) => ({
   backgroundImage: `url(${brainspackLogo})`,
   backgroundRepeat: "no-repeat",
   width: "18%",
   height: "65px",
   backgroundSize: "100% 65px",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "12%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+    height: "12%",
+  },
 }));
-export const LinksAndContentBox = styled(Box)(() => ({
+export const LinksAndContentBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   width: "35%",
   height: "100%",
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "75%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "75%",
+  },
 }));
-export const FooterLinksBox = styled(Box)(() => ({
+export const FooterLinksBox = styled(Box)(({ theme }) => ({
   width: "30% ",
   height: "60%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "30%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+    height: "30%",
+  },
 }));
-export const FooterContactBox = styled(Box)(() => ({
+export const FooterContactBox = styled(Box)(({ theme }) => ({
   width: "52% ",
   height: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "65%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+    height: "65%",
+  },
 }));
-export const SocialMediaBox = styled(Box)(() => ({
+export const SocialMediaBox = styled(Box)(({ theme }) => ({
   display: "flex",
   gap: "10px",
   justifyContent: "flex-end",
   width: "10%",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
 }));
 
 export const LinksTextBox = styled(Box)(() => ({
@@ -626,7 +715,7 @@ export const ContactBoxDetailsEach = styled(Box)(() => ({
   gap: "10px",
 }));
 
-export const SocialMediaFab = styled(Fab)(() => ({
+export const SocialMediaFab = styled(Fab)(({ theme }) => ({
   backgroundColor: "black !important",
   color: "#aea8b9 !important",
   height: "50px !important",

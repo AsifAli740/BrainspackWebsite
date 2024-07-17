@@ -442,7 +442,6 @@
   color: red !important;
 }
 .quote{
-  /* font-size: 35px !important; */
   color: #55AD88 !important;
   
 }
@@ -455,7 +454,4 @@
 
 .carousel-card:hover .Carousel-icons{
   display: block !important;
- 
-
-
 }

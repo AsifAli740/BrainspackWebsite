@@ -7,7 +7,10 @@ export const GetInTouchContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    height: "1250px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     height: "1250px",
   },
 }));
@@ -16,7 +19,12 @@ export const GetInTouchBox = styled(Box)(({ theme }) => ({
   height: "70%",
   display: "flex",
   justifyContent: "space-between",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    height: "80%",
+    width: "88%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     flexDirection: "column",
     height: "80%",
     width: "88%",
@@ -28,7 +36,12 @@ export const GetInTouchImageBox = styled(Box)(({ theme }) => ({
   backgroundImage: `url(${ContactDetails})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "435px",
+    backgroundSize: "100% 435px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     width: "100%",
     height: "435px",
     backgroundSize: "100% 435px",
@@ -37,7 +50,11 @@ export const GetInTouchImageBox = styled(Box)(({ theme }) => ({
 export const GetInTouchContentBox = styled(Box)(({ theme }) => ({
   width: "45%",
   height: "100%",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "520px",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     width: "100%",
     height: "520px",
   },
@@ -48,7 +65,11 @@ export const GetInTouchContentContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    width: "65%",
+    height: "100%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     width: "65%",
     height: "100%",
   },
@@ -92,7 +113,10 @@ export const ContactUsText = styled(Typography)(({ theme }) => ({
   fontSize: "16px !important",
   fontWeight: "400 !important",
   color: "#777181",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "16px !important",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     fontSize: "16px !important",
   },
 }));
@@ -100,16 +124,24 @@ export const ContactUsTextEmail = styled(Typography)(({ theme }) => ({
   fontSize: "20px !important",
   fontWeight: "500 !important",
   color: "#1b1525",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
     fontSize: "16px !important",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    fontSize: "18px !important",
   },
 }));
 export const ContactUsTextAddress = styled(Typography)(({ theme }) => ({
   fontSize: "22px !important",
   fontWeight: "500 !important",
   color: "#1b1525",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
     fontSize: "16px !important",
     fontWeight: "400 !important",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    fontSize: "21px !important",
+    fontWeight: "500 !important",
+    width: "78%",
   },
 }));

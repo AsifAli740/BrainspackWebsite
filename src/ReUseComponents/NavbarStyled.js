@@ -132,11 +132,17 @@ export const MenuListWrapper = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
 }));
 
-export const LogoWrapper = styled(Box)(() => ({
+export const LogoWrapper = styled(Box)(({ theme }) => ({
   width: "28%",
   height: "inherit",
   display: "flex",
   alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    width: "55%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "45%",
+  },
 }));
 
 export const BrainspackLogoWrapper = styled(Box)(() => ({
@@ -154,6 +160,9 @@ export const ListsBox = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   position: "relative",
   [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
     display: "none",
   },
 }));
