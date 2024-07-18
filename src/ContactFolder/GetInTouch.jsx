@@ -45,7 +45,7 @@ const GetInTouch = () => {
               </Box>
               <ContactUsIconsBoxEach>
                 <ContactUsIconsBox className="iconWrapper">
-                  <TrialBox >
+                  <TrialBox>
                     <PhoneInTalkIcon
                       className="change-icon-color"
                       sx={{ height: "25px", width: "25px", color: "#55ad88" }}
@@ -57,7 +57,9 @@ const GetInTouch = () => {
                     <ContactUsText>Have any question?</ContactUsText>
                   </Box>
                   <Box>
-                    <ContactUsTextEmail>Free +91-9168117671</ContactUsTextEmail>
+                    <ContactUsTextEmail>
+                      Free <span className="contactSpan">+91-9168117671</span>{" "}
+                    </ContactUsTextEmail>
                   </Box>
                 </ContactUsDetailsBox>
               </ContactUsIconsBoxEach>
@@ -84,7 +86,7 @@ const GetInTouch = () => {
                 <ContactUsIconsBox className="iconWrapper">
                   <Box>
                     <PlaceIcon
-                    className="change-icon-color"
+                      className="change-icon-color"
                       sx={{ height: "25px", width: "100px", color: "#55ad88" }}
                     />
                   </Box>

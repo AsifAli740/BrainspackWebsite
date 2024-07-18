@@ -29,7 +29,7 @@ export const GetKnowUsTitle = styled(Typography)(() => ({
   fontWeight: "700 !important",
 }));
 export const GetKnowUsTitle2 = styled(Typography)(({ theme }) => ({
-  fontSize: "42px !important",
+  fontSize: "40px !important",
   fontWeight: "700 !important",
   lineHeight: "50px !important",
   color: "#1b1525",
@@ -45,7 +45,7 @@ export const GetKnowUsTitle2 = styled(Typography)(({ theme }) => ({
 
 export const Offerings = styled(Typography)(({ theme }) => ({
   color: "#777181",
-  fontSize: "18px !important",
+  fontSize: "17px !important",
   fontWeight: "400 !important",
   [theme.breakpoints.down("sm")]: {
     fontSize: "16px !important",
