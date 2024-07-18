@@ -68,9 +68,10 @@ export const OverlayTextHeading = styled(Typography)(() => ({
   fontWeight: "700",
   width: "80%",
   fontSize: "24px",
+  lineHeight:"1.5rem !important"
 }));
 export const OverlayTextSubHeading = styled(Typography)(() => ({
-  fontSize: "17px",
+  fontSize: "16px",
   color: "#aea8b9",
   lineHeight: "30px",
 }));
@@ -114,13 +115,13 @@ export const CustomBtn = styled(Button)(() => ({
 }));
 export const DiscoverMoreBtn = styled(Typography)(() => ({
   color: "white !important",
-  fontSize: "18px !important",
+  fontSize: "16px !important",
   fontWeight: "700 !important",
 }));
 
 export const GetSolutionContainer = styled(Box)(() => ({
   width: "100%",
-  height: "120px",
+  height: "119px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -128,7 +129,7 @@ export const GetSolutionContainer = styled(Box)(() => ({
 }));
 export const GetSolution = styled(Typography)(() => ({
   color: "#dcd7ff",
-  fontSize: "19px !important",
+  fontSize: "18px !important",
   fontWeight: "400 !important",
 }));
 export const ExploreBrainspackLink = styled(Typography)(() => ({
@@ -146,6 +147,7 @@ export const LaunchingContainer = styled(Box)(() => ({
 export const LaunchingWrapper = styled(Box)(() => ({
   height: "500px",
   width: "100%",
+  backgroundAttachment:"fixed",
   backgroundImage: `url(${businessImg})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -172,7 +174,7 @@ export const BusinessText = styled(Typography)(() => ({
 }));
 export const LaunchingHeading = styled(Typography)(() => ({
   color: "white !important",
-  fontSize: "105px",
+  fontSize: "100px",
   fontWeight: "700",
   letterSpacing: "8px",
 }));
@@ -222,7 +224,7 @@ export const TechServicesText = styled(Typography)(() => ({
 export const LearnMoreBtn = styled(Button)(() => ({
   color: "white !important",
   textTransform: "none !important",
-  fontSize: "16px !important",
+  fontSize: "14px !important",
   fontWeight: "600 !important",
 }));
 

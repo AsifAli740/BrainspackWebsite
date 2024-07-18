@@ -87,7 +87,7 @@ function NavbarComp() {
               </MainMenuList>
               <MainMenuList className="border-btm">
                 <Navlinks className="setBorderBtm" to={"/about"}>
-                  {"About us"}
+                  {"About Us"}
                 </Navlinks>
               </MainMenuList>
               <MainMenuList className="navService border-btm">
