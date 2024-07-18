@@ -16,17 +16,6 @@ import footerImg1 from "../Assets/images/shapes/site-footer-shape-1.png";
 import footerImg2 from "../Assets/images/shapes/site-footer-shape-2.png";
 import brainspackLogo from "../Assets/images/resources/final-footer-brainspack-logo.svg";
 import trustedSourceIcon from "../Assets/images/icon/trusted-source-icon.png";
-// const theme = createTheme({
-//   breakpoints: {
-//     values: {
-//       xs: 0,
-//       sm: 700,
-//       md: 900,
-//       lg: 1200,
-//       xl: 1536,
-//     },
-//   },
-// });
 
 export const ServicesWrapper = styled(Box)(() => ({
   width: "100%",
@@ -480,7 +469,10 @@ export const FooterWrapper = styled(Box)(({ theme }) => ({
     height: "1150px",
   },
   [theme.breakpoints.between("sm", "md")]: {
-    height: "1150px",
+    height: "1200px",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "1200px",
   },
 }));
 
@@ -502,7 +494,7 @@ export const FooterTextWrapper = styled(Box)(({ theme }) => ({
 }));
 export const ChallengesWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  height: "30%",
+  height: "131px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -529,13 +521,13 @@ export const ChallengesBox = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.between("sm", "md")]: {
     flexDirection: "column",
-    width: "100%",
+    width: "85%",
     height: "80%",
   },
 }));
 export const IconAndBtnBox = styled(Box)(({ theme }) => ({
   display: "flex",
-  width: "56%",
+  width: "58%",
   justifyContent: "space-between",
   [theme.breakpoints.down("sm")]: {
     height: "160px",
@@ -543,7 +535,7 @@ export const IconAndBtnBox = styled(Box)(({ theme }) => ({
     flexDirection: "column",
   },
   [theme.breakpoints.between("sm", "md")]: {
-    height: "160px",
+    height: "150px",
     width: "100%",
     flexDirection: "column",
   },
@@ -551,6 +543,8 @@ export const IconAndBtnBox = styled(Box)(({ theme }) => ({
 export const AcUnitIconBox = styled(Box)(({ theme }) => ({
   fontSize: "65px !important ",
   color: "#2be4ac !important",
+  display: "flex",
+  alignItems: "center",
   [theme.breakpoints.down("sm")]: {
     display: "flex",
     justifyContent: "center",
@@ -563,8 +557,8 @@ export const AcUnitIconBox = styled(Box)(({ theme }) => ({
 
 export const FooterContent = styled(Typography)(({ theme }) => ({
   color: "white ",
-  fontSize: "25px !important",
-  fontWeight: "600 !important",
+  fontSize: "24px !important",
+  fontWeight: "500 !important",
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
   },
@@ -575,7 +569,7 @@ export const FooterContent = styled(Typography)(({ theme }) => ({
 
 export const FooterContentWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  height: "65%",
+  height: "63%",
 }));
 export const FooterContentBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -594,12 +588,12 @@ export const FooterContentBox = styled(Box)(({ theme }) => ({
 
 export const FooterLinks = styled(Typography)(() => ({
   color: "white ",
-  fontSize: "20px !important",
+  fontSize: "19px !important",
   fontWeight: "700 !important",
 }));
 export const FooterAddress = styled(Typography)(() => ({
   color: "#aea8b9 ",
-  fontSize: "16px !important",
+  fontSize: "15px !important",
   fontWeight: "500 !important",
   cursor: "pointer",
   transition: "all 500ms ease",
@@ -617,7 +611,7 @@ export const FooterCompanyFullAddress = styled(Typography)(() => ({
 export const FooterLogo = styled(Box)(({ theme }) => ({
   backgroundImage: `url(${brainspackLogo})`,
   backgroundRepeat: "no-repeat",
-  width: "18%",
+  width: "20%",
   height: "65px",
   backgroundSize: "100% 65px",
   [theme.breakpoints.down("sm")]: {
@@ -625,14 +619,14 @@ export const FooterLogo = styled(Box)(({ theme }) => ({
     height: "12%",
   },
   [theme.breakpoints.between("sm", "md")]: {
-    width: "100%",
+    width: "80%",
     height: "12%",
   },
 }));
 export const LinksAndContentBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  width: "35%",
+  width: "37%",
   height: "100%",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",

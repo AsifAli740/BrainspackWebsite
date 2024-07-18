@@ -19,9 +19,9 @@ export const Navbar = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
-  [theme.breakpoints.down("lg")]: {
-    display: "none",
-  },
+  // [theme.breakpoints.down("lg")]: {
+  //   display: "none",
+  // },
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -163,6 +163,9 @@ export const ListsBox = styled(Box)(({ theme }) => ({
     display: "none",
   },
   [theme.breakpoints.between("sm", "md")]: {
+    display: "none",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
     display: "none",
   },
 }));
