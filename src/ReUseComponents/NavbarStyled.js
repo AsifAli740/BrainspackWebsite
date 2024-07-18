@@ -10,7 +10,7 @@ export const MainContainer = styled(Box)(() => ({
 
 export const Navbar = styled(Box)(({ theme }) => ({
   width: "100%",
-  height: "47px",
+  height: "43px",
   display: "flex",
   borderBottom: "1px solid #ddd",
   [theme.breakpoints.down("sm")]: {
@@ -40,7 +40,7 @@ export const NavbarTopLeft = styled(Box)(() => ({
 }));
 
 export const AddressEmailWrapper = styled(Box)(() => ({
-  width: "35%",
+  width: "36%",
   height: "inherit",
   display: "flex",
   alignItems: "center",
@@ -50,15 +50,15 @@ export const AddressEmailWrapper = styled(Box)(() => ({
 export const AddressBox = styled(Typography)(() => ({
   width: "51%",
   color: "#777181",
-  fontSize: "13px !important",
+  fontSize: "12px !important",
   display: "flex",
   justifyContent: "space-between",
 }));
 
 export const EmailBox = styled(Typography)(() => ({
-  width: "38%",
+  width: "39%",
   color: "#777181",
-  fontSize: "13px !important",
+  fontSize: "12px !important",
   display: "flex",
   justifyContent: "space-between",
   cursor: "pointer",
@@ -77,7 +77,7 @@ export const AboutContactLinkWrapper = styled(Box)(() => ({
 
 export const AboutLink = styled(Typography)(() => ({
   color: "#777181",
-  fontSize: "13px !important",
+  fontSize: "12px !important",
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
@@ -86,7 +86,7 @@ export const AboutLink = styled(Typography)(() => ({
 
 export const ContactLink = styled(Typography)(() => ({
   color: "#777181",
-  fontSize: "13px !important",
+  fontSize: "12px !important",
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
@@ -95,7 +95,7 @@ export const ContactLink = styled(Typography)(() => ({
 
 export const Slash = styled(Typography)(() => ({
   color: "#777181",
-  fontSize: "13px !important",
+  fontSize: "12px !important",
 }));
 
 export const NavbarTopRightwrapper = styled(Box)(() => ({
@@ -115,18 +115,18 @@ export const LinkedInInstaWrapper = styled(Box)(() => ({
 
 export const MainMenuWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  height: "130px",
+  height: "116px",
   display: "flex",
   justifyContent: "center",
 }));
 
 export const MainMenu = styled(Box)(({ theme }) => ({
-  width: "89%",
+  width: "88%",
   height: "inherit",
 }));
 
 export const MenuListWrapper = styled(Box)(({ theme }) => ({
-  width: "65%",
+  width: "66%",
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
@@ -146,10 +146,10 @@ export const LogoWrapper = styled(Box)(({ theme }) => ({
 }));
 
 export const BrainspackLogoWrapper = styled(Box)(() => ({
-  width: "220px",
-  height: "65px",
+  width: "205px",
+  height: "60px",
   backgroundImage: `url(${brainspackLogo}) `,
-  backgroundSize: "100% 65px",
+  backgroundSize: "100% 60px",
   backgroundRepeat: "no-repeat",
 }));
 
@@ -172,7 +172,7 @@ export const MainMenuList = styled(Box)(() => ({
   height: "inherit",
   display: "flex",
   alignItems: "center",
-  fontSize: "18px",
+  fontSize: "16px",
 
   // "&:hover":{
   //   color:"#1B1525",
@@ -218,7 +218,7 @@ export const Navlinks = styled(NavLink)(() => ({
 
 export const CustomBtn = styled(Button)(() => ({
   height: "60px",
-  width: "220px",
+  width: "188px",
   backgroundColor: "#55ad88 !important",
   color: "white",
   borderRadius: "0px !important",

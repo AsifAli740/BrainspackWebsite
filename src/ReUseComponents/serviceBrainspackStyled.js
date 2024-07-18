@@ -31,7 +31,7 @@ export const ServiceOfferingBox = styled(Box)(() => ({
     
   }));
 export const ServiceOfferingIntroBox = styled(Box)(() => ({
-    width: "40%",
+    width: "41%",
     height: "200px",
     // backgroundColor:"yellow",
   }));
@@ -49,7 +49,7 @@ export const ServiceOfferingIntroduction = styled(Typography)(() => ({
     color:"#aea8b9",
     paddingTop:"20px",
     lineHeight:"30px !important",
-    fontSize:"17px !important",
+    fontSize:"16px !important",
 
     
 
@@ -65,7 +65,7 @@ export const ServiceCardWrapper = styled(Box)(() => ({
 
   }));
 export const ServiceCard = styled(Card)(() => ({
-    width:"18%",
+    width:"19%",
     height:"280px",
     backgroundColor:"transparent !important",
     borderRadius:"0px !important",
@@ -86,8 +86,8 @@ color:"black !important",
 
   }));
 export const ServiceCardContentWrapper = styled(CardContent)(() => ({
-    width:"98%",
-    padding:"0px 5px !important",
+    width:"97%",
+    padding:"0px 6px !important",
     display:"flex ",
     flexDirection:"column ",
     justifyContent:"space-evenly ",
@@ -114,7 +114,7 @@ cursor:"pointer",
 
   }));
 export const CardSubHeading = styled(Typography)(() => ({
-fontSize:"15px !important",
+fontSize:"14px !important",
 color:"#aea8b9"
 
   }));
