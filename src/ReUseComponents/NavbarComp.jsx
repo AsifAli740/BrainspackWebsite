@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   AboutContactLink,
@@ -16,7 +16,9 @@ import {
   MainMenu,
   MainMenuList,
   MainMenuWrapper,
+  MenuContainer,
   MenuListWrapper,
+  MenuWrapper,
   Navbar,
   NavbarTopLeft,
   NavbarTopLeftWrapper,
@@ -32,9 +34,28 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { headerLinks } from "../Utils/constant";
 import MainSlider from "../HomePageFolder/MainSlider";
 import { Box } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CartDrawer from "../HomePageFolder/Drawer";
 
 function NavbarComp() {
   const navigate = useNavigate();
+  const [state, setState] = useState({
+    // top: false,
+    left: false,
+    // bottom: false,
+    // right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
   return (
     <MainContainer>
       <Navbar>
@@ -56,12 +77,12 @@ function NavbarComp() {
             </AddressEmailWrapper>
             <AboutContactLinkWrapper>
               <Link className="link-style" to={"/about"}>
-              <AboutLink>About</AboutLink>
+                <AboutLink>About</AboutLink>
               </Link>
               <Slash>/</Slash>
 
               <Link className="link-style" to={"/contact"}>
-              <ContactLink>Contact</ContactLink>
+                <ContactLink>Contact</ContactLink>
               </Link>
             </AboutContactLinkWrapper>
           </NavbarTopLeft>
@@ -79,6 +100,15 @@ function NavbarComp() {
             <LogoWrapper>
               <BrainspackLogoWrapper></BrainspackLogoWrapper>
             </LogoWrapper>
+            <MenuWrapper>
+              <MenuContainer>
+                <MenuIcon
+                  sx={{ fontSize: "35px", color: "#55ad88" }}
+                  onClick={toggleDrawer("left", true)}
+                />
+              </MenuContainer>
+            </MenuWrapper>
+
             <ListsBox className="navListParent">
               <MainMenuList className="border-btm">
                 <Navlinks className="setBorderBtm" to={"/"}>
@@ -192,6 +222,11 @@ function NavbarComp() {
           </MenuListWrapper>
         </MainMenu>
       </MainMenuWrapper>
+      <CartDrawer
+        state={state}
+        setState={setState}
+        toggleDrawer={toggleDrawer}
+      />
     </MainContainer>
   );
 }

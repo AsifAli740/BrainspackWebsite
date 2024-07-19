@@ -20,13 +20,13 @@ function CounterItems() {
   return (
     <CounterContainerWrapper>
       <CounterContainer>
-        <ScrollAnimation animateIn="fadeInUp">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <CounterItemWrapper>
             <CounterItemBox>
               {counterItemContent.map((ele) => (
                 <CounterItem className="counterItem">
                   <Box className="customBox">
-                    <FabIcon className="customFabIcon" >
+                    <FabIcon className="customFabIcon">
                       <CounterIcon className="customIcons">
                         {ele.icons}
                       </CounterIcon>

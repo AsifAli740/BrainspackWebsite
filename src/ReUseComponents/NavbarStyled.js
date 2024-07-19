@@ -130,6 +130,12 @@ export const MenuListWrapper = styled(Box)(({ theme }) => ({
   height: "inherit",
   display: "flex",
   justifyContent: "space-between",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+  },
 }));
 
 export const LogoWrapper = styled(Box)(({ theme }) => ({
@@ -152,7 +158,36 @@ export const BrainspackLogoWrapper = styled(Box)(() => ({
   backgroundSize: "100% 60px",
   backgroundRepeat: "no-repeat",
 }));
-
+export const MenuWrapper = styled(Box)(({ theme }) => ({
+  display: "none",
+  [theme.breakpoints.down("sm")]: {
+    display: "block",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    display: "block",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    display: "block",
+  },
+}));
+export const MenuContainer = styled(Box)(({ theme }) => ({
+  // display: "none",
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+  },
+}));
 export const ListsBox = styled(Box)(({ theme }) => ({
   width: "57%",
   height: "inherit",

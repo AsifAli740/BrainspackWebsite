@@ -44,7 +44,7 @@ const FooterComp = () => {
     <>
       <FooterWrapper>
         <LeftFooterImageBox className="leftFooterImageBox">
-          <ScrollAnimation animateIn="slideInLeft">
+          <ScrollAnimation animateIn="slideInLeft" animateOnce={true}>
             <Box
               component={"img"}
               height={"388px"}
@@ -54,7 +54,7 @@ const FooterComp = () => {
           </ScrollAnimation>
         </LeftFooterImageBox>
         <RightFooterImageBox className="rightFooterImageBox">
-          <ScrollAnimation animateIn="slideInRight">
+          <ScrollAnimation animateIn="slideInRight" animateOnce={true}>
             <Box
               component={"img"}
               height={"600px"}
@@ -77,18 +77,16 @@ const FooterComp = () => {
                 </Box>
               </IconAndBtnBox>
               <Box>
-              <Link to={"/about"}>
+                <Link to={"/about"}>
                   {" "}
-
-                  <CustomBtn className="discover-button "> 
-                  <Box className="discover-overlay-footer-btn">
-                    </Box>
+                  <CustomBtn className="discover-button ">
+                    <Box className="discover-overlay-footer-btn"></Box>
                     <DiscoverMoreBtn className="typo green-text">
-
-                    Discover more
+                      Discover more
                     </DiscoverMoreBtn>
-                    </CustomBtn>
-                </Link>              </Box>
+                  </CustomBtn>
+                </Link>{" "}
+              </Box>
             </ChallengesBox>
           </ChallengesWrapper>
           <FooterContentWrapper className="footerContentWrapper">

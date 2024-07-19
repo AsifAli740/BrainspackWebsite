@@ -21,7 +21,11 @@ import {
 } from "./ServicesCompStyled";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { OUR_SERVICES, SERVICES_PROVIDED } from "../HomePageFolder/Constants";
-import { DiscoverMoreBtn, IconBox, IconBoxImage } from "../HomePageFolder/homePageStyled";
+import {
+  DiscoverMoreBtn,
+  IconBox,
+  IconBoxImage,
+} from "../HomePageFolder/homePageStyled";
 import { Link, NavLink } from "react-router-dom";
 import "../ExternalCss/GetKnowUs.css";
 import { CustomBtn, CustomBtnWebDevelopment } from "./NavbarStyled";
@@ -62,7 +66,6 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                             ? service.child.map((child) => {
                                 return (
                                   <NavLink
-                                  // style={{border:"1px solid red"}}
                                     className={`services ${child.class}`}
                                     to={child.link}
                                   >
@@ -110,18 +113,15 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                 Contact Us
               </Link>
             </ServicesProvidedContactUs> */}
-             <Link to={"/contact"}>
-                  {" "}
-
-                  <CustomBtnWebDevelopment className="discover-button"> 
-                  <Box className="discover-web-dev-overlay">
-                    </Box>
-                    <DiscoverMoreBtn className="typo">
-
-                    {"Contact us"}
-                    </DiscoverMoreBtn>
-                    </CustomBtnWebDevelopment>
-                </Link>
+            <Link to={"/contact"}>
+              {" "}
+              <CustomBtnWebDevelopment className="discover-button">
+                <Box className="discover-web-dev-overlay"></Box>
+                <DiscoverMoreBtn className="typo">
+                  {"Contact us"}
+                </DiscoverMoreBtn>
+              </CustomBtnWebDevelopment>
+            </Link>
           </ServicesCompLeftBox>
           <ServicesCompRightBox>
             <Box

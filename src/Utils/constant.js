@@ -1,8 +1,3 @@
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import DesignServicesIcon from "@mui/icons-material/DesignServices";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
-import AutoFixOffIcon from "@mui/icons-material/AutoFixOff";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PermDataSettingIcon from "@mui/icons-material/PermDataSetting";
@@ -62,6 +57,14 @@ import AppSettingsAltIcon from "@mui/icons-material/AppSettingsAlt";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import BrowseGalleryIcon from "@mui/icons-material/BrowseGallery";
 
+// DEVELOPMENT STEPS //
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
+import AutoFixOffIcon from "@mui/icons-material/AutoFixOff";
+//////////////////////////////////////////////////////////////////////////////////
+
 export const headerLinks = [
   {
     links: "/",
@@ -78,34 +81,6 @@ export const headerLinks = [
   {
     links: "/Contact",
     item: "Contact",
-  },
-];
-
-export const DEVELOPMENT_PROCESS = [
-  {
-    id: 0,
-    name: "Planning",
-    icon: <SupportAgentIcon sx={{ color: "white" }} />,
-  },
-  {
-    id: 1,
-    name: "Design",
-    icon: <DesignServicesIcon />,
-  },
-  {
-    id: 2,
-    name: "Development",
-    icon: <DeveloperModeIcon />,
-  },
-  {
-    id: 3,
-    name: "Q/A launch",
-    icon: <QuestionAnswerIcon />,
-  },
-  {
-    id: 4,
-    name: "Maintenance",
-    icon: <AutoFixOffIcon />,
   },
 ];
 
@@ -146,25 +121,25 @@ export const serviceCardContent = [
 
 export const counterItemContent = [
   {
-    icons: <BusinessCenterIcon sx={{fontSize:"35px"}} />,
+    icons: <BusinessCenterIcon sx={{ fontSize: "35px" }} />,
     dataCount: "3",
     counterPlus: "+",
     counterTitle: "Years of experience",
   },
   {
-    icons: <PermDataSettingIcon sx={{fontSize:"35px"}} />,
+    icons: <PermDataSettingIcon sx={{ fontSize: "35px" }} />,
     dataCount: "700",
     counterPlus: "+",
     counterTitle: "IT problems solved",
   },
   {
-    icons: <ThumbUpIcon sx={{fontSize:"35px"}} />,
+    icons: <ThumbUpIcon sx={{ fontSize: "35px" }} />,
     dataCount: "11",
     counterPlus: "+",
     counterTitle: "Satisfied clients",
   },
   {
-    icons: <GroupsIcon sx={{fontSize:"35px"}} />,
+    icons: <GroupsIcon sx={{ fontSize: "35px" }} />,
     dataCount: "15",
     counterPlus: "+",
     counterTitle: "Pro team members",
@@ -1197,5 +1172,33 @@ export const DEVELOPMENT_PROCESS_IMAGES = [
     name: "Maintenance",
     detail:
       "Sustaining and optimizing MEAN stack applications for enduring performance and reliability",
+  },
+];
+
+export const DEVELOPMENT_STEPS = [
+  {
+    id: 1,
+    name: "Planning",
+    icon: <SupportAgentIcon sx={{ color: "white", fontSize: "30px" }} />,
+  },
+  {
+    id: 2,
+    name: "Design",
+    icon: <DesignServicesIcon sx={{ color: "white", fontSize: "30px" }} />,
+  },
+  {
+    id: 3,
+    name: "Development",
+    icon: <DeveloperModeIcon sx={{ color: "white", fontSize: "30px" }} />,
+  },
+  {
+    id: 4,
+    name: "Q/A launch",
+    icon: <QuestionAnswerIcon sx={{ color: "white", fontSize: "30px" }} />,
+  },
+  {
+    id: 5,
+    name: "Maintenance",
+    icon: <AutoFixOffIcon sx={{ color: "white", fontSize: "30px" }} />,
   },
 ];
