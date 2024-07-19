@@ -28,7 +28,7 @@ export const WhyChooseUsImageBox = styled(Box)(() => ({
 }));
 export const WhyChooseUsContentBox = styled(Box)(() => ({
   width: "49%",
-  height: "85%",
+  height: "75%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -39,13 +39,13 @@ export const WhyChooseUsTitle = styled(Typography)(() => ({
   color: "#1b1525 !important",
 }));
 export const CreatingWebsiteText = styled(Typography)(() => ({
-  fontSize: "19px !important",
-  fontWeight: "500 !important",
+  fontSize: "18px !important",
+  fontWeight: "600 !important",
   color: "#2be4ac !important",
   lineHeight: "35px !important",
 }));
 export const CreatingWebsiteTextDetails = styled(Typography)(() => ({
-  fontSize: "17px !important",
+  fontSize: "16px !important",
   fontWeight: "400 !important",
   color: "#777181 !important",
 }));

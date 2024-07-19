@@ -75,7 +75,7 @@ export const WebImage = styled(Box)(({}) => ({
 }));
 
 export const ServiceFrontEndContentWrapper = styled(Box)(({}) => ({
-  width: "66%",
+  width: "68%",
   height: "auto",
   backgroundColor: "#f7f7f9",
   display: "flex",
@@ -84,7 +84,7 @@ export const ServiceFrontEndContentWrapper = styled(Box)(({}) => ({
   justifyContent: "space-between",
 }));
 export const FrontEndContentBox = styled(Box)(({}) => ({
-  width: "90%",
+  width: "100%",
   height: "auto",
   display: "flex",
   flexDirection: "column",
@@ -96,7 +96,7 @@ export const FrontEndHeading = styled(Typography)(({}) => ({
   paddingBottom: "12px",
 }));
 export const FrontEndSubHeading = styled(Typography)(({}) => ({
-  fontSize: "17px !important",
+  fontSize: "16px !important",
   color: "#777181",
   fontWeight: "400 !important",
 }));

@@ -209,6 +209,24 @@
   text-decoration: none;
 }
 
+.mail-color{
+  text-decoration: none;
+
+  color: #777181 !important
+
+}
+
+.nav-icon-hover:hover{
+    color: #55ad88;
+    cursor: pointer;
+    transition:all 500ms ease
+  
+}
+.mail-color:hover{
+  color: #55ad88 !important;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
 .getToKnowUsAnimation{
   animation-name: slideInLeft;  
   animation-duration: 2500ms;
@@ -487,3 +505,4 @@
   color: #1B1525 !important;
   font-weight: 500 !important;
 }
+

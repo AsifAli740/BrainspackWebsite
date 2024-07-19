@@ -108,12 +108,12 @@ export const ServicesCompContentBox = styled(Box)(() => ({
   gap: "15px",
 }));
 export const ServicesCompContentName = styled(Typography)(() => ({
-  fontSize: "41px !important",
+  fontSize: "40px !important",
   fontWeight: "700 !important",
   color: "#1b1525 !important",
 }));
 export const ServicesCompContentText = styled(Typography)(() => ({
-  fontSize: "19px !important",
+  fontSize: "18px !important",
   fontWeight: "400 !important",
   color: "#777181 !important",
   lineHeight: "32px !important",
@@ -135,13 +135,13 @@ export const FrontAndBackendBox = styled(Box)(() => ({
   justifyContent: "space-around",
 }));
 export const FrontAndBackendTextName = styled(Typography)(() => ({
-  fontSize: "21px !important",
-  fontWeight: "700 !important",
+  fontSize: "20px !important",
+  fontWeight: "600 !important",
   color: "#1b1525 !important",
 }));
 export const FrontAndBackendTextDetails = styled(Typography)(() => ({
   width: "90%",
-  fontSize: "19px !important",
+  fontSize: "18px !important",
   fontWeight: "400 !important",
   color: "#777181 !important",
   lineHeight: "30px !important",

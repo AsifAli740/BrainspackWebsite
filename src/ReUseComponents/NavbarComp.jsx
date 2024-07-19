@@ -35,6 +35,7 @@ import { Box } from "@mui/material";
 
 function NavbarComp() {
   const navigate = useNavigate();
+  
   return (
     <MainContainer>
       <Navbar>
@@ -51,7 +52,9 @@ function NavbarComp() {
                 <EmailIcon
                   sx={{ fontSize: "17px", color: "#55ad88" }}
                 ></EmailIcon>
+                <Link className="mail-color" to={"mailto:info@brainspack.com"}>
                 info@brainspack.com
+                </Link>
               </EmailBox>
             </AddressEmailWrapper>
             <AboutContactLinkWrapper>
@@ -68,8 +71,8 @@ function NavbarComp() {
         </NavbarTopLeftWrapper>
         <NavbarTopRightwrapper>
           <LinkedInInstaWrapper>
-            <LinkedInIcon sx={{ fontSize: "18px" }}></LinkedInIcon>
-            <InstagramIcon sx={{ fontSize: "18px" }}></InstagramIcon>
+            <LinkedInIcon className="nav-icon-hover" sx={{ fontSize: "18px" }}></LinkedInIcon>
+            <InstagramIcon className="nav-icon-hover" sx={{ fontSize: "18px" }}></InstagramIcon>
           </LinkedInInstaWrapper>
         </NavbarTopRightwrapper>
       </Navbar>
@@ -98,8 +101,8 @@ function NavbarComp() {
                     height: "220px",
                     bgcolor: "#fff",
                     position: "absolute",
-                    top: "130px",
-                    left: "270px",
+                    top: "116px",
+                    left: "220px",
                     zIndex: "999",
                     display: "none",
                     boxShadow: "0px 0px 65px 0px rgba(0, 0, 0, 0.1)",
@@ -109,7 +112,6 @@ function NavbarComp() {
                 >
                   <ServiceOptions
                     onClick={(e) => {
-                      console.log("web-devloymsjkdhga");
                       e.stopPropagation();
                       navigate("/services/web-development");
                     }}
