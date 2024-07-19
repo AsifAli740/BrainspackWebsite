@@ -204,35 +204,35 @@ export const WHY_CHOOSE_WEB = [
   {
     id: 0,
     icon: (
-      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "18px" }} />
     ),
     name: "Expertise",
   },
   {
     id: 1,
     icon: (
-      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "18px" }} />
     ),
     name: "Custom Solutions",
   },
   {
     id: 2,
     icon: (
-      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "18px" }} />
     ),
     name: "Innovative Designs",
   },
   {
     id: 3,
     icon: (
-      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "18px" }} />
     ),
     name: "Scalability",
   },
   {
     id: 4,
     icon: (
-      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "20px" }} />
+      <CheckCircleOutlineIcon sx={{ color: "#55ad88", fontSize: "18px" }} />
     ),
     name: "Cutting-Edge Technologies",
   },

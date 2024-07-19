@@ -61,11 +61,7 @@ export const EmailBox = styled(Typography)(() => ({
   fontSize: "12px !important",
   display: "flex",
   justifyContent: "space-between",
-  cursor: "pointer",
-  "&:hover": {
-    color: "#55ad88 !important",
-    cursor: "pointer",
-  },
+ 
 }));
 
 export const AboutContactLinkWrapper = styled(Box)(() => ({
@@ -81,6 +77,7 @@ export const AboutLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
+    transition:"all 500ms ease"
   },
 }));
 
@@ -90,6 +87,7 @@ export const ContactLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
+    transition:"all 500ms ease"
   },
 }));
 
@@ -227,7 +225,7 @@ export const ServiceOptions = styled(Box)(() => ({
   alignItems: "center",
   textAlign: "justify",
   padding: "22px",
-  fontSize: "18px",
+  fontSize: "16px",
   fontWeight: "400",
   lineHeight: "30px",
   color: "black",
@@ -270,7 +268,7 @@ export const CustomBtn = styled(Button)(() => ({
 }));
 export const CustomBtnWebDevelopment = styled(Button)(() => ({
   height: "70px",
-  width: "444px",
+  width: "401px",
   backgroundColor: "#55ad88 !important",
   color: "white",
   borderRadius: "0px !important",
@@ -282,3 +280,6 @@ export const CustomBtnWebDevelopment = styled(Button)(() => ({
     transition: "all 0.5s linear !important",
   },
 }));
+
+
+

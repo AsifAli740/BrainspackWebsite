@@ -335,12 +335,12 @@ export const HelpingLineImageWrapper = styled(Box)(() => ({
   opacity: "0.1",
 }));
 export const HelpingContent = styled(Box)(() => ({
-  width: "60%",
+  width: "70%",
   height: "600px",
 }));
 export const HelpingContentBox = styled(Box)(() => ({
   width: "100%",
-  height: "450px",
+  height: "470px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -381,7 +381,7 @@ export const EmpoweringBussiness = styled(Typography)(() => ({
 }));
 export const HelpingPointsWrapper = styled(Box)(() => ({
   width: "100%",
-  height: "200px",
+  height: "220px",
   display: "flex",
 }));
 export const DataProtectionWrapper = styled(Box)(() => ({
@@ -392,11 +392,11 @@ export const DataProtectionWrapper = styled(Box)(() => ({
   justifyContent: "space-between",
 }));
 export const DataProtectionTitle = styled(Typography)(() => ({
-  width: "67%",
-  borderBottom: "3px solid #ffffff1a",
+  width: "62%",
+  borderBottom: "2px solid #ffffff1a",
 
   fontSize: "18px !important",
-  fontWeight: "900 !important",
+  fontWeight: "700 !important",
   paddingBottom: "15px",
   color: "white",
 }));
@@ -415,10 +415,10 @@ export const OptimizeWrapper = styled(Box)(() => ({
   justifyContent: "space-between",
 }));
 export const OptimizeTitle = styled(Typography)(() => ({
-  width: "81%",
-  borderBottom: "3px solid #ffffff1a",
+  width: "76%",
+  borderBottom: "2px solid #ffffff1a",
   fontSize: "18px !important",
-  fontWeight: "900 !important",
+  fontWeight: "700 !important",
   paddingBottom: "15px",
   color: "white",
 }));

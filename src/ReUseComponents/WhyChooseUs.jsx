@@ -23,14 +23,18 @@ const WhyChooseUs = ({ data, title }) => {
             <Box width={"90%"}>
               <CreatingWebsiteText>{title}</CreatingWebsiteText>
             </Box>
+            <Box sx={{display:"flex",height:"150px",justifyContent:"space-between", flexDirection:"column"}}>
+
             {data.map((item) => (
-              <Box display={"flex"} gap={"15px"}>
+              
+              <Box display={"flex"} gap={"15px"} alignItems={"center"}>
                 <Box>{item.icon}</Box>
                 <CreatingWebsiteTextDetails>
                   {item.name}
                 </CreatingWebsiteTextDetails>
               </Box>
             ))}
+            </Box>
           </WhyChooseUsContentBox>
         </WhyChooseUsContainer>
       </WhyChooseUsWrapper>
