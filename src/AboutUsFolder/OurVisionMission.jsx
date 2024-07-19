@@ -36,7 +36,7 @@ function OurVisionMission(props) {
 
       <OurVisionImageIntroWrapper>
         <OurVisionImageBox className="ourVisionImageBox">
-          <ScrollAnimation animateIn="slideInLeft">
+          <ScrollAnimation animateIn="slideInLeft" animateOnce={true}>
             <Box
               component={"img"}
               width={"100%"}

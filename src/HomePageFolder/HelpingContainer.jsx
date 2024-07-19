@@ -39,7 +39,7 @@ function HelpingContainer(props) {
   return (
     <HelpingContainerWrapper>
       <TrustedSourceWrapper className="trustWrapper2">
-        <ScrollAnimation animateIn="fadeInUp">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <TrustedSourceWrapper2>
             <TrustedSourceBox>
               <Box
@@ -69,7 +69,7 @@ function HelpingContainer(props) {
       <HelpingContainerImageBox></HelpingContainerImageBox>
       <HelpingContentWrapper>
         <HelpingLineImageWrapper className="helpingLineImageWrapper">
-          <ScrollAnimation animateIn="slideInRight">
+          <ScrollAnimation animateIn="slideInRight" animateOnce={true}>
             <Box
               component={"img"}
               width={"390px"}
@@ -96,8 +96,9 @@ function HelpingContainer(props) {
             </EmpoweringBussiness>
             <HelpingPointsWrapper>
               <DataProtectionWrapper className="data-protection">
-                <Box sx={{height:"75px"}}>
-                  <AdminPanelSettingsIcon className="data-protect-icon"
+                <Box sx={{ height: "75px" }}>
+                  <AdminPanelSettingsIcon
+                    className="data-protect-icon"
                     sx={{ fontSize: "75px !important", color: "#2be4ac" }}
                   />
                 </Box>
@@ -107,8 +108,9 @@ function HelpingContainer(props) {
                 </DataProtectionText>
               </DataProtectionWrapper>
               <OptimizeWrapper className="optimize">
-                <Box sx={{height:"75px"}}>
-                  <SettingsSuggestIcon className="optimize-icon"
+                <Box sx={{ height: "75px" }}>
+                  <SettingsSuggestIcon
+                    className="optimize-icon"
                     sx={{ fontSize: "75px !important", color: "#2be4ac" }}
                   />
                 </Box>

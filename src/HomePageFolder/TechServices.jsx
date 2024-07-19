@@ -33,7 +33,7 @@ const TechServicesComp = () => {
             position={"relative"}
             className="techServicesImageBox"
           >
-            <ScrollAnimation animateIn="slideInLeft">
+            <ScrollAnimation animateIn="slideInLeft" animateOnce={true}>
               <Box
                 component={"img"}
                 height={"95%"}

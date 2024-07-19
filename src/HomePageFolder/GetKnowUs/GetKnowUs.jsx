@@ -24,12 +24,12 @@ import { MissonImageBg } from "../../AboutUsFolder/aboutUsStyled";
 const GetKnowUs = () => {
   return (
     <>
-      <GetKnowUsContainer sx={{position:'relative'}}>
-      <MissonImageBg></MissonImageBg>
+      <GetKnowUsContainer sx={{ position: "relative" }}>
+        <MissonImageBg></MissonImageBg>
 
         <GetKnowUsWrapper>
           <GetKnowUsImageBox className="getKnowUsImageBox">
-            <ScrollAnimation animateIn="slideInLeft">
+            <ScrollAnimation animateIn="slideInLeft" animateOnce={true}>
               <Box
                 component={"img"}
                 height={"600px"}
@@ -100,8 +100,7 @@ const GetKnowUs = () => {
               </Box>
             </Box>
             <Box>
-            <DiscoverMore path={"/about"} text="Discover more" />
-
+              <DiscoverMore path={"/about"} text="Discover more" />
             </Box>
           </GetKnowUsContentBox>
         </GetKnowUsWrapper>
