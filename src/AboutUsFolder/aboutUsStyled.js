@@ -32,7 +32,6 @@ export const OurVisionImageIntroWrapper = styled(Box)(() => ({
 export const OurVisionImageBox = styled(Box)(() => ({
   width: "40%",
   height: "540px",
-  // backgroundImage: `url(${ourVisionImage})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
 }));
@@ -62,29 +61,29 @@ export const OurMissionBox = styled(Box)(() => ({
   backgroundColor: "#f7f7f9",
 }));
 export const VisionHeading = styled(Typography)(() => ({
-  width: "15%",
+  width: "16%",
   fontSize: "20px !important",
   color: "black",
-  borderBottom: "3px solid black ",
+  borderBottom: "2px solid black ",
   fontWeight: "bold !important",
 }));
 export const VisionContent = styled(Typography)(() => ({
   width: "85%",
-  fontSize: "17px !important",
+  fontSize: "16px !important",
   lineHeight: " 25.5px",
   color: "#777181",
   textAlign: "justify",
 }));
 export const MissionHeading = styled(Typography)(() => ({
-  width: "16%",
+  width: "18%",
   fontSize: "20px !important",
   color: "black",
-  borderBottom: "3px solid black ",
+  borderBottom: "2px solid black ",
   fontWeight: "bold !important",
 }));
 export const MissionContent = styled(Typography)(() => ({
   width: "85%",
-  fontSize: "17px !important",
+  fontSize: "16px !important",
   lineHeight: " 25.5px",
   color: "#777181",
   textAlign: "justify",

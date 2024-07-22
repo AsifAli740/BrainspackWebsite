@@ -17,7 +17,7 @@ function WebDevelopment(props) {
       <NavbarComp />
       <ServicePageHeaderLink
         activeText={"Services"}
-        headerHeading={"Our Services"}
+        headerHeading={"Web Development"}
         nestedActiveText={"Web Development"}
       />
 

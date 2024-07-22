@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Box, Typography } from "@mui/material";
 export const DevelopmentProcessContainer = styled(Box)(() => ({
   width: "100%",
-  height: "700px",
+  height: "620px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

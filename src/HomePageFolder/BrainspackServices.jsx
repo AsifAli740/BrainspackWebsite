@@ -11,6 +11,7 @@ import {
   OverlapText,
   OverlayTextHeading,
   OverlayTextSubHeading,
+  ServicesHeadingWrapper,
 } from "./homePageStyled";
 import { SERVICES_CONTENT } from "./Constants";
 import { Box, Typography } from "@mui/material";
@@ -38,21 +39,10 @@ const BrainspackServices = () => {
                 boxSizing={"border-box"}
                 overflow={"hidden"}
               >
-                {/* <Box
-                className="blackWrapper"
-                  sx={{
-                    width: "100%",
-                    height: "0px",
-                    transition:"all 500ms ease",
-                    backgroundColor: "#282331",
-                    
-                  }}
-                > */}
-                {/* <Box className="secondBlackWrapper" sx={{ opacity: "1" }}> */}
+                
                 <ServicesCardMedia
                   component="img"
                   src={service.image}
-                  // className="image"
                   className="scaleImage"
                 />
                 <OverlayWrapper className="overlay"></OverlayWrapper>
@@ -79,22 +69,12 @@ const BrainspackServices = () => {
                     </OverlapText>
                   </OverlapContentWrapper>
                 </OverlayTop>
-                <Box
-                  display={"flex"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  textAlign={"center"}
-                  height={"20%"}
-                  position={"absolute"}
-                  bottom={"30px"}
-                  left={"60px"}
-                  className="serviceHeadingText"
+                <ServicesHeadingWrapper
+                  
                 >
                   <ServicesHeading variant="h5">{service.name}</ServicesHeading>
-                </Box>
+                </ServicesHeadingWrapper>
               </Box>
-              {/* </Box> */}
-              {/* </Box> */}
             </ServicesCard>
           ))}
         </ServicesBox>
