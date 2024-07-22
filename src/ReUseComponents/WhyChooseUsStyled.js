@@ -6,43 +6,75 @@ import {
   AccordionDetails,
 } from "@mui/material";
 import WhyChooseUsImage from "../Assets/images/services/service-details-benefits-img.jpg";
-export const WhyChooseUsWrapper = styled(Box)(() => ({
+export const WhyChooseUsWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "500px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "400px",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "400px",
+  },
 }));
-export const WhyChooseUsContainer = styled(Box)(() => ({
+export const WhyChooseUsContainer = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "80%",
   display: "flex",
   justifyContent: "space-between",
+  [theme.breakpoints.between("sm", "md")]: {},
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "90%",
+  },
 }));
-export const WhyChooseUsImageBox = styled(Box)(() => ({
+export const WhyChooseUsImageBox = styled(Box)(({ theme }) => ({
   width: "49%",
   height: "100%",
   backgroundImage: `url(${WhyChooseUsImage})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "70%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "73%",
+  },
 }));
-export const WhyChooseUsContentBox = styled(Box)(() => ({
+export const WhyChooseUsContentBox = styled(Box)(({ theme }) => ({
   width: "49%",
   height: "75%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "90%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "90%",
+    justifyContent: "space-evenly",
+  },
 }));
 export const WhyChooseUsTitle = styled(Typography)(() => ({
   fontSize: "24px !important",
   fontWeight: "700 !important",
   color: "#1b1525 !important",
 }));
-export const CreatingWebsiteText = styled(Typography)(() => ({
+export const CreatingWebsiteTextBox = styled(Box)(({ theme }) => ({
+  width: "90%",
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "100%",
+  },
+}));
+export const CreatingWebsiteText = styled(Typography)(({ theme }) => ({
   fontSize: "18px !important",
   fontWeight: "600 !important",
   color: "#2be4ac !important",
   lineHeight: "35px !important",
+  [theme.breakpoints.between("md", "lg")]: {
+    color: "#55ad88 !important",
+  },
 }));
 export const CreatingWebsiteTextDetails = styled(Typography)(() => ({
   fontSize: "16px !important",

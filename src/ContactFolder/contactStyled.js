@@ -32,6 +32,10 @@ export const GetInTouchBox = styled(Box)(({ theme }) => ({
     height: "85%",
     width: "88%",
   },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "70%",
+    width: "90%",
+  },
 }));
 export const GetInTouchImageBox = styled(Box)(({ theme }) => ({
   width: "45%",
@@ -49,6 +53,11 @@ export const GetInTouchImageBox = styled(Box)(({ theme }) => ({
     height: "45%",
     backgroundSize: "100% 100%",
   },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "48%",
+    height: "70%",
+    backgroundSize: "100% 100%",
+  },
 }));
 export const GetInTouchContentBox = styled(Box)(({ theme }) => ({
   width: "45%",
@@ -60,6 +69,10 @@ export const GetInTouchContentBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.between("sm", "md")]: {
     width: "100%",
     height: "50%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "48%",
+    height: "100%",
   },
 }));
 export const GetInTouchContentContainer = styled(Box)(({ theme }) => ({
@@ -74,6 +87,10 @@ export const GetInTouchContentContainer = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.between("sm", "md")]: {
     width: "66%",
+    height: "100%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "100%",
     height: "100%",
   },
 }));

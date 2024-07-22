@@ -19,7 +19,9 @@ export const Navbar = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
-  
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -131,6 +133,9 @@ export const MenuListWrapper = styled(Box)(({ theme }) => ({
   [theme.breakpoints.between("sm", "md")]: {
     width: "100%",
   },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "100%",
+  },
 }));
 
 export const LogoWrapper = styled(Box)(({ theme }) => ({
@@ -205,7 +210,6 @@ export const MainMenuList = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   fontSize: "16px",
-
 }));
 export const WebDevOptions = styled(Box)(() => ({
   width: "100%",
@@ -215,7 +219,6 @@ export const WebDevOptions = styled(Box)(() => ({
   top: "0px",
   left: "100%",
   display: "none",
-
 }));
 export const ServiceOptionWrapper = styled(Box)(() => ({
   width: "55%",
@@ -258,7 +261,6 @@ export const Navlinks = styled(NavLink)(() => ({
     borderBottom: "3px solid green",
     paddingTop: "3px",
   },
- 
 }));
 
 export const CustomBtn = styled(Button)(() => ({
@@ -275,7 +277,7 @@ export const CustomBtn = styled(Button)(() => ({
     transition: "all 0.5s linear !important",
   },
 }));
-export const CustomBtnWebDevelopment = styled(Button)(() => ({
+export const CustomBtnWebDevelopment = styled(Button)(({ theme }) => ({
   height: "70px",
   width: "401px",
   backgroundColor: "#55ad88 !important",
@@ -287,5 +289,14 @@ export const CustomBtnWebDevelopment = styled(Button)(() => ({
   "&:hover": {
     backgroundColor: "black !important",
     transition: "all 0.5s linear !important",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "100%",
   },
 }));

@@ -1,41 +1,67 @@
-import styled from "styled-components";
-import { Box, Typography } from "@mui/material";
-export const DevelopmentProcessContainer = styled(Box)(() => ({
+import { Box, Typography, styled } from "@mui/material";
+export const DevelopmentProcessContainer = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "620px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "1065px",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    height: "600px",
+    // border: "1px solid red",
+  },
 }));
-export const DevelopmentProcessWrapper = styled(Box)(() => ({
+export const DevelopmentProcessWrapper = styled(Box)(({ theme }) => ({
   width: "90%",
   height: "90%%",
   display: "flex",
   flexDirection: "column",
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "90%",
+    height: "90%",
+  },
 }));
-export const DevelopmentTextBox = styled(Typography)(() => ({
+export const DevelopmentTextBox = styled(Box)(({ theme }) => ({
   height: "100px",
   width: "100%",
   display: "flex",
   alignItems: "center",
+  [theme.breakpoints.between("sm", "md")]: {
+    justifyContent: "center",
+  },
 }));
-export const DevelopmentIconsAndImageBox = styled(Box)(() => ({
+export const DevelopmentIconsAndImageBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   height: "90%",
   width: "100%",
+  [theme.breakpoints.between("sm", "md")]: {
+    flexDirection: "column",
+  },
 }));
 
-export const DevelopmentIconsBox = styled(Box)(() => ({
+export const DevelopmentIconsBox = styled(Box)(({ theme }) => ({
   width: "30%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-between",
+  [theme.breakpoints.between("sm", "md")]: {
+    // height: "auto",
+    width: "100%",
+    // justifyContent: "center",
+  },
 }));
-export const DevelopmentImagesBox = styled(Box)(() => ({
+export const DevelopmentImagesBox = styled(Box)(({ theme }) => ({
   width: "60%",
   marginTop: "2%",
+  [theme.breakpoints.between("sm", "md")]: {
+    // height: "auto",
+    width: "100%",
+    height: "400px",
+  },
 }));
 export const DevelopmentMainImageBox = styled(Box)(() => ({
   height: "400px",

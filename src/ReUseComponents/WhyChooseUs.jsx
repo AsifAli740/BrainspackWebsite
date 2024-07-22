@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import {
   CreatingWebsiteText,
+  CreatingWebsiteTextBox,
   CreatingWebsiteTextDetails,
   WhyChooseUsContainer,
   WhyChooseUsContentBox,
@@ -20,20 +21,25 @@ const WhyChooseUs = ({ data, title }) => {
             <Box>
               <WhyChooseUsTitle>Why choose us ?</WhyChooseUsTitle>
             </Box>
-            <Box width={"90%"}>
+            <CreatingWebsiteTextBox>
               <CreatingWebsiteText>{title}</CreatingWebsiteText>
-            </Box>
-            <Box sx={{display:"flex",height:"150px",justifyContent:"space-between", flexDirection:"column"}}>
-
-            {data.map((item) => (
-              
-              <Box display={"flex"} gap={"15px"} alignItems={"center"}>
-                <Box>{item.icon}</Box>
-                <CreatingWebsiteTextDetails>
-                  {item.name}
-                </CreatingWebsiteTextDetails>
-              </Box>
-            ))}
+            </CreatingWebsiteTextBox>
+            <Box
+              sx={{
+                display: "flex",
+                height: "150px",
+                justifyContent: "space-between",
+                flexDirection: "column",
+              }}
+            >
+              {data.map((item) => (
+                <Box display={"flex"} gap={"15px"} alignItems={"center"}>
+                  <Box>{item.icon}</Box>
+                  <CreatingWebsiteTextDetails>
+                    {item.name}
+                  </CreatingWebsiteTextDetails>
+                </Box>
+              ))}
             </Box>
           </WhyChooseUsContentBox>
         </WhyChooseUsContainer>

@@ -18,6 +18,7 @@ import {
   EasySolutionsText,
   HaveAnyQuesText,
   ContactNumberText,
+  EasySolutionsTextBox,
 } from "./ServicesCompStyled";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { OUR_SERVICES, SERVICES_PROVIDED } from "../HomePageFolder/Constants";
@@ -92,11 +93,11 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                   <IconBox>
                     <IconBoxImage></IconBoxImage>
                   </IconBox>
-                  <Box>
+                  <EasySolutionsTextBox>
                     <EasySolutionsText>
                       Easy solutions to your tech problem
                     </EasySolutionsText>
-                  </Box>
+                  </EasySolutionsTextBox>
                   <Box>
                     <HaveAnyQuesText variant="h6">
                       Have any question?
@@ -108,11 +109,6 @@ const ServicesComp = ({ serviceName, serviceText, servicesImage }) => {
                 </ServicesProvidedImageWrapper>
               </ServicesProvidedImageBox>
             </ServicesProvidedImageContainer>
-            {/* <ServicesProvidedContactUs>
-              <Link className="contactUs" to={"/Contact"}>
-                Contact Us
-              </Link>
-            </ServicesProvidedContactUs> */}
             <Link to={"/contact"}>
               {" "}
               <CustomBtnWebDevelopment className="discover-button">

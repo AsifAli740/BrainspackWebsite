@@ -44,7 +44,13 @@ export const ServiceLinkWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  [theme.breakpoints.between("xs", "sm")]: {
+  [theme.breakpoints.down("sm")]: {
+    width: "80%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "50%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
     width: "35%",
   },
 }));
