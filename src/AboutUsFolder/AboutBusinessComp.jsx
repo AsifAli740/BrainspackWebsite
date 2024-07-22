@@ -28,7 +28,7 @@ const AboutBusinessComp = () => {
                   ack
                 </BrainspackHeading>
               </Box>
-              <Box sx={{ width: "87%" }}>
+              <Box sx={{ width: "88%" }}>
                 <BusinessSubHeading>
                   Brainspack is a globally acknowledged brand specializing in
                   the creation of advanced web and mobile applications. Through
@@ -41,9 +41,7 @@ const AboutBusinessComp = () => {
                   steadfast leadership.
                 </BusinessSubHeading>
               </Box>
-              {/* <Box>
-              <CustomBtn>Contact us now</CustomBtn>
-            </Box> */}
+              
             </BusinessTextBox>
           </BusinessTextBoxWrapper>
         </LaunchingWrapper>

@@ -9,31 +9,26 @@ export const BrainspackServiceContainer = styled(Box)(() => ({
     display:"flex",
     justifyContent:"center",
     alignItems:"center"
-    // backgroundImage:`url(${serviceImg})`
   }));
 export const BrainspackService = styled(Box)(() => ({
     width: "87%",
     height: "480px",
-    // backgroundColor:"red",
   }));
 export const BrainspackServiceIntroWrapper = styled(Box)(() => ({
     width: "100%",
     height: "200px",
-    // backgroundColor:"purple",
     display:"flex",
     justifyContent:"space-between"
   }));
 export const ServiceOfferingBox = styled(Box)(() => ({
     width: "40%",
     height: "200px",
-    // backgroundColor:"green",
     color:"white"
     
   }));
 export const ServiceOfferingIntroBox = styled(Box)(() => ({
     width: "41%",
     height: "200px",
-    // backgroundColor:"yellow",
   }));
 export const OfferingHeading = styled(Typography)(() => ({
     color:"#55AD88",
@@ -57,7 +52,6 @@ export const ServiceOfferingIntroduction = styled(Typography)(() => ({
 export const ServiceCardWrapper = styled(Box)(() => ({
     width:"100%",
     height:"280px",
-    // backgroundColor:"aqua",
     display:"flex",
     justifyContent:"space-evenly"
 

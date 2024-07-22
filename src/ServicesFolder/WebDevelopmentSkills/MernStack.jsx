@@ -12,6 +12,7 @@ import NavbarComp from "../../ReUseComponents/NavbarComp";
 import FooterComp from "../../HomePageFolder/Footer";
 import ServicePageHeaderLink from "../ServicePageHeaderLink";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function MernStack(props) {
   return (
@@ -28,6 +29,7 @@ function MernStack(props) {
         servicesImage={SERVICES_PROVIDED[5].image}
       />
       <ServiceWebDetailsComp content={serviceMernContent} />
+      <DevelopmentProcess />
       <WhyChooseUs
         data={WHY_CHOOSE_MERN}
         title={

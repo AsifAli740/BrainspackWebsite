@@ -72,21 +72,18 @@ export const SERVICES_PROVIDED = [
     name: "MEAN Stack",
     text: "The MEAN stack is a comprehensive JavaScript framework encompassing MongoDB for the database, Express.js for the backend, Angular for the front end, and Node.js as the runtime environment. This cohesive stack facilitates end-to-end JavaScript development, ensuring smooth data flow and code reuse across the entire web application development lifecycle. Renowned for its adaptability and scalability, the MEAN stack is widely favored for constructing dynamic, efficient, and seamlessly integrated web applications.",
     image: serviceImage4,
-    // link: "/digitalMarkt",
   },
   {
     id: 5,
     name: "MERN Stack",
     text: "MERN, a comprehensive full-stack JavaScript framework, seamlessly integrates MongoDB for data storage, Express.js for server logic, React.js for dynamic user interfaces, and Node.js for server-side operations. This amalgamation establishes a robust foundation, facilitating the development of dynamic web applications. MongoDB efficiently manages data storage, Express.js handles server-side logic, React.js ensures an engaging user interface, and Node.js executes server-side operations. The synergy of these components creates a cohesive, efficient, and scalable environment, empowering developers in crafting modern, responsive web solutions",
     image: serviceImage4,
-    // link: "/digitalMarkt",
   },
   {
     id: 6,
     name: "PHP",
     text: "PHP (Hypertext Preprocessor) is a server-side scripting language widely used for web development. It is embedded within HTML code, executing on the server to generate dynamic content. Known for its simplicity and versatility, PHP powers numerous websites and applications, facilitating the creation of dynamic and interactive web experiences.PHP development revolves around harnessing the server-side scripting language to create dynamic web content. Integrated into HTML, PHP executes on the server, enabling the development of interactive and dynamic web applications. Recognized for its simplicity, versatility, and extensive adoption, PHP remains fundamental in web development.",
     image: serviceImage4,
-    // link: "/digitalMarkt",
   },
 ];
 

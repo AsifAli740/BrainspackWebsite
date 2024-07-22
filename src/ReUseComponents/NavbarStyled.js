@@ -19,9 +19,7 @@ export const Navbar = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
-  // [theme.breakpoints.down("lg")]: {
-  //   display: "none",
-  // },
+  
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -61,7 +59,6 @@ export const EmailBox = styled(Typography)(() => ({
   fontSize: "12px !important",
   display: "flex",
   justifyContent: "space-between",
- 
 }));
 
 export const AboutContactLinkWrapper = styled(Box)(() => ({
@@ -77,7 +74,7 @@ export const AboutLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
-    transition:"all 500ms ease"
+    transition: "all 500ms ease",
   },
 }));
 
@@ -87,7 +84,7 @@ export const ContactLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
-    transition:"all 500ms ease"
+    transition: "all 500ms ease",
   },
 }));
 
@@ -169,7 +166,6 @@ export const MenuWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 export const MenuContainer = styled(Box)(({ theme }) => ({
-  // display: "none",
   [theme.breakpoints.down("sm")]: {
     display: "flex",
     alignItems: "center",
@@ -210,18 +206,35 @@ export const MainMenuList = styled(Box)(() => ({
   alignItems: "center",
   fontSize: "16px",
 
-  // "&:hover":{
-  //   color:"#1B1525",
-  //   borderBottom: "3px solid green",
-  // paddingTop: "3px",
-  // }
+}));
+export const WebDevOptions = styled(Box)(() => ({
+  width: "100%",
+  height: "165px",
+  backgroundColor: "white",
+  position: "absolute",
+  top: "0px",
+  left: "100%",
+  display: "none",
+
+}));
+export const ServiceOptionWrapper = styled(Box)(() => ({
+  width: "55%",
+  height: "220px",
+  backgroundColor: "#fff",
+  position: "absolute",
+  top: "116px",
+  left: "220px",
+  zIndex: "999",
+  display: "none",
+  boxShadow: "0px 0px 65px 0px rgba(0, 0, 0, 0.1)",
+
+  cursor: "pointer",
 }));
 export const ServiceOptions = styled(Box)(() => ({
   width: "100%",
   height: "55px",
   display: "flex",
   position: "relative",
-  // justifyContent:"center",
   alignItems: "center",
   textAlign: "justify",
   padding: "22px",
@@ -245,11 +258,7 @@ export const Navlinks = styled(NavLink)(() => ({
     borderBottom: "3px solid green",
     paddingTop: "3px",
   },
-  // "&:hover":{
-  //   color:"#1B1525",
-  //   borderBottom: "3px solid green",
-  // paddingTop: "3px",
-  // }
+ 
 }));
 
 export const CustomBtn = styled(Button)(() => ({
@@ -280,6 +289,3 @@ export const CustomBtnWebDevelopment = styled(Button)(() => ({
     transition: "all 0.5s linear !important",
   },
 }));
-
-
-

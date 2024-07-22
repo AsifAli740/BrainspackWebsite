@@ -21,7 +21,7 @@ function DigitalMarketing(props) {
       <NavbarComp />
       <ServicePageHeaderLink
         activeText={"Services"}
-        headerHeading={"Our Services"}
+        headerHeading={"Digital Marketing"}
         nestedActiveText={"Digital Marketing"}
       />
 

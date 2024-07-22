@@ -25,7 +25,9 @@ import {
   NavbarTopRightwrapper,
   Navlinks,
   ServiceOptions,
+  ServiceOptionWrapper,
   Slash,
+  WebDevOptions,
 } from "./NavbarStyled";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -130,21 +132,9 @@ function NavbarComp() {
                 </Navlinks>
               </MainMenuList>
               <MainMenuList className="navService border-btm">
-                <Box
+                <ServiceOptionWrapper
                   className="hello"
-                  sx={{
-                    width: "55%",
-                    height: "220px",
-                    bgcolor: "#fff",
-                    position: "absolute",
-                    top: "116px",
-                    left: "220px",
-                    zIndex: "999",
-                    display: "none",
-                    boxShadow: "0px 0px 65px 0px rgba(0, 0, 0, 0.1)",
-
-                    cursor: "pointer",
-                  }}
+                  
                 >
                   <ServiceOptions
                     onClick={(e) => {
@@ -153,17 +143,9 @@ function NavbarComp() {
                     }}
                     className="options webDevelop"
                   >
-                    <Box
+                    <WebDevOptions
                       className="webDev-options"
-                      sx={{
-                        width: "100%",
-                        height: "165px",
-                        bgcolor: "white",
-                        position: "absolute",
-                        top: "0px",
-                        left: "100%",
-                        display: "none",
-                      }}
+                      
                     >
                       <ServiceOptions
                         onClick={(e) => {
@@ -195,7 +177,7 @@ function NavbarComp() {
                       >
                         PHP
                       </ServiceOptions>
-                    </Box>
+                    </WebDevOptions>
                     Web Development
                   </ServiceOptions>
                   <ServiceOptions
@@ -216,7 +198,7 @@ function NavbarComp() {
                   >
                     Digital Marketing
                   </ServiceOptions>
-                </Box>
+                </ServiceOptionWrapper>
                 <Navlinks className="setBorderBtm" to={"/services"}>
                   {"Services"}
                 </Navlinks>

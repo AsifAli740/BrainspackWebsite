@@ -17,7 +17,7 @@ const UiUxDesigning = () => {
       <NavbarComp />
       <ServicePageHeaderLink
         activeText={"Services"}
-        headerHeading={"Our Services"}
+        headerHeading={"UI UX Designing"}
         nestedActiveText={"UI UX Designing"}
       />
       <ServicesComp
