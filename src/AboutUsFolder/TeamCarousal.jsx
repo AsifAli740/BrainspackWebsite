@@ -128,7 +128,6 @@ const TeamCarousal = () => {
                       </Box>
 
                       <CardContent className="team-name-box"   sx={{ height: "100px", position:"relative"
-                      // backgroundImage: `url(${teamshape})`, backgroundRepeat:"no-repeat",backgroundSize:"30% 100px"
                      }}
                       >
                         <Box className="team-shape-img"  component={"img"} src={teamshape} sx={{    position: "absolute",

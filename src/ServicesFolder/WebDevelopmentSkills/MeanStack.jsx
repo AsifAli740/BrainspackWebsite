@@ -9,6 +9,7 @@ import ServicePageHeaderLink from "../ServicePageHeaderLink";
 import ServiceWebDetailsComp from "../../ReUseComponents/ServiceWebDetailsComp";
 import { serviceMeanContent } from "../../Utils/constant";
 import FooterComp from "../../HomePageFolder/Footer";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function MeanStack(props) {
   return (
@@ -24,7 +25,10 @@ function MeanStack(props) {
         serviceText={SERVICES_PROVIDED[4].text}
         servicesImage={SERVICES_PROVIDED[4].image}
       />
+      
       <ServiceWebDetailsComp content={serviceMeanContent} />
+      <DevelopmentProcess />
+
 
       <WhyChooseUs
         data={WHY_CHOOSE_MEAN}

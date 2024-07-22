@@ -97,20 +97,18 @@ export const UiAndUxBox = styled(Box)(() => ({
   paddingBottom: "100px",
 }));
 export const UiAndUxHeading = styled(Typography)(() => ({
-  fontSize: "19px !important",
-  fontWeight: "500 !important",
+  fontSize: "18px !important",
+  fontWeight: "400 !important",
   color: "#1b1525 ! important",
 }));
 export const UiAndUxSubHeading = styled(Typography)(() => ({
-  fontSize: "17px !important",
+  fontSize: "16px !important",
   fontWeight: "600 !important",
   color: "#777181 ! important",
 }));
 export const UiAndUxParagraph = styled(Typography)(() => ({
-  fontSize: "17px !important",
-  fontWeight: "400 !important",
+  fontSize: "16px !important",
   color: "#777181 ! important",
-  // lineHeight: "30px !important",
 }));
 
 export const CustomAccordian = styled(Accordion)(() => ({

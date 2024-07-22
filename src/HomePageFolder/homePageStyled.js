@@ -109,6 +109,17 @@ export const OverlapContentWrapper = styled(Box)(() => ({
   height: "inherit",
   padding: "20px",
 }));
+export const ServicesHeadingWrapper = styled(Box)(() => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  height: "20%",
+  position: "absolute",
+  bottom: "30px",
+  left: "60px",
+  className: "serviceHeadingText",
+}));
 
 export const OverlapText = styled(Box)(() => ({}));
 export const OverlayTextHeading = styled(Typography)(() => ({
@@ -849,8 +860,8 @@ export const BrainspackHeading = styled(Typography)(() => ({
 }));
 
 export const BusinessSubHeading = styled(Typography)(() => ({
-  fontWeight: 400,
-  fontSize: "20px",
+  fontWeight: "400",
+  fontSize: "18px",
   color: "white",
   textAlign: "center",
   lineHeight: "32px",

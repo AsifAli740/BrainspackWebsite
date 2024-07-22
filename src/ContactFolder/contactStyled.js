@@ -130,8 +130,8 @@ export const ContactUsDetailsBox = styled(Box)(() => ({
   justifyContent: "center",
 }));
 export const ContactUsText = styled(Typography)(({ theme }) => ({
-  fontSize: "15px !important",
-  fontWeight: "400 !important",
+  fontSize: "18px !important",
+  fontWeight: "500 !important",
   color: "#777181",
   [theme.breakpoints.down("sm")]: {
     fontSize: "16px !important",
@@ -141,7 +141,7 @@ export const ContactUsText = styled(Typography)(({ theme }) => ({
   },
 }));
 export const ContactUsTextEmail = styled(Typography)(({ theme }) => ({
-  fontSize: "20px !important",
+  fontSize: "18px !important",
   fontWeight: "500 !important",
   color: "#1b1525",
   [theme.breakpoints.down("sm")]: {
@@ -152,8 +152,8 @@ export const ContactUsTextEmail = styled(Typography)(({ theme }) => ({
   },
 }));
 export const ContactUsTextAddress = styled(Typography)(({ theme }) => ({
-  fontSize: "21px !important",
-  fontWeight: "500 !important",
+  fontSize: "20px !important",
+  fontWeight: "400 !important",
   color: "#1b1525",
   width: "77%",
   [theme.breakpoints.down("sm")]: {

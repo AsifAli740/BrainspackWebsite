@@ -11,6 +11,7 @@ import {
   OverlapText,
   OverlayTextHeading,
   OverlayTextSubHeading,
+  ServicesHeadingWrapper,
   ServicesCardWrapper,
 } from "./homePageStyled";
 import { SERVICES_CONTENT } from "./Constants";
@@ -68,19 +69,9 @@ const BrainspackServices = () => {
                     </OverlapText>
                   </OverlapContentWrapper>
                 </OverlayTop>
-                <Box
-                  display={"flex"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  textAlign={"center"}
-                  height={"20%"}
-                  position={"absolute"}
-                  bottom={"30px"}
-                  left={"60px"}
-                  className="serviceHeadingText"
-                >
+                <ServicesHeadingWrapper>
                   <ServicesHeading variant="h5">{service.name}</ServicesHeading>
-                </Box>
+                </ServicesHeadingWrapper>
               </ServicesCardWrapper>
             </ServicesCard>
           ))}

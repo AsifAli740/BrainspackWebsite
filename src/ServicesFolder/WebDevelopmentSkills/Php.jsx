@@ -7,6 +7,7 @@ import WhyChooseUs from "../../ReUseComponents/WhyChooseUs";
 import NavbarComp from "../../ReUseComponents/NavbarComp";
 import FooterComp from "../../HomePageFolder/Footer";
 import ServicePageHeaderLink from "../ServicePageHeaderLink";
+import DevelopmentProcess from "../../HomePageFolder/DevelopmentProcess";
 
 function Php(props) {
   return (
@@ -22,6 +23,7 @@ function Php(props) {
         serviceText={SERVICES_PROVIDED[6].text}
         servicesImage={SERVICES_PROVIDED[6].image}
       />
+       <DevelopmentProcess />
       <WhyChooseUs
         data={WHY_CHOOSE_Php}
         title={

@@ -682,11 +682,7 @@ export const WHY_CHOOSE_MOBILE_APP = [
         paragraph:
           "Tailored interfaces enhance user satisfaction and streamline interactions.",
       },
-      // {
-      //   subHeading: "Data Analytics",
-      //   paragraph:
-      //     " Gain valuable insights into user behavior and preferences for informed decision-making Responsive design ensures your website functions seamlessly on various devices, catering to the growing number of mobile users.",
-      // },
+      
     ],
   },
   {

@@ -17,7 +17,7 @@ function MobileAppDevelopment(props) {
       <NavbarComp />
       <ServicePageHeaderLink
         activeText={"Services"}
-        headerHeading={"Our Services"}
+        headerHeading={"Mobile App Development"}
         nestedActiveText={"Mobile App Development"}
       />
       <ServicesComp
