@@ -150,23 +150,51 @@ export const TECH_SERVICES = [
     id: 0,
     icon: <CheckIcon />,
     name: "Web Development",
+    subHeading: "Shaping Digital Worlds Through Code and Creativity.",
   },
   {
     id: 1,
     icon: <CheckIcon />,
     name: "UI/UX Designing",
+    subHeading: "Weaving Aesthetic Brilliance into Digital Experiences.",
   },
   {
     id: 2,
     icon: <CheckIcon />,
     name: "Mobile App Development",
+    subHeading: "Unleashing Innovation in the Palm of Your Hand.",
   },
   {
     id: 3,
     icon: <CheckIcon />,
     name: "Digital Marketing",
+    subHeading:
+      "Strategically Elevating Online Presence for Impactful Results.",
   },
 ];
+// export const TECH_SERVICES_HEADING = [
+//   {
+//     id: 4,
+//     icon: <CheckIcon />,
+//     name: "Web Development",
+//     subHeading: "",
+//   },
+//   {
+//     id: 5,
+//     icon: <CheckIcon />,
+//     name: "UI/UX Designing",
+//   },
+//   {
+//     id: 6,
+//     icon: <CheckIcon />,
+//     name: "Mobile App Development",
+//   },
+//   {
+//     id: 7,
+//     icon: <CheckIcon />,
+//     name: "Digital Marketing",
+//   },
+// ];
 
 export const teamCarouselImages = [
   {

@@ -9,6 +9,8 @@ import {
   LearnMoreBtn,
   CustomFab,
   FabText,
+  FabSubHeading,
+  TechServicesHeading,
 } from "./homePageStyled";
 import { Box, Button, Fab, Typography } from "@mui/material";
 import techServices from "../Assets/images/resources/tech-services-img-1.jpg";
@@ -63,9 +65,9 @@ const TechServicesComp = () => {
               <GetKnowUsTitle>Stay protected</GetKnowUsTitle>
             </Box>
             <Box>
-              <GetKnowUsTitle2>
+              <TechServicesHeading>
                 Tech services for your business ideas:
-              </GetKnowUsTitle2>
+              </TechServicesHeading>
             </Box>
             <Box>
               <Offerings>
@@ -73,10 +75,22 @@ const TechServicesComp = () => {
               </Offerings>
             </Box>
             {TECH_SERVICES.map((service) => (
-              <Box display={"flex"} alignItems={"center"} gap={"20px"}>
-                <CustomFab>{service.icon}</CustomFab>
-                <FabText>{service.name}</FabText>
-              </Box>
+              <>
+                {service.subHeading ? (
+                  <Box display={"flex"} alignItems={"center"} gap={"20px"}>
+                    <CustomFab>{service.icon}</CustomFab>
+                    <Box>
+                      <FabText>{service.name}</FabText>
+                      <FabSubHeading>{service.subHeading}</FabSubHeading>
+                    </Box>
+                  </Box>
+                ) : (
+                  <Box display={"flex"} alignItems={"center"} gap={"20px"}>
+                    <CustomFab>{service.icon}</CustomFab>
+                    <FabText>{service.name}</FabText>
+                  </Box>
+                )}
+              </>
             ))}
           </TechServicesTextWrapper>
         </TechServicesWrapper>

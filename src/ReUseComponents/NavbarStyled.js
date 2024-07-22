@@ -19,9 +19,9 @@ export const Navbar = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
-  // [theme.breakpoints.down("lg")]: {
-  //   display: "none",
-  // },
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
 }));
 
 export const NavbarTopLeftWrapper = styled(Box)(() => ({
@@ -61,7 +61,6 @@ export const EmailBox = styled(Typography)(() => ({
   fontSize: "12px !important",
   display: "flex",
   justifyContent: "space-between",
- 
 }));
 
 export const AboutContactLinkWrapper = styled(Box)(() => ({
@@ -77,7 +76,7 @@ export const AboutLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
-    transition:"all 500ms ease"
+    transition: "all 500ms ease",
   },
 }));
 
@@ -87,7 +86,7 @@ export const ContactLink = styled(Typography)(() => ({
   "&:hover": {
     color: "#55ad88",
     cursor: "pointer",
-    transition:"all 500ms ease"
+    transition: "all 500ms ease",
   },
 }));
 
@@ -132,6 +131,9 @@ export const MenuListWrapper = styled(Box)(({ theme }) => ({
     width: "100%",
   },
   [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
     width: "100%",
   },
 }));
@@ -266,7 +268,7 @@ export const CustomBtn = styled(Button)(() => ({
     transition: "all 0.5s linear !important",
   },
 }));
-export const CustomBtnWebDevelopment = styled(Button)(() => ({
+export const CustomBtnWebDevelopment = styled(Button)(({ theme }) => ({
   height: "70px",
   width: "401px",
   backgroundColor: "#55ad88 !important",
@@ -279,7 +281,13 @@ export const CustomBtnWebDevelopment = styled(Button)(() => ({
     backgroundColor: "black !important",
     transition: "all 0.5s linear !important",
   },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("sm", "md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    width: "100%",
+  },
 }));
-
-
-
