@@ -26,6 +26,8 @@ import {
   AcUnitIconBox,
   FooterCompanyFullAddress,
   DiscoverMoreBtn,
+  FooterLogoBox,
+  ContactBoxDetailsEachBox,
 } from "./homePageStyled";
 import { Box } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
@@ -89,72 +91,70 @@ const FooterComp = () => {
               </Box>
             </ChallengesBox>
           </ChallengesWrapper>
-          <FooterContentWrapper className="footerContentWrapper">
-            <FooterContentBox>
+          <FooterContentBox>
+            <FooterLogoBox>
               <FooterLogo></FooterLogo>
-              <LinksAndContentBox>
-                <FooterLinksBox>
-                  <LinksTextBox>
-                    <FooterLinks>Links</FooterLinks>
-                  </LinksTextBox>
-                  <LinksTextBoxDetails>
-                    <Link className="link-style" to={"/about"}>
-                      <FooterAddress>About us</FooterAddress>
-                    </Link>
+            </FooterLogoBox>
+            <FooterLinksBox>
+              <LinksTextBox>
+                <FooterLinks>Links</FooterLinks>
+              </LinksTextBox>
+              <LinksTextBoxDetails>
+                <Link className="link-style" to={"/about"}>
+                  <FooterAddress>About us</FooterAddress>
+                </Link>
 
-                    <FooterAddress>Meet our team</FooterAddress>
-                    <Link className="link-style" to={"/contact"}>
-                      <FooterAddress>Contacts</FooterAddress>
-                    </Link>
-                  </LinksTextBoxDetails>
-                </FooterLinksBox>
-                <FooterContactBox>
-                  <ContactBox>
-                    <FooterLinks>Contact</FooterLinks>
-                  </ContactBox>
-                  <ContactBoxDetails>
-                    <ContactBoxDetailsEach>
-                      <PhoneIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>+91-9168117671</FooterAddress>
-                    </ContactBoxDetailsEach>
-                    <ContactBoxDetailsEach>
-                      <MessageIcon sx={{ color: "#55ad88" }} />
-                      <FooterAddress>info@brainspack.com</FooterAddress>
-                    </ContactBoxDetailsEach>
-                    <ContactBoxDetailsEach>
-                      <LocationOnIcon sx={{ color: "#55ad88" }} />
-                      <FooterCompanyFullAddress>
-                        SCF-15, First Floor, opposite Bus Stand Road, Sarojini
-                        Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
-                      </FooterCompanyFullAddress>
-                    </ContactBoxDetailsEach>
-                  </ContactBoxDetails>
-                </FooterContactBox>
-              </LinksAndContentBox>
-              <SocialMediaBox>
-                <Link
-                  to={
-                    "https://www.linkedin.com/company/brainspack/?originalSubdomain=in"
-                  }
-                >
-                  <Box className="icon-wrapper">
-                    <Box className="icon-overlay"></Box>
-                    <LinkedInIcon sx={{ zIndex: "2" }} />
-                  </Box>
+                <FooterAddress>Meet our team</FooterAddress>
+                <Link className="link-style" to={"/contact"}>
+                  <FooterAddress>Contacts</FooterAddress>
                 </Link>
-                <Link
-                  to={
-                    "https://www.instagram.com/brainspack?igsh=MTI2aHhqYXlmZmJzdQ=="
-                  }
-                >
-                  <Box className="icon-wrapper">
-                    <Box className="icon-overlay"></Box>
-                    <InstagramIcon sx={{ zIndex: "2" }} />
-                  </Box>
-                </Link>
-              </SocialMediaBox>
-            </FooterContentBox>
-          </FooterContentWrapper>
+              </LinksTextBoxDetails>
+            </FooterLinksBox>
+            <FooterContactBox>
+              <ContactBox>
+                <FooterLinks>Contact</FooterLinks>
+              </ContactBox>
+              <ContactBoxDetails>
+                <ContactBoxDetailsEach>
+                  <PhoneIcon sx={{ color: "#55ad88" }} />
+                  <FooterAddress>+91-9168117671</FooterAddress>
+                </ContactBoxDetailsEach>
+                <ContactBoxDetailsEach>
+                  <MessageIcon sx={{ color: "#55ad88" }} />
+                  <FooterAddress>info@brainspack.com</FooterAddress>
+                </ContactBoxDetailsEach>
+                <ContactBoxDetailsEachBox>
+                  <LocationOnIcon sx={{ color: "#55ad88" }} />
+                  <FooterCompanyFullAddress>
+                    SCF-15, First Floor, opposite Bus Stand Road, Sarojini
+                    Colony, PART-1, Model Town, Yamuna Nagar, Haryana 135001
+                  </FooterCompanyFullAddress>
+                </ContactBoxDetailsEachBox>
+              </ContactBoxDetails>
+            </FooterContactBox>
+            <SocialMediaBox>
+              <Link
+                to={
+                  "https://www.linkedin.com/company/brainspack/?originalSubdomain=in"
+                }
+              >
+                <Box className="icon-wrapper">
+                  <Box className="icon-overlay"></Box>
+                  <LinkedInIcon sx={{ zIndex: "2" }} />
+                </Box>
+              </Link>
+              <Link
+                to={
+                  "https://www.instagram.com/brainspack?igsh=MTI2aHhqYXlmZmJzdQ=="
+                }
+              >
+                <Box className="icon-wrapper">
+                  <Box className="icon-overlay"></Box>
+                  <InstagramIcon sx={{ zIndex: "2" }} />
+                </Box>
+              </Link>
+            </SocialMediaBox>
+          </FooterContentBox>
         </FooterTextWrapper>
       </FooterWrapper>
     </>
