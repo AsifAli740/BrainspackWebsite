@@ -23,6 +23,16 @@ export const GetKnowUsContentBox = styled(Box)(() => ({
   flexDirection: "column",
   justifyContent: "space-between",
 }));
+export const GetKnowUsTitleWrapper = styled(Box)(() => ({
+  displa:"flex",
+   flexDirection:"column",
+    gap:"10px"
+}));
+export const GetKnowUsTitleBox = styled(Box)(() => ({
+  displa:"flex",
+   alignItems:"center",
+    gap:"10px"
+}));
 export const GetKnowUsTitle = styled(Typography)(() => ({
   color: "#55ad88",
   fontSize: "16px !important",
