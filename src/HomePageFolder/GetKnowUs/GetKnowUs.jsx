@@ -8,6 +8,8 @@ import {
   Offerings,
   Features,
   Problems,
+  GetKnowUsTitleWrapper,
+  GetKnowUsTitleBox,
 } from "./GetKnowUsStyled";
 import getToKnowUs from "../../Assets/images/resources/get-to-know-img-1.jpg";
 import getToKnowUsSmall from "../../Assets/images/resources/get-to-know-small-img.jpg";
@@ -46,17 +48,17 @@ const GetKnowUs = () => {
             </ScrollAnimation>
           </GetKnowUsImageBox>
           <GetKnowUsContentBox>
-            <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
-              <Box display={"flex"} alignItems={"center"} gap={"10px"}>
+            <GetKnowUsTitleWrapper >
+              <GetKnowUsTitleBox >
                 <Box component={"img"} src={twoDots} />
                 <GetKnowUsTitle>Get to know us</GetKnowUsTitle>
-              </Box>
+              </GetKnowUsTitleBox>
               <Box>
                 <GetKnowUsTitle2>
                   Elevating Your Digital Presence with Seamless Solutions
                 </GetKnowUsTitle2>
               </Box>
-            </Box>
+            </GetKnowUsTitleWrapper>
             <Box>
               <Offerings>
                 "Our offerings, spanning Web Development, Mobile App
